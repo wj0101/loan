@@ -35,10 +35,10 @@ a:hover{text-decoration: none}
 .fistCard:hover{background-color: #f2f8ff}
 
 .topBanner_protect{background: url("../images/banner_1.jpg") no-repeat;width: 962px;height: 70px;}
-.topBanner_britain{background: url("../images/banner_2.jpg") no-repeat;width: 962px;height: 70px;}
-.topBanner_house{background: url("../images/banner_3.jpg") no-repeat;width: 962px;height: 70px;}
-.topBanner_car{background: url("../images/banner_4.jpg") no-repeat;width: 962px;height: 70px;}
-.topBanner_home{background: url("../images/banner_5.jpg") no-repeat;width: 962px;height: 70px;}
+.topBanner_britain{background: url("../images/banner_1.jpg") no-repeat;width: 962px;height: 70px;}
+.topBanner_house{background: url("../images/banner_1.jpg") no-repeat;width: 962px;height: 70px;}
+.topBanner_car{background: url("../images/banner_1.jpg") no-repeat;width: 962px;height: 70px;}
+.topBanner_home{background: url("../images/banner_1.jpg") no-repeat;width: 962px;height: 70px;}
 
 .textTitle{ font-size: 30px;color: #fff;font-weight: bold;line-height: 70px;float: left;padding-left: 50px;}
 .textMessage{font-size: 20px;color: #fff;padding-left: 60px;line-height: 70px;float: left;letter-spacing: 1px;}
@@ -75,7 +75,7 @@ ul.textApply li .applyBto{ margin-left: 130px;line-height:70px;width: 160px;}
 .container .loanProducts .master{ width: 962px; background-color: #fff;box-shadow: 0 1px 2px #eee;margin-top: 20px; margin-bottom: 4px;overflow: hidden;}
 .container .loanProducts .master .qualifications,.materials,.costDescription{position: relative;overflow: hidden; }
 .applicationCon{line-height: 2;font-size: 14px;padding:0 0 36px 60px;}
-.textLine{border-bottom: 1px solid #f1f1f1; width: 900px;margin: 0 auto;}
+.textLine{border-bottom: 1px solid #eee; width: 900px;margin: 0 auto;}
 ul.imgMater li .cardID{background: url("../images/icon.png") -74px 0; width: 22px; height: 16px; float: left;}
 ul.imgMater li .houseIcon{background: url("../images/icon.png") -182px 0; width: 22px; height: 23px; float: left;}
 ul.imgMater li .creditReport{background: url("../images/icon.png") -127px 0; width: 20px; height: 22px; float: left}
@@ -163,7 +163,7 @@ td{border:1px solid  #ccc;}
 .products_description .leftProducts .imgMon,.products_description .rightProducts .imgHouse{position: absolute;right: 60px; top:50%;margin-top: -50px;}
 .products_description .rightProducts .btnApply{ width: 160px;height: 40px;border-radius: 4px;background-color: #2577e3;margin: 34px 0 0 38px;}
 .borrowingPro{ width: 1180px;height: 240px;background-color: #fff;box-shadow:0 1px 2px #eee;margin:20px auto 0 auto}
-.borrowingPro .topPro{height: 54px;width: 1180px;border-bottom: 1px solid #e6e6e6;}
+.borrowingPro .topPro{height: 54px;width: 1180px;border-bottom: 1px solid #eee;}
 .borrowingPro .topPro h3{font-size: 20px;float: left;padding-left: 40px;line-height: 55px;}
 .borrowingPro .topPro .textEx{float: right;line-height: 55px;padding-right: 30px;color: #999;font-size: 14px;}
 .markIc{background: url("../images/icon.png") -217px 0 no-repeat;width: 22px;height: 22px;vertical-align: middle;margin-right: 10px;}
@@ -178,7 +178,7 @@ td{border:1px solid  #ccc;}
 .textTecProcess ul.process li .right_Arrow{position: absolute;background: url("../images/icon.png") -246px 0 no-repeat;width: 44px;height: 12px;right: 0;top:50%;margin-top:-6px;}
 
 #loanMain .faqsPro{height: 440px;width: 1180px;background-color: #fff;margin: 20px auto 2px auto;box-shadow: 0 1px 2px #eee;}
-.faqsPro .text_faqsTop{width: 1180px;height: 54px;border-bottom: 1px solid #e6e6e6}
+.faqsPro .text_faqsTop{width: 1180px;height: 54px;border-bottom: 1px solid #eee}
 .faqsPro .text_faqsTop h3.textQues{ float: left;padding-left: 40px;line-height: 55px;font-size: 20px;}
 .faqsPro .text_faqsTop .more{ float: right;line-height: 55px;padding-right: 40px;font-size: 16px;display: inline-block}
 .faqsPro .text_faqsTop .more a:active{color: #2577e3}
