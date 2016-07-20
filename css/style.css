@@ -5,51 +5,54 @@ a:hover{text-decoration: none}
 .navWarp .warp{ width: 1180px; height: 50px; margin: 0 auto; min-width: 1010px;}
 .navWarp .warp ul.navList{ height: 50px; }
 .navWarp .warp ul.navList li{ float: left;font-size: 18px;color:#fff; text-align: center;margin: 0 15px 0 15px;position: relative;  cursor: pointer}
-.navWarp .warp ul.navList li.choice{color:#295ab4;border-bottom:4px solid #295ab4; text-decoration: none;}
+.navWarp .warp ul.navList li.choice{color:#2577e3;border-bottom:4px solid #2577e3; text-decoration: none;}
 .navWarp .warp ul.navList li a{display: block; font-size: 18px; width: 90px;padding-top: 11px;padding-bottom: 11px;}
-.navWarp .warp ul.navList li a:hover{text-decoration: none;color: #295ab4;  }
+.navWarp .warp ul.navList li a:hover{text-decoration: none;color: #2577e3;  }
 .navWarp .warp ul.navList li.calculatorRight{ float: right; margin-right: 25px;}
-.navWarp .warp ul.navList li.calculatorRight a:hover{    color: #295ab4; border: 0;}
+.navWarp .warp ul.navList li.calculatorRight a:hover{    color: #2577e3; border: 0;}
 .calculator{background: url("../images/icon.png") 0 0; width: 24px; height: 24px;position: absolute; top:50%;left: -31px;margin-top: -11px;}
-.navWarp .warp ul.navList li a.hover{ color: #295ab4;border: 0; width: 100px;}
+.navWarp .warp ul.navList li a.hover{ color: #2577e3;border: 0; width: 100px;}
 
 #menuWarp{margin: 0 auto; padding-top: 16px; min-width: 1180px;overflow: hidden;width: 1180px;}
-.siderbar{width: 202px;overflow: hidden;float:left;}
-.bottomImg{ margin-top: 20px}
+.siderbar{width: 202px;float:left;}
+.bottomImg{ margin-top: 20px;position: relative}
+.bottomImg .leftAppDown{ position: absolute;top: 121px; left: 14px;width: 80px;height: 30px;cursor: pointer;}
+.bottomImg .rightWX{ position: absolute;top: 121px;right: 16px; width: 80px;height: 30px;cursor: pointer;}
+.imgAppDown,.imgWX{position: absolute;bottom: -191px;left: 0;}
 #menuWarp ul.asideList{ width: 202px; height: 410px; background-color: #fff; position: relative;font-size: 16px;box-shadow: 0 1px 2px #eee;box-sizing: border-box;}
 #menuWarp ul.asideList li{ width:202px;height: 48px;text-indent: 35px; cursor: pointer; padding: 16px 0;}
 .textTop{ color: #333;}
 .mobile{background: url("../images/icon.png") 0 -29px; width: 59px;height: 20px;position: absolute;right:30px;}
-.textBottom{ color: #999}
+.textBottom{ color: #999;font-size: 14px;}
 #menuWarp ul.asideList li .textTop .house{background: url("../images/icon.png") 0 -56px; width: 59px;height: 20px;position: absolute;right:30px;}
-#menuWarp ul.asideList li.hoverButton{ background-color: #f2f8ff;border-left: 4px solid #295ab4;cursor: pointer;text-indent: 31px; width: 198px;}
-#menuWarp ul.asideList li.hoverButton .textTop{ color: #295ab4;}
+#menuWarp ul.asideList li.hoverButton{ background-color: #f2f8ff;border-left: 4px solid #2577e3;cursor: pointer;text-indent: 31px; width: 198px;}
+#menuWarp ul.asideList li.hoverButton .textTop{ color: #2577e3;}
 #menuWarp ul.asideList li:hover{background-color: #f2f8ff}
 
 .fistCard{ width: 202px;height: 48px;text-indent: 35px;cursor: pointer;padding: 16px 0;display:block;font-size: 16px;}
 .buttonCard{padding-top: 10px;background-color: #fff;position: relative}
 .fistCard:hover{background-color: #f2f8ff}
 
-.topBanner_protect{background: url("../images/banner_1.jpg") no-repeat;width: 962px;height: 100px;}
-.topBanner_britain{background: url("../images/banner_2.jpg") no-repeat;width: 962px;height: 100px;}
-.topBanner_house{background: url("../images/banner_3.jpg") no-repeat;width: 962px;height: 100px;}
-.topBanner_car{background: url("../images/banner_4.jpg") no-repeat;width: 962px;height: 100px;}
-.topBanner_home{background: url("../images/banner_5.jpg") no-repeat;width: 962px;height: 100px;}
+.topBanner_protect{background: url("../images/banner_1.jpg") no-repeat;width: 962px;height: 70px;}
+.topBanner_britain{background: url("../images/banner_2.jpg") no-repeat;width: 962px;height: 70px;}
+.topBanner_house{background: url("../images/banner_3.jpg") no-repeat;width: 962px;height: 70px;}
+.topBanner_car{background: url("../images/banner_4.jpg") no-repeat;width: 962px;height: 70px;}
+.topBanner_home{background: url("../images/banner_5.jpg") no-repeat;width: 962px;height: 70px;}
 
-.textTitle{ font-size: 36px;color: #fff;font-weight: bold;line-height: 100px;float: left;padding-left: 50px;}
-.textMessage{font-size: 22px;color: #fff;padding-left: 60px;line-height: 100px;float: left;letter-spacing: 1px;}
+.textTitle{ font-size: 30px;color: #fff;font-weight: bold;line-height: 70px;float: left;padding-left: 50px;}
+.textMessage{font-size: 20px;color: #fff;padding-left: 60px;line-height: 70px;float: left;letter-spacing: 1px;}
 .container{ float: left; margin-left: 15px;width: 962px;}
-.applications{ width: 962px;height: 200px;background-color: #fff;box-shadow: 0 1px 2px #eee}
-ul.textApply{  padding: 65px 80px;height:70px;}
+.applications{ width: 962px;height: 160px;background-color: #fff;box-shadow: 0 1px 2px #eee}
+ul.textApply{  padding: 45px 80px;height:70px;}
 ul.textApply li{ float: left; width: 210px;}
-ul.textApply li.line{width: 1px;height: 70px;background-color: #ccc; margin: 0 80px 0 0;}
+ul.textApply li.line{width: 1px;height: 70px; margin: 0 80px 0 0;}
 ul.textApply li .textNum{ font-size: 14px; color: #666}
-ul.textApply li .quota{ font-size: 36px;color: #ff7714;letter-spacing: 3px;line-height: 36px;}
+ul.textApply li .quota{ font-size: 36px;color: #2577e3;letter-spacing: 3px;line-height: 36px;padding-top: 4px;}
 ul.textApply li .date{font-size:14px;color: #666 }
 ul.textApply li .time{font-size:14px;color: #666 ; padding-top:22px}
 ul.textApply li .date em,ul.textApply li .time em{ color: #000}
-ul.textApply li .applyBto{ margin-left: 130px;line-height:60px;width: 160px;}
-.container .loanProducts .applyProcess{ width: 962px;height: 210px;box-shadow:0 1px 2px #eee;background-color: #fff;margin-top: 20px;position: relative;}
+ul.textApply li .applyBto{ margin-left: 130px;line-height:70px;width: 160px;}
+.container .loanProducts .applyProcess{ width: 962px;height: 200px;box-shadow:0 1px 2px #eee;background-color: #fff;margin-top: 20px;position: relative;}
 .textProcess{ font-size: 20px;color: #000;padding: 30px 0 30px 40px;}
 .applyProcess ul.content li .fillIn,.applyProcess ul.housePro li .fillIn{background: url("../images/icon.png") -74px -31px; width: 29px; height: 30px; margin: 0 auto}
 .applyProcess ul.content li .contact,.applyProcess ul.housePro li .contact{background: url("../images/icon.png") -111px -31px; width: 31px; height: 30px; margin: 0 auto}
@@ -59,7 +62,7 @@ ul.textApply li .applyBto{ margin-left: 130px;line-height:60px;width: 160px;}
 .applyProcess ul.content li .fillText,.applyProcess ul.housePro li .fillText{ font-size: 14px; padding-top: 25px; text-align: center}
 .applyProcess ul.content li .rightRrrow{background: url("../images/icon.png") -47px 0; width: 12px; height: 22px;display: block;position: absolute; right: 10px; top:15px;}
 .applyProcess ul.content li{position: relative; width: 230px; height:98px;float: left }
-.applyProcess ul.housePro{ margin: 10px 0;overflow: hidden;text-align: center;}
+.applyProcess ul.housePro{overflow: hidden;text-align: center;}
 .applyProcess ul.housePro li{position: relative; width: 160px; height:98px;float: left}
 .applyProcess ul.housePro li .rightRrrow{background: url("../images/icon.png") -47px 0; width: 12px; height: 22px;display: block;position: absolute; right: 10px; top:15px;}
 .applyProcess ul.housePro li .noodles{background: url("../images/icon.png") -221px -32px; width: 31px; height: 29px; margin: 0 auto}
@@ -82,10 +85,10 @@ ul.imgMater li .textReport,.textPolicy,.textInvest{text-align: center;font-size:
 ul.imgMater{ overflow: hidden; padding:0 0 20px 60px;}
 .tabStyle{ margin:0 0 20px 60px;border:1px solid  #ccc;font-size: 14px;}
 td{border:1px solid  #ccc;}
-.footerApply{width: 960px; height: 88px;background-color: #fff;box-shadow: 0 1px 2px #eee; position:fixed;top:0;display: none;border: 1px solid #ddd;opacity: 0.9}
-.textBrand{ font-size: 36px;color: #3e6abb; padding-left: 40px; float: left;line-height: 90px;font-weight: bold;}
-.textExplain{font-size: 22px;padding-left: 60px; float: left;color: #3e6abb;line-height: 90px; }
-.imgBtn{ float: right; margin: 20px 100px 0  0;vertical-align:middle;display:inline }
+.footerApply{width: 960px; height: 68px;background-color: #fff;box-shadow: 0 1px 2px #eee; position:fixed;top:0;display: none;border: 1px solid #ddd;opacity: 0.9}
+.textBrand{ font-size: 36px;color: #2577e3; padding-left: 40px; float: left;line-height: 70px;font-weight: bold;}
+.textExplain{font-size: 22px;padding-left: 60px; float: left;color: #2577e3;line-height: 70px; }
+.imgBtn{ float: right; margin: 13px 100px 0  0;vertical-align:middle;display:inline }
 .hideCon{display: none;}
 
 .cityB{ width: 167px;height: 35px;border: 1px solid #dbdbdb;border-radius:5px;padding-left:10px;color:#333;cursor:pointer;line-height: 35px; margin-left: 0; float: left;}
@@ -101,7 +104,7 @@ td{border:1px solid  #ccc;}
 .example{ padding-top: 50px;width: 550px; margin: 0 auto;height: auto;overflow: hidden;}
 .example .imgApp{float: left;}
 .example .appDowns{float: right;text-align: center;padding-top: 43px;}
-.example .appDowns h3{ font-size: 20px;color: #295ab4;padding-top: 23px;font-weight: bold;}
+.example .appDowns h3{ font-size: 20px;color: #2577e3;padding-top: 23px;font-weight: bold;}
 .example .appDowns p{font-size: 12px; color: #999;padding-top: 30px;font-weight: bold;}
 .insideFail{width: 531px; height: auto;overflow: hidden; margin: 0 auto; padding-top: 70px;}
 
@@ -128,15 +131,15 @@ td{border:1px solid  #ccc;}
 .column ul.columnTitle li .tagsImg{padding-top: 3px;}
 
 #loanMain{ min-width: 1180px;margin: 20px auto 0 auto;overflow: hidden;}
-#loanMain .explainPro{height: 400px;width: 1180px;background-color: #fff;box-shadow:0 1px 2px #eee;margin: 0 auto}
-#loanMain .explainPro .leftTitle{background: url("../images/main_bg.jpg") no-repeat;width: 280px;height: 400px;float: left;text-align: center;color: #fff;}
+#loanMain .explainPro{height: 360px;width: 1180px;background-color: #fff;box-shadow:0 1px 2px #eee;margin: 0 auto}
+#loanMain .explainPro .leftTitle{background: url("../images/main_bg.jpg") no-repeat;width: 280px;height: 360px;float: left;text-align: center;color: #fff;}
 #loanMain .explainPro .leftTitle .textMo{ padding-top: 35px;font-size: 20px;}
 #loanMain .explainPro .leftTitle p{font-size: 14px;}
-#loanMain .explainPro .leftTitle .numPeople{padding-top:50px;}
+#loanMain .explainPro .leftTitle .numPeople{padding-top:40px;}
 #myTargetElement{font-size: 28px;}
-.rightList{ width: 900px;height: 400px;float: left;}
-.rightList dl.newsRelease{ width: 900px;height: 200px;}
-.rightList dl.newsRelease .textProducts{padding: 36px 0 30px 40px;font-size: 20px;}
+.rightList{ width: 900px;height: 360px;float: left;}
+.rightList dl.newsRelease{ width: 900px;height: 180px;}
+.rightList dl.newsRelease .textProducts{padding: 40px 0 30px 40px;font-size: 20px;}
 .rightList dl.newsRelease .textProducts .fontCo{color: #2577e3}
 .rightList dl.newsRelease .details{float: left;padding: 0 0 0 40px;width: 220px;font-size: 16px;}
 .rightList dl.newsRelease .details .textQuo{ color: #999;display: block;}
@@ -147,7 +150,7 @@ td{border:1px solid  #ccc;}
 .products_description .leftProducts{ width: 580px;height: 240px;margin-right: 20px;background-color: #fff;float: left;box-shadow:0 1px 2px #eee;position: relative;cursor: pointer;}
 .products_description .rightProducts{ width: 580px;height: 240px;background-color: #fff;float: left;box-shadow:0 1px 2px #eee;position: relative;cursor: pointer;}
 .products_description .leftProducts .textTil,.products_description .rightProducts .textTil{font-size: 20px;padding: 30px 0 20px 30px}
-.products_description .leftProducts .textTil .orange,.products_description .rightProducts .textTil .orange{color: #ff6600}
+.products_description .leftProducts .textTil .orange,.products_description .rightProducts .textTil .orange{color: #2577e3}
 .products_description .leftProducts .textExp,.products_description .rightProducts .textExp{font-size: 14px;color: #666;padding: 0 0 20px 38px}
 .products_description .leftProducts .btnApply{ width: 160px;height: 40px;border-radius: 4px;background-color: #2577e3;margin: 15px 0 0 38px;}
 .textWord{ display: block;color: #fff;text-align: center;line-height: 40px;font-size: 16px;}

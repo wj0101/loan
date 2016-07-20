@@ -186,12 +186,38 @@ $("#bannerWrap .prev").hover(function(){
 
 
 
+$(".column ul.columnTitle li:eq(0)").hover(function(){
+	$(".tagsImg:eq(0) img").attr("src","images/index_11_1.png")
+},function(){
+	$(".tagsImg:eq(0) img").attr("src","images/index_11.png")
+});
+
+	$(".column ul.columnTitle li:eq(1)").hover(function(){
+		$(".tagsImg:eq(1) img").attr("src","images/index_12_1.png")
+	},function(){
+		$(".tagsImg:eq(1) img").attr("src","images/index_12.png")
+	});
+
+	$(".column ul.columnTitle li:eq(2)").hover(function(){
+		$(".tagsImg:eq(2) img").attr("src","images/index_13_1.png")
+	},function(){
+		$(".tagsImg:eq(2) img").attr("src","images/index_13.png")
+	});
+	$(".column ul.columnTitle li:eq(3)").hover(function(){
+		$(".tagsImg:eq(3) img").attr("src","images/index_14_1.png")
+	},function(){
+		$(".tagsImg:eq(3) img").attr("src","images/index_14.png")
+	});
 
 
+	$(".bottomImg .leftAppDown").hover(function(){
+		$(".imgAppDown").stop().fadeToggle();
 
+	});
+	$(".bottomImg .rightWX").hover(function(){
+			$(".imgWX").stop().fadeToggle()
 
+	})
 
-
-	
 });
 
