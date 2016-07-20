@@ -24,19 +24,19 @@ $(function(){
 			$(".applyLoan .textTitle,.successful .textTitle,.successFail .textTitle").text('嘉保贷');
 			$(".applyLoan .textMessage,.successful .textMessage,.successFail .textMessage").text('有寿险保单就能借')
 		}else if(num==1){
-			$(".applyLoan .topBanner_protect,.successful .topBanner_home,.successFail .topBanner_home").css({'background':'url(images/banner_2.jpg)' });
+			$(".applyLoan .topBanner_protect,.successful .topBanner_home,.successFail .topBanner_home").css({'background':'url(images/banner_1.jpg)' });
 			$(".applyLoan .textTitle,.successful .textTitle,.successFail .textTitle").text('嘉英贷');
 			$(".applyLoan .textMessage,.successful .textMessage,.successFail .textMessage").text('社保/公积金借款')
 		}else if(num==2	){
-			$(".applyLoan .topBanner_protect,.successful .topBanner_home,.successFail .topBanner_home").css({'background':'url(images/banner_3.jpg)' });
+			$(".applyLoan .topBanner_protect,.successful .topBanner_home,.successFail .topBanner_home").css({'background':'url(images/banner_1.jpg)' });
 			$(".applyLoan .textTitle,.successful .textTitle,.successFail .textTitle").text('嘉房贷');
 			$(".applyLoan .textMessage,.successful .textMessage,.successFail .textMessage").text('按揭房贷借款')
 		}else if(num==3	){
-			$(".applyLoan .topBanner_protect,.successful .topBanner_home,.successFail .topBanner_home").css({'background':'url(images/banner_4.jpg)' });
+			$(".applyLoan .topBanner_protect,.successful .topBanner_home,.successFail .topBanner_home").css({'background':'url(images/banner_1.jpg)' });
 			$(".applyLoan .textTitle,.successful .textTitle,.successFail .textTitle").text('嘉车贷');
 			$(".applyLoan .textMessage,.successful .textMessage,.successFail .textMessage").text('有车贷都能借')
 		}else if(num==4	){
-			$(".applyLoan .topBanner_protect,.successful .topBanner_home,.successFail .topBanner_home").css({'background':'url(images/banner_5.jpg)' });
+			$(".applyLoan .topBanner_protect,.successful .topBanner_home,.successFail .topBanner_home").css({'background':'url(images/banner_1.jpg)' });
 			$(".applyLoan .textTitle,.successful .textTitle,.successFail .textTitle").text('宅抵贷');
 			$(".applyLoan .textMessage,.successful .textMessage,.successFail .textMessage").text('有住宅就能借')
 		}
