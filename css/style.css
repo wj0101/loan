@@ -135,8 +135,8 @@ td{border:1px solid  #ccc;}
 #loanMain .explainPro .leftTitle{background: url("../images/main_bg.jpg") no-repeat;width: 280px;height: 360px;float: left;text-align: center;color: #fff;}
 #loanMain .explainPro .leftTitle .textMo{ padding-top: 35px;font-size: 20px;}
 #loanMain .explainPro .leftTitle p{font-size: 14px;}
-#loanMain .explainPro .leftTitle .numPeople{padding-top:40px;}
-#myTargetElement{font-size: 28px;}
+#loanMain .explainPro .leftTitle .numPeople{padding-top:25px;}
+#myTargetElement{font-size: 30px;}
 .rightList{ width: 900px;height: 360px;float: left;}
 .rightList dl.newsRelease{ width: 900px;height: 180px;}
 .rightList dl.newsRelease .textProducts{padding: 40px 0 30px 40px;font-size: 20px;}
@@ -161,7 +161,7 @@ td{border:1px solid  #ccc;}
 .borrowingPro .topPro{height: 54px;width: 1180px;border-bottom: 1px solid #e6e6e6;}
 .borrowingPro .topPro h3{font-size: 20px;float: left;padding-left: 40px;line-height: 55px;}
 .borrowingPro .topPro .textEx{float: right;line-height: 55px;padding-right: 30px;color: #999;font-size: 14px;}
-.markIc{background: url("../images/icon.png") -217px 0 no-repeat;width: 22px;height: 22px;padding-left: 8px;vertical-align: middle;}
+.markIc{background: url("../images/icon.png") -217px 0 no-repeat;width: 22px;height: 22px;vertical-align: middle;margin-right: 10px;}
 
 .textTecProcess{height: 185px;width: 1180px;}
 .textTecProcess ul.process li{float: left; width: 295px;position: relative;}
@@ -176,12 +176,12 @@ td{border:1px solid  #ccc;}
 .faqsPro .text_faqsTop{width: 1180px;height: 54px;border-bottom: 1px solid #e6e6e6}
 .faqsPro .text_faqsTop h3.textQues{ float: left;padding-left: 40px;line-height: 55px;font-size: 20px;}
 .faqsPro .text_faqsTop .more{ float: right;line-height: 55px;padding-right: 40px;font-size: 16px;display: inline-block}
-
+.faqsPro .text_faqsTop .more a:active{color: #2577e3}
 #loanMain .faqsPro .textWord{ width: 1180px;height: 385px; text-align: left}
 #loanMain .faqsPro .textWord dl.text_master{ width: 300px;line-height: 1.8;padding: 30px 50px 30px 40px;float: left;}
 #loanMain .faqsPro .textWord dl.text_master dt.text_themes{ padding-bottom: 10px;font-size: 16px;color: #333;}
 #loanMain .faqsPro .textWord dl.text_master dd{font-size: 14px;color: #666;}
-
+#loanMain .faqsPro .textWord dl.text_master dd a{color: #2577e3}
 
 
 
