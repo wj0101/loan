@@ -126,17 +126,17 @@ input, select{ outline:none;}
 .application .delCon{ float:left; margin-left:65px;}
 .application .delCon h1{ font-size:24px; color:#333333; font-weight:normal;}
 .iptBox{ margin-top:20px;height: 40px;}
-.iptBox span{ color:#666666; font-size:16px; margin-right:20px; display:inline-block;float: left}
+.iptBox span{ color:#666666; font-size:16px; margin-right:20px; display:inline-block;float: left;line-height: 40px;}
 .iptBox input{ width:340px; height:38px; border:1px solid #dbdbdb; border-radius:2px; padding-left:10px; font-size:14px; color:#333333;line-height: 40px;background-color: #f9f9f9;float: left;}
 .iptBox #imgc{float: left;padding-left: 2px;padding-top: 2px;}
 
 .iptBox input:hover{ border-color:#2577e3;}
 .error{ margin-left: 23px;font-size: 14px;color: #ff6600;margin-top: 8px;display: none;float: left;}
-.ageBox{ width:352px; height:37px; border:1px solid #dbdbdb; border-radius:5px; padding-left:6px; font-size:14px; -webkit-appearance: none; cursor:pointer; color:#333333;background-color: #f9f9f9}
+.ageBox{ width:352px; height:38px; border:1px solid #dbdbdb; border-radius:5px; padding-left:6px; font-size:14px; -webkit-appearance: none; cursor:pointer; color:#333333;background-color: #f9f9f9}
 #dtmbtn{line-height: 40px;}
 .ageBox:hover{ border-color:#295ab4;}
 .city{ height:37px;}
-.city span{ float:left; margin-top:7px;}
+.city span{ float:left; }
 .city .cityBox{ width:340px; height:35px; border:1px solid #dbdbdb; border-radius:5px; padding-left:10px; font-size:14px; color:#333333; float:left; margin-left:5px; background:url(../images/down.png) no-repeat 318px center; cursor:pointer;}
 .city .cityBox:hover{ border-color:#295ab4;}
 .city .cityBox dl dt{ line-height:35px;}
