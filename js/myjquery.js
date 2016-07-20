@@ -173,15 +173,15 @@ $("#bannerWrap .prev").hover(function(){
 
 	$(".leftProducts,.rightProducts").hover(function(){
 		$(this).stop().animate({
-			"margin-top":"-10px",
+			"margin-top":"-4px",
 			"boxShadow":"0 8px 10px 0 #ccc",
 			"z-index":"2"
-		},300)
+		},200)
 	},function(){
 		$(this).stop().animate({
 			"margin-top":"0px",
 			"boxShadow":"0 1px 2px 0 #eee"
-		},300)
+		},200)
 	});
 
 
