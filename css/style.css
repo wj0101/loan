@@ -121,9 +121,9 @@ td{border:1px solid  #ccc;}
 #bannerWrap .prev a:hover{opacity: 1}
 #bannerWrap .next a:hover{opacity: 1}
 
-.column{ width: 100%;height: 120px;background-color: #fff;box-shadow:0 1px 2px #eee;min-width: 1180px;}
-.column ul.columnTitle{ width: 1180px;margin: 0 auto;position: relative;height: 120px;}
-.column ul.columnTitle li{ padding: 35px 30px; width: 235px; height: 50px;float: left}
+.column{ width: 100%;height: 100px;background-color: #fff;box-shadow:0 1px 2px #eee;min-width: 1180px;}
+.column ul.columnTitle{ width: 1180px;margin: 0 auto;position: relative;height: 100px;}
+.column ul.columnTitle li{ padding: 25px 30px; width: 235px; height: 50px;float: left}
 .column ul.columnTitle li .tagsText,.column ul.columnTitle li .tagsImg{float: left;}
 .column ul.columnTitle li .tagsText{ padding-left: 20px;}
 .column ul.columnTitle li .tagsText h3.textStyle{font-size: 20px; color: #333;}
