@@ -6,7 +6,8 @@ a:hover{text-decoration: none}
 .navWarp .warp ul.navList{ height: 50px; }
 .navWarp .warp ul.navList li{ float: left;font-size: 18px;color:#fff; text-align: center;margin: 0 15px 0 15px;position: relative;  cursor: pointer}
 .navWarp .warp ul.navList li.choice{color:#2577e3;border-bottom:4px solid #2577e3; text-decoration: none;}
-.navWarp .warp ul.navList li a{display: block; font-size: 18px; width: 90px;padding-top: 11px;padding-bottom: 11px;}
+.navWarp .warp ul.navList li.choice a{color:#2577e3;}
+.navWarp .warp ul.navList li a{display: block; font-size: 16px; width: 90px;padding-top: 11px;padding-bottom: 11px;}
 .navWarp .warp ul.navList li a:hover{text-decoration: none;color: #2577e3;  }
 .navWarp .warp ul.navList li.calculatorRight{ float: right; margin-right: 25px;}
 .navWarp .warp ul.navList li.calculatorRight a:hover{    color: #2577e3; border: 0;}
@@ -49,16 +50,19 @@ ul.textApply li.line{width: 1px;height: 70px; margin: 0 80px 0 0;}
 ul.textApply li .textNum{ font-size: 14px; color: #666}
 ul.textApply li .quota{ font-size: 36px;color: #2577e3;letter-spacing: 3px;line-height: 36px;padding-top: 4px;}
 ul.textApply li .date{font-size:14px;color: #666 }
-ul.textApply li .time{font-size:14px;color: #666 ; padding-top:22px}
+ul.textApply li .time{font-size:14px;color: #666 ; padding-top:14px}
 ul.textApply li .date em,ul.textApply li .time em{ color: #000}
 ul.textApply li .applyBto{ margin-left: 130px;line-height:70px;width: 160px;}
 .container .loanProducts .applyProcess{ width: 962px;height: 200px;box-shadow:0 1px 2px #eee;background-color: #fff;margin-top: 20px;position: relative;}
-.textProcess{ font-size: 20px;color: #000;padding: 30px 0 30px 40px;}
+.textProcess{font-size: 20px;
+    color: #000;
+    padding: 30px 0 30px 40px;}
+.otherSty{ font-size: 20px;color: #000;padding: 0 0 0 40px;height: 54px;border-bottom: 1px solid #eee;line-height: 55px;}
 .applyProcess ul.content li .fillIn,.applyProcess ul.housePro li .fillIn{background: url("../images/icon.png") -74px -31px; width: 29px; height: 30px; margin: 0 auto}
 .applyProcess ul.content li .contact,.applyProcess ul.housePro li .contact{background: url("../images/icon.png") -111px -31px; width: 31px; height: 30px; margin: 0 auto}
 .applyProcess ul.content li .material,.applyProcess ul.housePro li .material{background: url("../images/icon.png") -152px -31px; width: 28px; height: 29px; margin: 0 auto}
 .applyProcess ul.content li .payment,.applyProcess ul.housePro li .payment{background: url("../images/icon.png") -188px -31px; width: 28px; height: 30px; margin: 0 auto}
-.applyProcess ul.content{ margin: 10px 0;overflow: hidden}
+.applyProcess ul.content{ margin: 24px 0;overflow: hidden}
 .applyProcess ul.content li .fillText,.applyProcess ul.housePro li .fillText{ font-size: 14px; padding-top: 25px; text-align: center}
 .applyProcess ul.content li .rightRrrow{background: url("../images/icon.png") -47px 0; width: 12px; height: 22px;display: block;position: absolute; right: 10px; top:15px;}
 .applyProcess ul.content li{position: relative; width: 230px; height:98px;float: left }
@@ -126,24 +130,25 @@ td{border:1px solid  #ccc;}
 .column ul.columnTitle li{ padding: 25px 30px; width: 235px; height: 50px;float: left}
 .column ul.columnTitle li .tagsText,.column ul.columnTitle li .tagsImg{float: left;}
 .column ul.columnTitle li .tagsText{ padding-left: 20px;}
-.column ul.columnTitle li .tagsText h3.textStyle{font-size: 20px; color: #333;}
-.column ul.columnTitle li .tagsText p{color: #666;}
+.column ul.columnTitle li .tagsText h3.textStyle{font-size: 20px; color: #333;font-weight: normal}
+.column ul.columnTitle li .tagsText p{color: #666;font-size: 14px;}
 .column ul.columnTitle li .tagsImg{padding-top: 3px;}
 
 #loanMain{ min-width: 1180px;margin: 20px auto 0 auto;overflow: hidden;}
 #loanMain .explainPro{height: 360px;width: 1180px;background-color: #fff;box-shadow:0 1px 2px #eee;margin: 0 auto}
 #loanMain .explainPro .leftTitle{background: url("../images/main_bg.jpg") no-repeat;width: 280px;height: 360px;float: left;text-align: center;color: #fff;}
-#loanMain .explainPro .leftTitle .textMo{ padding-top: 35px;font-size: 20px;}
-#loanMain .explainPro .leftTitle p{font-size: 14px;}
-#loanMain .explainPro .leftTitle .numPeople{padding-top:25px;}
+#loanMain .explainPro .leftTitle .textMo{ padding-top: 35px;font-size: 20px;opacity: 0.9}
+#loanMain .explainPro .leftTitle p{font-size: 14px;opacity: 0.9}
+#loanMain .explainPro .leftTitle .numPeople{padding-top:25px;opacity: 0.9}
 #myTargetElement{font-size: 30px;}
 .rightList{ width: 900px;height: 360px;float: left;}
 .rightList dl.newsRelease{ width: 900px;height: 180px;}
-.rightList dl.newsRelease .textProducts{padding: 40px 0 30px 40px;font-size: 20px;}
-.rightList dl.newsRelease .textProducts .fontCo{color: #2577e3}
-.rightList dl.newsRelease .details{float: left;padding: 0 0 0 40px;width: 220px;font-size: 16px;}
-.rightList dl.newsRelease .details .textQuo{ color: #999;display: block;}
-.lineBottom{ border-bottom: 1px solid #e6e6e6;width: 820px;margin: 0 auto}
+.rightList dl.newsRelease .textProducts{padding: 36px 0 24px 40px;font-size: 20px;}
+.rightList dl.newsRelease .textProducts .fontCo{color: #2577e3;font-size: 20px;}
+.rightList dl.newsRelease .details{float: left;padding: 0 0 0 40px;width: 220px;}
+.rightList dl.newsRelease .details .textQuo{ color: #999;display: block;font-size: 14px;padding-bottom: 6px;}
+.rightList dl.newsRelease .details .textNumb{ display: block;font-size: 16px;}
+.lineBottom{ border-bottom: 1px solid #eee;width: 820px;margin: 0 auto}
 .symbol{background: url("../images/icon.png") 0 -86px no-repeat;width: 63px; height: 21px;vertical-align: middle;margin-left: 10px;margin-top: -2px;}
 
 .products_description{ width: 1180px;height: 240px;margin: 20px auto 0 auto;}
