@@ -95,8 +95,8 @@ td{border:1px solid  #ccc;}
 .imgBtn{ float: right; margin: 13px 100px 0  0;vertical-align:middle;display:inline }
 .hideCon{display: none;}
 
-.cityB{ width: 167px;height: 35px;border: 1px solid #dbdbdb;border-radius:5px;padding-left:10px;color:#333;cursor:pointer;line-height: 35px; margin-left: 0; float: left;}
-.cityC{ width: 167px;height: 35px;;border: 1px solid #dbdbdb;border-radius:5px;margin-left: 5px;line-height: 35px;}
+.cityB{ width: 167px;height: 40px;border: 1px solid #dbdbdb;border-radius:5px;padding-left:10px;color:#333;cursor:pointer;line-height: 35px; margin-left: 0; float: left;}
+.cityC{ width: 167px;height: 40px;;border: 1px solid #dbdbdb;border-radius:5px;margin-left: 5px;line-height: 35px;}
 .ageBox,.cityC,.cityB{background-color: #f9f9f9;}
 
 .inside{ width: 962px;height: 580px;box-shadow: 0 1px 2px #eee;margin-bottom: 4px;background-color: #fff;}
@@ -132,12 +132,12 @@ input, select{ outline:none;}
 
 .iptBox input:hover{ border-color:#2577e3;}
 .error{ margin-left: 23px;font-size: 14px;color: #ff6600;margin-top: 8px;display: none;float: left;}
-.ageBox{ width:352px; height:38px; border:1px solid #dbdbdb; border-radius:5px; padding-left:6px; font-size:14px; -webkit-appearance: none; cursor:pointer; color:#333333;background-color: #f9f9f9}
+.ageBox{ width:352px; height:40px; border:1px solid #dbdbdb; border-radius:5px; padding-left:6px; font-size:14px; -webkit-appearance: none; cursor:pointer; color:#333333;background-color: #f9f9f9}
 #dtmbtn{line-height: 40px;}
 .ageBox:hover{ border-color:#295ab4;}
 .city{ height:37px;}
 .city span{ float:left; }
-.city .cityBox{ width:340px; height:35px; border:1px solid #dbdbdb; border-radius:5px; padding-left:10px; font-size:14px; color:#333333; float:left; margin-left:5px; background:url(../images/down.png) no-repeat 318px center; cursor:pointer;}
+.city .cityBox{ width:340px; height:38px; border:1px solid #dbdbdb; border-radius:5px; padding-left:10px; font-size:14px; color:#333333; float:left; margin-left:5px; background:url(../images/down.png) no-repeat 318px center; cursor:pointer;}
 .city .cityBox:hover{ border-color:#295ab4;}
 .city .cityBox dl dt{ line-height:35px;}
 .city .cityBox dl{ position:relative;}
