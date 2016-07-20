@@ -144,7 +144,7 @@ td{border:1px solid  #ccc;}
 .rightList dl.newsRelease .details{float: left;padding: 0 0 0 40px;width: 220px;font-size: 16px;}
 .rightList dl.newsRelease .details .textQuo{ color: #999;display: block;}
 .lineBottom{ border-bottom: 1px solid #e6e6e6;width: 820px;margin: 0 auto}
-.symbol{background: url("../images/icon.png") 0 -86px no-repeat;width: 63px; height: 21px;vertical-align: middle;margin-left: 10px;line-height: 20px;margin-top: -2px;}
+.symbol{background: url("../images/icon.png") 0 -86px no-repeat;width: 63px; height: 21px;vertical-align: middle;margin-left: 10px;margin-top: -2px;}
 
 .products_description{ width: 1180px;height: 240px;margin: 20px auto 0 auto;}
 .products_description .leftProducts{ width: 580px;height: 240px;margin-right: 20px;background-color: #fff;float: left;box-shadow:0 1px 2px #eee;position: relative;cursor: pointer;}
@@ -177,6 +177,7 @@ td{border:1px solid  #ccc;}
 .faqsPro .text_faqsTop h3.textQues{ float: left;padding-left: 40px;line-height: 55px;font-size: 20px;}
 .faqsPro .text_faqsTop .more{ float: right;line-height: 55px;padding-right: 40px;font-size: 16px;display: inline-block}
 .faqsPro .text_faqsTop .more a:active{color: #2577e3}
+.faqsPro .text_faqsTop .more a{color: #2577e3}
 #loanMain .faqsPro .textWord{ width: 1180px;height: 385px; text-align: left}
 #loanMain .faqsPro .textWord dl.text_master{ width: 300px;line-height: 1.8;padding: 30px 50px 30px 40px;float: left;}
 #loanMain .faqsPro .textWord dl.text_master dt.text_themes{ padding-bottom: 10px;font-size: 16px;color: #333;}
