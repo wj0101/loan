@@ -62,11 +62,11 @@ ul.textApply li .applyBto{ margin-left: 130px;line-height:70px;width: 160px;}
 .applyProcess ul.content li .contact,.applyProcess ul.housePro li .contact{background: url("../images/icon.png") -111px -31px; width: 31px; height: 30px; margin: 0 auto}
 .applyProcess ul.content li .material,.applyProcess ul.housePro li .material{background: url("../images/icon.png") -152px -31px; width: 28px; height: 29px; margin: 0 auto}
 .applyProcess ul.content li .payment,.applyProcess ul.housePro li .payment{background: url("../images/icon.png") -188px -31px; width: 28px; height: 30px; margin: 0 auto}
-.applyProcess ul.content{ margin: 24px 0;overflow: hidden}
+.applyProcess ul.content{ margin: 28px 0 20px 0;overflow: hidden}
 .applyProcess ul.content li .fillText,.applyProcess ul.housePro li .fillText{ font-size: 14px; padding-top: 25px; text-align: center}
 .applyProcess ul.content li .rightRrrow{background: url("../images/icon.png") -47px 0; width: 12px; height: 22px;display: block;position: absolute; right: 10px; top:15px;}
 .applyProcess ul.content li{position: relative; width: 230px; height:98px;float: left }
-.applyProcess ul.housePro{overflow: hidden;text-align: center;margin-top: 24px;}
+.applyProcess ul.housePro{overflow: hidden;text-align: center;margin-top: 28px;}
 .applyProcess ul.housePro li{position: relative; width: 160px; height:98px;float: left}
 .applyProcess ul.housePro li .rightRrrow{background: url("../images/icon.png") -47px 0; width: 12px; height: 22px;display: block;position: absolute; right: 10px; top:15px;}
 .applyProcess ul.housePro li .noodles{background: url("../images/icon.png") -221px -32px; width: 31px; height: 29px; margin: 0 auto}
