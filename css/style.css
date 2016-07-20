@@ -218,7 +218,7 @@ input, select{ outline:none;}
 .products_description .rightProducts{ width: 580px;height: 240px;background-color: #fff;float: left;box-shadow:0 1px 2px #eee;position: relative;cursor: pointer;}
 .products_description .leftProducts .textTil,.products_description .rightProducts .textTil{font-size: 20px;padding: 30px 0 20px 30px}
 .products_description .leftProducts .textTil .orange,.products_description .rightProducts .textTil .orange{color: #2577e3}
-.products_description .leftProducts .textExp,.products_description .rightProducts .textExp{font-size: 14px;color: #666;padding: 0 0 20px 38px}
+.products_description .leftProducts .textExp,.products_description .rightProducts .textExp{font-size: 16px;color: #666;padding: 0 0 20px 38px}
 .products_description .leftProducts .btnApply{ width: 160px;height: 40px;border-radius: 4px;background-color: #2577e3;margin: 15px 0 0 38px;}
 .textWord{ display: block;color: #fff;text-align: center;line-height: 40px;font-size: 16px;}
 .textWord:hover{color: #fff;text-decoration: none ;}
