@@ -147,31 +147,31 @@ input, select{ outline:none;}
 .applyBtn{ width:350px; height:45px; background:#ff6600; border:0; cursor:pointer; font-size:18px; color:#fff; margin-top:20px; margin-left:85px; border-radius:5px;}
 .line{ height:1px; border-bottom:1px solid #dbdbdb; margin-top:20px;}
 
-.calculatorMain{ width: 300px;position: absolute;top: 50px;right: 0;z-index: 99;height: 264px;}
-.calculatorMain h4.textCalc{font-size: 20px;color: #000; text-align: center;padding-top: 15px;position: relative;height: 40px;}
-.calculatorMain span.close{ color: #2577e3;font-size: 30px; position: absolute;top: 12px;right: 15px;cursor: pointer}
-.calculatorMain .topCal{width:298px; position: absolute;border: 1px solid #dcdcdc;background-color: #f8f8f7;}
-a.CalMainBtn{ width: 160px;height: 40px;background-color: #2577e3;display: block;text-align: center;border-radius: 4px;margin:0 auto 20px auto;line-height: 40px;color: #fff;font-size: 16px;}
+.calculatorMain{ width: 250px;position: absolute;top: 50px;right: -24px;z-index: 99;height: 264px;}
+.calculatorMain h4.textCalc{font-size: 16px;color: #000; text-align: center;padding-top: 15px;position: relative;height: 40px;}
+.calculatorMain span.close{ color: #2577e3;font-size: 25px; position: absolute;top: 12px;right: 15px;cursor: pointer}
+.calculatorMain .topCal{width:248px; position: absolute;border: 1px solid #dcdcdc;background-color: #f8f8f7;}
+a.CalMainBtn{ width: 130px;height: 30px;background-color: #2577e3;display: block;text-align: center;border-radius: 4px;margin:0 auto 20px auto;line-height:30px;color: #fff;font-size: 16px;}
 a.CalMainBtn:hover{color: #fff;}
 .ipBox,.ipBoxS{height: 37px;margin-bottom: 20px;}
 .calcNum .timeBox{ width: 210px;height: 35px;border: 1px solid #dbdbdb;border-radius: 2px;padding-left: 10px;font-size: 14px;
-color: #333333;line-height:37px;background-color: #f9f9f9;}
+color: #333333;line-height:37px;}
 .miniText{width: 198px;height: 33px;border: 1px solid #dbdbdb;border-radius: 2px;padding-left: 10px;font-size: 14px;
-color: #333333;line-height:35px;background-color: #f9f9f9;}
+color: #333333;line-height:35px;}
 input.miniText:hover{border:1px solid #2577e3 ;}
-.calculatorMain .bottomCalc{position: absolute;top: 227px;background-color: #f8f8f7;width: 300px;}
-.calculatorMain .bottomCalc .calBar{ width:300px;height:35px;background-color: #2577e3;display: block; }
-.textRes{font-size: 20px;text-align: center;color: #333;height: 55px;line-height: 55px;}
-.textRes .linkRes{ position: absolute;right: 15px;color: #2577e3}
-.conResult .conRes{height: 166px;text-align: left;}
-.conResult .conRes .monthlyNum,.conResult .Total{text-indent: 45px;line-height: 1.5}
-.conResult .conRes .monthlyNum .mouth,.conResult .Total .totalNum{font-size: 16px;color: #999}
-.conResult .conRes .monthlyNum .moneyAm,.conResult .Total .moneyTo{font-size: 30px; color:#2577e3; }
+.calculatorMain .bottomCalc{position: absolute;top: 220px;background-color: #f8f8f7;width: 250px;}
+.calculatorMain .bottomCalc .calBar{ width:250px;height:35px;background-color: #2577e3;display: block; }
+.textRes{font-size: 16px;text-align: center;color: #333;height: 55px;line-height: 55px;}
+.textRes .linkRes{ position: absolute;right: 15px;color: #2577e3;font-size: 12px;text-decoration: underline}
+.conResult .conRes{height: 145px;text-align: left;}
+.conResult .conRes .monthlyNum,.conResult .Total{text-indent: 20px;line-height: 1.5}
+.conResult .conRes .monthlyNum .mouth,.conResult .Total .totalNum{font-size: 14px;color: #999}
+.conResult .conRes .monthlyNum .moneyAm,.conResult .Total .moneyTo{font-size: 24px; color:#2577e3; }
 .conResult .conRes .monthlyNum{padding-bottom: 10px;}
-.conResult{ width: 298px;border: 1px solid #dcdcdc;}
+.conResult{ width: 248px;border: 1px solid #dcdcdc;}
 .bottomCalc .pngArrow{background: url("../images/icon.png") -154px -76px no-repeat;width: 33px;height: 33px;display: inline-block;margin-top: 1px;}
 #ErorrMess{ color: #ff0600;font-size: 14px;}
-
+.icon-yuan{ background: url("../images/icon-r-yuan.png")no-repeat right 50% #fff;}
 /*借款首页*/
 #bannerWrap{ width:100%; height:350px; overflow:hidden; line-height:0; position:relative;min-width: 1180px;}
 #bannerWrap ul.imgToggle{ width:1920px; height:350px; position:absolute; top:0; left:50%; margin-left:-960px;}

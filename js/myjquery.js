@@ -260,14 +260,18 @@ $(".column ul.columnTitle li:eq(0)").hover(function(){
 		$(".calculatorMain ").fadeToggle();
 		$(".conResult").hide();
 		$("form input#miniInput").val("");
-		$("select.timeBox option:eq(0)").attr("selected","selected")
+		$("select.timeBox option:eq(0)").attr("selected","selected");
+		$(".ipBoxS").find("#ErorrMess").remove();
+		$(".ipBox").find("#ErorrMess").remove();
 	});
 
 
 	$(".textCalc span.close,#menuWarp ul.asideList li").click(function(){
 		$(".calculatorMain ").fadeOut();
 		$("form input#miniInput").val("");
-		$("select.timeBox option:eq(0)").attr("selected","selected")
+		$("select.timeBox option:eq(0)").attr("selected","selected");
+		$(".ipBoxS").find("#ErorrMess").remove();
+		$(".ipBox").find("#ErorrMess").remove();
 	});
 
 
@@ -276,18 +280,16 @@ $(".column ul.columnTitle li:eq(0)").hover(function(){
 		var $parent=$(this).parent();
 		$parent.find("#ErorrMess").remove();
 		if ($(this).is($("#miniInput"))){
-			if (this.value==""|| this.value.length<6){
-				var error=$("<div id='ErorrMess'>请输入至少6位</div>");
+			if (this.value==""){
+				var error=$("<div id='ErorrMess'>请输入借款金额</div>");
 				$parent.append(error)
+			}else if (this.value<"20000"|| this.value>"500000"){
+				var error02=$("<div id='ErorrMess'>请输入2-50万之间的整数</div>");
+				$parent.append(error02)
 			}
 
 		}
-	}).focus(function(){
-		$(this).triggerHandler("blur")
-	}).keyup(function(){
-		$(this).triggerHandler("blur")
-
-	});
+	})
 
 
 	$(".CalMainBtn").click(function(){
@@ -317,6 +319,9 @@ $(".column ul.columnTitle li:eq(0)").hover(function(){
 	});
 
 	/*计算器结束*/
+
+
+
 
 });
 

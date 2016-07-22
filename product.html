@@ -182,27 +182,27 @@
                             <form>
                                 <div class="calcNum">
                                   <div class="ipBox">
-                                      <input id="miniInput" class="miniText"  placeholder="输入借款金额"  type="text" maxlength="7">
+                                      <input id="miniInput" class="miniText icon-yuan"  placeholder="输入借款金额"  type="text" maxlength="7" onblur="subs()">
                                       <div id="ErorrMess"></div>
                                   </div>
                                     <div class="ipBoxS">
-                                        <select class="timeBox" id="time" name="year" >
+                                        <select class="timeBox" id="time" name="year" onchange="subs()" >
                                             <option value="0" disabled selected>请选择借款期数</option>
-                                            <option value="1">12期</option>
-                                            <option value="2">8期</option>
-                                            <option value="3">6期</option>
-                                            <option value="4">3期</option>
+                                            <option value="12">12期</option>
+                                            <option value="18">18期</option>
+                                            <option value="24">24期</option>
+                                            <option value="36">36期</option>
                                         </select>
                                     </div>
 
-                                    <a class="CalMainBtn"  href="javascript:;">计算</a>
+                                    <a class="CalMainBtn"  href="javascript:;" onclick="subs()">计算</a>
 
                                 </div>
                             </form></div>
                     </div>
                     <div class="bottomCalc">
                         <div class="conResult hideCon" >
-                            <h4 class="textRes">计算结果<a class="linkRes" href="#">查看详情</a></h4>
+                            <h4 class="textRes">计算结果<a class="linkRes" href="http://www.niwodai.com/calc-gerendaikuan/ " target="_blank">查看详情</a></h4>
                             <div class="conRes">
                                 <div class="monthlyNum">
                                     <h4 class="mouth">每月应还（元）</h4>
@@ -1074,32 +1074,6 @@
 
 
 </div>
-<!--
- <div class="calminiRTabC">
-       <form>
-                    <div class="calminiRTabC_m">
-                        <input id="miniInput0" class="miniText" value="输入借款金额" type="text" maxlength="7">
-                        <div class="miniErorr" id="ErorrMess"></div>
-                        <div id="miniSel0" class="miniSel">
-                        <div class="miniSelT clearfix">
-                            <input class="miniSelInput" type="text" value="选择借款期数" readonly="readonly">
-                            <a class="miniSelIcon" href="javascript:void(0);"></a>
-                        </div>
-                            <div class="miniSelList" style="display: none;">
-                                <ul>
-                                    <li><span>12</span>期</li>
-                                    <li><span>18</span>期</li>
-                                    <li><span>24</span>期</li>
-                                    <li><span>36</span>期</li>
-                                    <li><span>48</span>期</li>
-                                </ul>
-                            </div>
-                            <div class="miniErorr" id="ErorrMess"></div>
-                        </div>
-                       <a class="miniBtn" id="jyd" href="javascript:void(0);">计算</a>
-                    </div>
-                </form></div>
--->
 
 <!--footer start-->
 <div class="h35 clearfix"></div>
@@ -1142,5 +1116,52 @@
     })
 </script>
 
+<script>
+
+    //等额本息还款法
+    //original贷款金额
+    //yearratio年利率%，如年利率5.6%就为5.6
+    //year还款年限
+    //验证数据有限性
+    function subs(){
+        var totala=$(".ipBox #miniInput").val();
+        var timesNum = $('.ipBoxS select option:selected').val();
+        original=parseFloat(totala);
+        if(timesNum==12){
+          var yearsNums=10;
+            yearratio=parseFloat(yearsNums);
+        }else if(timesNum==18){
+            var yearsNums02=10.5;
+            yearratio=parseFloat(yearsNums02);
+        }else if(timesNum==24){
+            var yearsNums03=11;
+            yearratio=parseFloat(yearsNums03);
+        }else if(timesNum==36){
+            var yearsNums04=12;
+            yearratio=parseFloat(yearsNums04);
+        }
+
+//还款月数
+        timeSpan=timesNum;
+//某种利率
+        active = yearratio * 10 / 12 * 0.001;
+
+        var t1=Math.pow(1+active,timeSpan);
+        var t2=t1-1;
+        var tmp=t1/t2;
+//月利率
+        var monthratio = active * tmp;
+
+//每月支付本息
+        var monthBack=original*monthratio;
+//累计还款总额
+        var totalBack=monthBack.toFixed(2)*timeSpan;
+
+        $(".conResult .conRes .monthlyNum .moneyAm").text(monthBack.toFixed(2));
+        $(".conResult .Total .moneyTo").text(totalBack.toFixed(2));
+
+    }
+
+</script>
 </body>
 </html>
