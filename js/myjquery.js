@@ -211,13 +211,112 @@ $(".column ul.columnTitle li:eq(0)").hover(function(){
 
 
 	$(".bottomImg .leftAppDown").hover(function(){
-		$(".imgAppDown").stop().fadeToggle();
-
+		$('.imgAppDown').stop().animate({'top':0})
+	},function(){
+		$('.imgAppDown').stop().animate({'top':160})
 	});
 	$(".bottomImg .rightWX").hover(function(){
-			$(".imgWX").stop().fadeToggle()
+		$('.imgWX').stop().animate({'top':0})
+	},function(){
+		$('.imgWX').stop().animate({'top':160})
+	});
 
-	})
+	/*计算器开始*/
+	$(".calculatorMain .bottomCalc .calBar").click(function(){
+		var val = $('.ipBoxS select option:selected').val();
+		$(".ipBoxS").find("#ErorrMess").remove();
+		if(0 == val)
+		{
+			var error=$("<p id='ErorrMess'>请选择期数</p>");
+			$(".ipBoxS").append(error)
+		}
+		var UL = $(this).prev(".conResult");
+		var numError=$("form #ErorrMess").length;
+		if(numError){
+			return false
+		}else {
+			if(UL.css("display")=="block"){
+				$(".conResult").slideUp();
+				$(".calculatorMain").css("height","264px");
+				$(".bottomCalc .pngArrow").css({
+					"background-position-x":"-118px",
+					"background-position-y":"-76px"
+
+				})
+
+			} else {
+				$(".conResult").slideDown();
+				$(".calculatorMain").css("height","481px");
+				$(".bottomCalc .pngArrow").css({
+					"background-position-x":"-75px",
+					"background-position-y":"-76px"
+				})
+			}
+		}
+
+	});
+
+	$(".calculatorRight .hover").click(function(){
+		$(".calculatorMain ").fadeToggle();
+		$(".conResult").hide();
+		$("form input#miniInput").val("");
+		$("select.timeBox option:eq(0)").attr("selected","selected")
+	});
+
+
+	$(".textCalc span.close").click(function(){
+		$(".calculatorMain ").fadeToggle();
+		$("form input#miniInput").val("");
+		$("select.timeBox option:eq(0)").attr("selected","selected")
+	});
+
+
+
+	$("form input#miniInput").blur(function(){
+		var $parent=$(this).parent();
+		$parent.find("#ErorrMess").remove();
+		if ($(this).is($("#miniInput"))){
+			if (this.value==""|| this.value.length<6){
+				var error=$("<div id='ErorrMess'>请输入至少6位</div>");
+				$parent.append(error)
+			}
+
+		}
+	}).focus(function(){
+		$(this).triggerHandler("blur")
+	}).keyup(function(){
+		$(this).triggerHandler("blur")
+
+	});
+
+
+	$(".CalMainBtn").click(function(){
+		$("form input#miniInput").trigger("blur");
+		$(".ipBoxS").find("#ErorrMess").remove();
+		var val = $('.ipBoxS select option:selected').val();
+		if(0 == val)
+		{
+			var error=$("<p id='ErorrMess'>请选择期数</p>");
+			$(".ipBoxS").append(error)
+		}
+
+		var numError=$("form #ErorrMess").length;
+		if(numError){
+			return false
+		}else {
+			$(".conResult").slideDown();
+			$(".bottomCalc .pngArrow").css({
+				"background-position-x":"-75px",
+				"background-position-y":"-76px"
+			})
+		}
+	});
+
+	$("form .ipBoxS select").change(function(){
+		$(".ipBoxS").find("#ErorrMess").remove();
+	});
+
+	/*计算器结束*/
 
 });
 

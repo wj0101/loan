@@ -171,12 +171,58 @@
                 <a href="http://www.niwodai.com/help/jiekshenqing.html">借款攻略</a>
             </li>
             <li class="calculatorRight">
-                <a href="http://www.niwodai.com/calc-gerendaikuan/" class="hover">
+                <a href="javascript:;" class="hover">
                     <i class="calculator"></i>
                     <em>借款计算器</em>
                 </a>
+                <div class="calculatorMain hideCon">
+                    <div class="topCal">
+                        <h4 class="textCalc">借款计算器<span class="close">&times;</span></h4>
+                        <div class="calminTab">
+                            <form>
+                                <div class="calcNum">
+                                  <div class="ipBox">
+                                      <input id="miniInput" class="miniText"  placeholder="输入借款金额"  type="text" maxlength="7">
+                                      <div id="ErorrMess"></div>
+                                  </div>
+                                    <div class="ipBoxS">
+                                        <select class="timeBox" id="time" name="year" >
+                                            <option value="0" disabled selected>请选择借款期数</option>
+                                            <option value="1">12期</option>
+                                            <option value="2">8期</option>
+                                            <option value="3">6期</option>
+                                            <option value="4">3期</option>
+                                        </select>
+                                    </div>
+
+                                    <a class="CalMainBtn"  href="javascript:;">计算</a>
+
+                                </div>
+                            </form></div>
+                    </div>
+                    <div class="bottomCalc">
+                        <div class="conResult hideCon" >
+                            <h4 class="textRes">计算结果<a class="linkRes" href="#">查看详情</a></h4>
+                            <div class="conRes">
+                                <div class="monthlyNum">
+                                    <h4 class="mouth">每月应还（元）</h4>
+                                    <p class="moneyAm">1230.00</p>
+                                </div>
+                                <div class="Total">
+                                    <h4 class="totalNum">总还款额（元）</h4>
+                                    <p class="moneyTo">623000.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="javascript:;" class="calBar"><span class="pngArrow"></span></a>
+                    </div>
+
+                </div>
             </li>
+
         </ul>
+
+
     </div>
 </div>
 
@@ -215,12 +261,11 @@
             </li>
         </ul>
         <div class="bottomImg">
-            <img src="images/index_30m.png" alt="你我贷借款APP">
+            <img src="images/index_m2.jpg" alt="你我贷借款APP">
             <div class="leftAppDown"></div>
             <div class="rightWX "></div>
-            <div class="imgAppDown hideCon"><img src="images/index_app.png"></div>
-            <div class="imgWX hideCon"><img src="images/index_wx.png"></div>
-
+            <div class="imgAppDown "><img src="images/index_app.jpg"></div>
+            <div class="imgWX "><img src="images/index_wx.jpg"></div>
         </div>
     </div>
     <div class="container">
@@ -883,7 +928,7 @@
                     <h2 class="textTitle">嘉保贷</h2>
                     <h3 class="textMessage">有寿险保单就能借</h3>
                 </div>
-                <div class="application" style="height:auto;overflow: hidden; margin: 0 auto 100px auto; width: auto;padding: 30px 0 100px 45px;border:0;border-radius:0;box-shadow:0 1px 2px #eee; ">
+                <div class="application" style="height:auto;overflow: hidden; margin: 0 auto; width: auto;padding: 30px 0 40px 45px;border:0;border-radius:0;box-shadow:0 1px 2px #eee; ">
 
                     <div class="delCon">
                         <div class="iptBox">
@@ -1026,8 +1071,35 @@
             </div>
         </div>
     </div>
-</div>
 
+
+</div>
+<!--
+ <div class="calminiRTabC">
+       <form>
+                    <div class="calminiRTabC_m">
+                        <input id="miniInput0" class="miniText" value="输入借款金额" type="text" maxlength="7">
+                        <div class="miniErorr" id="ErorrMess"></div>
+                        <div id="miniSel0" class="miniSel">
+                        <div class="miniSelT clearfix">
+                            <input class="miniSelInput" type="text" value="选择借款期数" readonly="readonly">
+                            <a class="miniSelIcon" href="javascript:void(0);"></a>
+                        </div>
+                            <div class="miniSelList" style="display: none;">
+                                <ul>
+                                    <li><span>12</span>期</li>
+                                    <li><span>18</span>期</li>
+                                    <li><span>24</span>期</li>
+                                    <li><span>36</span>期</li>
+                                    <li><span>48</span>期</li>
+                                </ul>
+                            </div>
+                            <div class="miniErorr" id="ErorrMess"></div>
+                        </div>
+                       <a class="miniBtn" id="jyd" href="javascript:void(0);">计算</a>
+                    </div>
+                </form></div>
+-->
 
 <!--footer start-->
 <div class="h35 clearfix"></div>

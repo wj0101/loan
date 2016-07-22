@@ -4,22 +4,22 @@ a:hover{text-decoration: none}
 .navWarp{ width: 100%;height:50px; background-color: #fff; min-width: 1180px; margin-top: 10px;box-shadow: 0 1px 2px #eee; }
 .navWarp .warp{ width: 1180px; height: 50px; margin: 0 auto; min-width: 1010px;}
 .navWarp .warp ul.navList{ height: 50px; }
-.navWarp .warp ul.navList li{ float: left;font-size: 18px;color:#fff; text-align: center;margin: 0 15px 0 15px;position: relative;  cursor: pointer}
+.navWarp .warp ul.navList li{ float: left;font-size: 18px;color:#fff; text-align: center;margin: 0 15px 0 15px;position: relative;}
 .navWarp .warp ul.navList li.choice{color:#2577e3;border-bottom:4px solid #2577e3; text-decoration: none;}
-.navWarp .warp ul.navList li.choice a{color:#2577e3;}
-.navWarp .warp ul.navList li a{display: block; font-size: 16px; width: 90px;padding-top: 11px;padding-bottom: 11px;}
-.navWarp .warp ul.navList li a:hover{text-decoration: none;color: #2577e3;  }
-.navWarp .warp ul.navList li.calculatorRight{ float: right; margin-right: 25px;}
-.navWarp .warp ul.navList li.calculatorRight a:hover{    color: #2577e3; border: 0;}
+.navWarp .warp ul.navList li.choice>a{color:#2577e3;}
+.navWarp .warp ul.navList li>a{display: block; font-size: 16px; width: 90px;padding-top: 11px;padding-bottom: 11px;}
+.navWarp .warp ul.navList li>a:hover{text-decoration: none;color: #2577e3;  }
+.navWarp .warp ul.navList li.calculatorRight{ float: right; margin-right: 25px; position: relative}
+.navWarp .warp ul.navList li.calculatorRight>a:hover{    color: #2577e3; border: 0;}
 .calculator{background: url("../images/icon.png") 0 0; width: 24px; height: 24px;position: absolute; top:50%;left: -31px;margin-top: -11px;}
-.navWarp .warp ul.navList li a.hover{ color: #2577e3;border: 0; width: 100px;}
+.navWarp .warp ul.navList li>a.hover{ color: #2577e3;border: 0; width: 100px;}
 
 #menuWarp{margin: 0 auto; padding-top: 16px; min-width: 1180px;overflow: hidden;width: 1180px;}
 .siderbar{width: 202px;float:left;}
-.bottomImg{ margin-top: 20px;position: relative}
-.bottomImg .leftAppDown{ position: absolute;top: 121px; left: 14px;width: 80px;height: 30px;cursor: pointer;}
-.bottomImg .rightWX{ position: absolute;top: 121px;right: 16px; width: 80px;height: 30px;cursor: pointer;}
-.imgAppDown,.imgWX{position: absolute;bottom: -191px;left: 0;}
+.bottomImg{ margin-top: 20px;position: relative;overflow: hidden}
+.bottomImg .leftAppDown{ position: absolute;top: 121px; left: 14px;width: 80px;height: 30px;cursor: pointer;z-index: 99}
+.bottomImg .rightWX{ position: absolute;top: 121px;right: 16px; width: 80px;height: 30px;cursor: pointer;z-index: 99}
+.imgAppDown,.imgWX{position: absolute;top: 160px;left: 0;}
 #menuWarp ul.asideList{ width: 202px; height: 410px; background-color: #fff; position: relative;font-size: 16px;box-shadow: 0 1px 2px #eee;box-sizing: border-box;}
 #menuWarp ul.asideList li{ width:202px;height: 48px;text-indent: 35px; cursor: pointer; padding: 16px 0;}
 .textTop{ color: #333;}
@@ -117,12 +117,9 @@ td{border:1px solid  #ccc;}
 /* CSS Document */
 
 input, select{ outline:none;}
-/*头部预留位置样式*/
-.top{ height:120px; line-height:120px; text-align:center; background:#fff;}
 
 /*快速申请*/
 .application{ width:1133px; height:603px; background:#fff; margin:45px auto 0; border:1px solid #dbdbdb; border-radius:5px; padding:62px 0 0 42px;}
-.application .banner{ width:563px; height:502px; background:url(../images/banner.jpg) no-repeat; float:left;}
 .application .delCon{ float:left; margin-left:65px;}
 .application .delCon h1{ font-size:24px; color:#333333; font-weight:normal;}
 .iptBox{ margin-top:20px;height: 40px;}
@@ -147,32 +144,33 @@ input, select{ outline:none;}
 .iptBox .message{ margin-left:-16px;}
 .iptBox .short{ width:258px;}
 .iptBox i{ font-size:12px; color:#295ab4; text-decoration:underline; font-style:normal; margin-left:5px; cursor:pointer;}
-.checkImg{ width:75px; height:35px; border:1px solid #dbdbdb; display:block; float:right; border-radius:5px; background:url(../images/check.png) no-repeat center center; cursor:pointer;}
 .applyBtn{ width:350px; height:45px; background:#ff6600; border:0; cursor:pointer; font-size:18px; color:#fff; margin-top:20px; margin-left:85px; border-radius:5px;}
 .line{ height:1px; border-bottom:1px solid #dbdbdb; margin-top:20px;}
 
-/*申请成功页面*/
-.successCon{ width:480px; margin:62px auto 0; text-align:center;}
-.successCon span{ color:#333333; font-size:30px; display:block; margin-left:20px; margin-top:5px;}
-.successCon p{ font-size:18px; color:#999999; margin-top:8px; margin-bottom:40px;}
-.successCon .app{ font-size:16px; color:#666666;}
-.successCon .app span{ font-size:16px; color:#ff6600; margin-left:0;}
-.line2{ height:1px; border-bottom:1px solid #dbdbdb; margin-top:95px;}
-
-/*登录框*/
-.loginBox{ width:410px; height:400px; background:#fff; margin:200px auto 0; position:relative;}
-.loginBox i{ width:26px; height:26px; background:url(../images/turn-off.png) no-repeat; position:absolute; right:-8px; top:-10px; cursor:pointer;}
-.loginBox h1{ height:40px; line-height:40px; background:#2f8ece; font-weight:normal; font-size:16px; color:#fff; padding-left:50px;}
-.loginipt{ width:270px; margin:54px auto 0;}
-.loginipt ul li{ width:220px; height:36px; line-height:36px; border:1px solid #ccc; position:relative; padding-left:48px;}
-.loginipt ul li span{ width:37px; height:36px; display:inline-block; background:#f4f4f4 url(../images/icon01.png) no-repeat center center; position:absolute; left:0; top:0;}
-.loginipt ul li strong{ width:220px; display:inline-block; font-weight:normal; color:#333333; font-size:14px;}
-.loginipt ul .password span{ background-image:url(../images/icon02.png);}
-.loginipt ul .password input{ width:220px; border:0;}
-.loginipt ul .password{ margin-top:22px;}
-.forget{ font-size:14px; color:#2f8ece; text-decoration:none; float:right; margin-top:20px;}
-.loginBtn{ width:270px; height:35px; background:#ff6600; border:0; border-radius:3px; color:#fff; font-size:14px; margin-top:15px; cursor:pointer;}
-
+.calculatorMain{ width: 300px;position: absolute;top: 50px;right: 0;z-index: 99;height: 264px;}
+.calculatorMain h4.textCalc{font-size: 20px;color: #000; text-align: center;padding-top: 15px;position: relative;height: 40px;}
+.calculatorMain span.close{ color: #2577e3;font-size: 30px; position: absolute;top: 12px;right: 15px;cursor: pointer}
+.calculatorMain .topCal{width:298px; position: absolute;border: 1px solid #dcdcdc;background-color: #f8f8f7;}
+a.CalMainBtn{ width: 160px;height: 40px;background-color: #2577e3;display: block;text-align: center;border-radius: 4px;margin:0 auto 20px auto;line-height: 40px;color: #fff;font-size: 16px;}
+a.CalMainBtn:hover{color: #fff;}
+.ipBox,.ipBoxS{height: 37px;margin-bottom: 20px;}
+.calcNum .timeBox{ width: 210px;height: 35px;border: 1px solid #dbdbdb;border-radius: 2px;padding-left: 10px;font-size: 14px;
+color: #333333;line-height:37px;background-color: #f9f9f9;}
+.miniText{width: 198px;height: 33px;border: 1px solid #dbdbdb;border-radius: 2px;padding-left: 10px;font-size: 14px;
+color: #333333;line-height:35px;background-color: #f9f9f9;}
+input.miniText:hover{border:1px solid #2577e3 ;}
+.calculatorMain .bottomCalc{position: absolute;top: 227px;background-color: #f8f8f7;width: 300px;}
+.calculatorMain .bottomCalc .calBar{ width:300px;height:35px;background-color: #2577e3;display: block; }
+.textRes{font-size: 20px;text-align: center;color: #333;height: 55px;line-height: 55px;}
+.textRes .linkRes{ position: absolute;right: 15px;color: #2577e3}
+.conResult .conRes{height: 166px;text-align: left;}
+.conResult .conRes .monthlyNum,.conResult .Total{text-indent: 45px;line-height: 1.5}
+.conResult .conRes .monthlyNum .mouth,.conResult .Total .totalNum{font-size: 16px;color: #999}
+.conResult .conRes .monthlyNum .moneyAm,.conResult .Total .moneyTo{font-size: 30px; color:#2577e3; }
+.conResult .conRes .monthlyNum{padding-bottom: 10px;}
+.conResult{ width: 298px;border: 1px solid #dcdcdc;}
+.bottomCalc .pngArrow{background: url("../images/icon.png") -154px -76px no-repeat;width: 33px;height: 33px;display: inline-block;margin-top: 1px;}
+#ErorrMess{ color: #ff0600;font-size: 14px;}
 
 /*借款首页*/
 #bannerWrap{ width:100%; height:350px; overflow:hidden; line-height:0; position:relative;min-width: 1180px;}
