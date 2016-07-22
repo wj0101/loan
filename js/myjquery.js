@@ -264,8 +264,8 @@ $(".column ul.columnTitle li:eq(0)").hover(function(){
 	});
 
 
-	$(".textCalc span.close").click(function(){
-		$(".calculatorMain ").fadeToggle();
+	$(".textCalc span.close,#menuWarp ul.asideList li").click(function(){
+		$(".calculatorMain ").fadeOut();
 		$("form input#miniInput").val("");
 		$("select.timeBox option:eq(0)").attr("selected","selected")
 	});
