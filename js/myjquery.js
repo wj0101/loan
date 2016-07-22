@@ -256,9 +256,27 @@ $(".column ul.columnTitle li:eq(0)").hover(function(){
 
 	});
 
-	
 
-
+	$(".CalMainBtn").click(function(){
+		$(".ipBoxS").find("#ErorrMess").remove();
+		var val = $('.ipBoxS select option:selected').val();
+		if(0 == val)
+		{
+			var error=$("<p id='ErorrMess'>请选择期数</p>");
+			$(".ipBoxS").append(error)
+		}
+		$("form input#miniInput").trigger("blur");
+		var numError=$("form #ErorrMess").length;
+		if(numError){
+			return false
+		}else {
+			$(".conResult").slideDown();
+			$(".bottomCalc .pngArrow").css({
+				"background-position-x":"-75px",
+				"background-position-y":"-76px"
+			})
+		}
+	});
 
 	$(".calculatorRight .hover").click(function(){
 		$(".calculatorMain ").fadeToggle();
@@ -276,7 +294,6 @@ $(".column ul.columnTitle li:eq(0)").hover(function(){
 		}
 	});
 
-
 	$(".textCalc span.close,#menuWarp ul.asideList li").click(function(){
 		$(".calculatorMain ").fadeOut();
 		$("form input#miniInput").val("");
@@ -288,8 +305,6 @@ $(".column ul.columnTitle li:eq(0)").hover(function(){
 			"background-position-y":"-76px"
 		})
 	});
-
-
 
 	$("form input#miniInput").blur(function(){
 		var $parent=$(this).parent();
@@ -304,30 +319,10 @@ $(".column ul.columnTitle li:eq(0)").hover(function(){
 			}
 
 		}
-	})
-
-
-	$(".CalMainBtn").click(function(){
-		$("form input#miniInput").trigger("blur");
-		$(".ipBoxS").find("#ErorrMess").remove();
-		var val = $('.ipBoxS select option:selected').val();
-		if(0 == val)
-		{
-			var error=$("<p id='ErorrMess'>请选择期数</p>");
-			$(".ipBoxS").append(error)
-		}
-
-		var numError=$("form #ErorrMess").length;
-		if(numError){
-			return false
-		}else {
-			$(".conResult").slideDown();
-			$(".bottomCalc .pngArrow").css({
-				"background-position-x":"-75px",
-				"background-position-y":"-76px"
-			})
-		}
 	});
+
+
+
 
 	$("form .ipBoxS select").change(function(){
 		$(".ipBoxS").find("#ErorrMess").remove();
