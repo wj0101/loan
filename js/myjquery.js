@@ -287,7 +287,7 @@ $(".column ul.columnTitle li:eq(0)").hover(function(){
 		$(".ipBox").find("#ErorrMess").remove();
 		if($(".conResult").css("display")=="none"){
 			$(".bottomCalc .pngArrow").css({
-				"background-position-x":"-118px",
+				"background-position-x":"-154px",
 				"background-position-y":"-76px"
 
 			})
@@ -301,7 +301,7 @@ $(".column ul.columnTitle li:eq(0)").hover(function(){
 		$(".ipBoxS").find("#ErorrMess").remove();
 		$(".ipBox").find("#ErorrMess").remove();
 		$(".bottomCalc .pngArrow").css({
-			"background-position-x":"-118px",
+			"background-position-x":"-154px",
 			"background-position-y":"-76px"
 		})
 	});
@@ -313,7 +313,7 @@ $(".column ul.columnTitle li:eq(0)").hover(function(){
 			if (this.value==""){
 				var error=$("<div id='ErorrMess'>请输入借款金额</div>");
 				$parent.append(error)
-			}else if (this.value<"20000"|| this.value>"500000"){
+			}else if (this.value<20000|| this.value>500000){
 				var error02=$("<div id='ErorrMess'>请输入2-50万之间的整数</div>");
 				$parent.append(error02)
 			}
