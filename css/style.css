@@ -209,7 +209,9 @@ input.miniText:hover{border:1px solid #2577e3 ;}
 .rightList dl.newsRelease .details .textQuo{ color: #999;display: block;font-size: 14px;padding-bottom: 6px;}
 .rightList dl.newsRelease .details .textNumb{ display: block;font-size: 16px;}
 .lineBottom{ border-bottom: 1px solid #eee;width: 820px;margin: 0 auto}
-.symbol{background: url("../images/icon.png") 0 -86px no-repeat;width: 63px; height: 21px;vertical-align: middle;margin-left: 10px;margin-top: -2px;}
+.symbol{background: url("../images/icon.png") -237px -86px no-repeat;width: 63px; height: 21px;vertical-align: middle;margin-left: 10px;margin-top: -2px;}
+.symbolCard{background: url("../images/icon.png") -237px -86px no-repeat;width: 63px; height: 21px;vertical-align: middle;margin-left: 10px;margin-top: -2px;}
+.symbolE{background: url("../images/icon.png") 0 -86px no-repeat;width: 63px; height: 21px;vertical-align: middle;margin-left: 8px;margin-top: -2px;}
 
 .products_description{ width: 1180px;height: 240px;margin: 20px auto 0 auto;}
 .products_description .leftProducts{ width: 580px;height: 240px;margin-right: 20px;background-color: #fff;float: left;box-shadow:0 1px 2px #eee;position: relative;cursor: pointer;}
