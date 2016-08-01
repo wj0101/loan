@@ -7,7 +7,7 @@ a:hover{text-decoration: none}
 .navWarp .warp ul.navList li{ float: left;font-size: 18px;color:#fff; text-align: center;margin: 0 15px 0 15px;position: relative;}
 .navWarp .warp ul.navList li.choice{color:#2577e3;border-bottom:4px solid #2577e3; text-decoration: none;}
 .navWarp .warp ul.navList li.choice>a{color:#2577e3;}
-.navWarp .warp ul.navList li>a{display: block; font-size: 16px; width: 90px;padding-top: 11px;padding-bottom: 11px;}
+.navWarp .warp ul.navList li>a{display: block; font-size: 16px; width: 90px;padding-top: 11px;padding-bottom: 11px;color: #333}
 .navWarp .warp ul.navList li>a:hover{text-decoration: none;color: #2577e3;  }
 .navWarp .warp ul.navList li.calculatorRight{ float: right; margin-right: 25px; position: relative}
 .navWarp .warp ul.navList li.calculatorRight>a:hover{    color: #2577e3; border: 0;}
@@ -148,7 +148,7 @@ input, select{ outline:none;}
 .calculatorMain span.close{ color: #2577e3;font-size: 25px; position: absolute;top: 12px;right: 15px;cursor: pointer}
 .calculatorMain .topCal{width:248px; position: absolute;border: 1px solid #dcdcdc;background-color: #f8f8f7;}
 a.CalMainBtn{ width: 130px;height: 30px;background-color: #2577e3;display: block;text-align: center;border-radius: 4px;margin:0 auto 20px auto;line-height:30px;color: #fff;font-size: 16px;}
-a.CalMainBtn:hover{color: #fff;}
+a.CalMainBtn:hover{color: #fff;text-decoration: none;}
 .ipBox,.ipBoxS{height: 37px;margin-bottom: 20px;}
 .calcNum .timeBox{ width: 210px;height: 35px;border: 1px solid #dbdbdb;border-radius: 2px;padding-left: 8px;font-size: 14px;
 color: #333333;line-height:35px;}
