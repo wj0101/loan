@@ -12,7 +12,6 @@ $(function(){
 			text.eq(numB).addClass('hoverButton').siblings('li').removeClass('hoverButton');
 			tab.eq(numB).show().siblings().hide()
 		}
-
 	},0);
 	text.click(function(){
 		$(this).addClass('hoverButton').siblings('li').removeClass('hoverButton');
@@ -22,7 +21,7 @@ $(function(){
 		if(num==0){
 			$(".applyLoan .topBanner_protect,.successful .topBanner_home,.successFail .topBanner_home").css({'background':'url(images/banner_1.jpg)' });
 			$(".applyLoan .textTitle,.successful .textTitle,.successFail .textTitle").text('嘉保贷');
-			$(".applyLoan .textMessage,.successful .textMessage,.successFail .textMessage").text('有寿险保单就能借')
+			$(".applyLoan .textMessage,.successful .textMessage,.successFail .textMessage").text('有寿险保单就能借');
 		}else if(num==1){
 			$(".applyLoan .topBanner_protect,.successful .topBanner_home,.successFail .topBanner_home").css({'background':'url(images/banner_1.jpg)' });
 			$(".applyLoan .textTitle,.successful .textTitle,.successFail .textTitle").text('嘉英贷');
@@ -62,7 +61,6 @@ $(function(){
 		}
 	});
 
-
 	//幻灯效果开始
 	var isRune=true;
 	var imagesNum=$('#bannerWrap ul.imgToggle>li').length;
@@ -93,8 +91,6 @@ $(function(){
 	$('#bannerWrap ul.buttonDot>li').on('click.hover',function(){
 		show($('#bannerWrap ul.buttonDot>li').index(this))
 	});
-
-
 
 	$('#bannerWrap ul.imgToggle>li,#bannerWrap ul.buttonDot>li').hover(function(){
 		isRune=false;
@@ -143,7 +139,6 @@ $(function(){
 			page--
 		}
 	});
-
 	//幻灯效果结束
 
 $("#bannerWrap .prev").hover(function(){
@@ -170,7 +165,6 @@ $("#bannerWrap .prev").hover(function(){
 			},300)
 	});
 
-
 	$(".leftProducts,.rightProducts").hover(function(){
 		$(this).stop().animate({
 			"margin-top":"-4px",
@@ -183,8 +177,6 @@ $("#bannerWrap .prev").hover(function(){
 			"boxShadow":"0 1px 2px 0 #eee"
 		},200)
 	});
-
-
 
 $(".column ul.columnTitle li:eq(0)").hover(function(){
 	$(".tagsImg:eq(0) img").attr("src","images/index_11_1.png")
@@ -208,7 +200,6 @@ $(".column ul.columnTitle li:eq(0)").hover(function(){
 	},function(){
 		$(".tagsImg:eq(3) img").attr("src","images/index_14.png")
 	});
-
 
 	$(".bottomImg .leftAppDown").hover(function(){
 		$('.imgAppDown').stop().animate({'top':0})
@@ -237,25 +228,21 @@ $(".column ul.columnTitle li:eq(0)").hover(function(){
 		}else {
 			if(UL.css("display")=="none"){
 				$(".conResult").slideDown();
-				$(".calculatorMain").css("height","481px");
 				$(".bottomCalc .pngArrow").css({
 					"background-position-x":"-75px",
 					"background-position-y":"-76px"
-				})
+				});
+				$(".calculatorMain").css("height","458px");
 			} else {
 				$(".conResult").slideUp();
-				$(".calculatorMain").css("height","264px");
 				$(".bottomCalc .pngArrow").css({
 					"background-position-x":"-118px",
 					"background-position-y":"-76px"
-
-				})
-
+				});
+				$(".calculatorMain").css("height","256px");
 			}
 		}
-
 	});
-
 
 	$(".CalMainBtn").click(function(){
 		$(".ipBoxS").find("#ErorrMess").remove();
@@ -289,7 +276,6 @@ $(".column ul.columnTitle li:eq(0)").hover(function(){
 			$(".bottomCalc .pngArrow").css({
 				"background-position-x":"-154px",
 				"background-position-y":"-76px"
-
 			})
 		}
 	});
@@ -317,20 +303,13 @@ $(".column ul.columnTitle li:eq(0)").hover(function(){
 				var error02=$("<div id='ErorrMess'>请输入2-50万之间的整数</div>");
 				$parent.append(error02)
 			}
-
 		}
 	});
-
-
-
 
 	$("form .ipBoxS select").change(function(){
 		$(".ipBoxS").find("#ErorrMess").remove();
 	});
-
 	/*计算器结束*/
-
-
 
 
 });

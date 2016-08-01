@@ -40,8 +40,8 @@ a:hover{text-decoration: none}
 .topBanner_car{background: url("../images/banner_1.jpg") no-repeat;width: 962px;height: 70px;}
 .topBanner_home{background: url("../images/banner_1.jpg") no-repeat;width: 962px;height: 70px;}
 
-.textTitle{ font-size: 30px;color: #fff;font-weight: bold;line-height: 70px;float: left;padding-left: 50px;}
-.textMessage{font-size: 20px;color: #fff;padding-left: 60px;line-height: 70px;float: left;letter-spacing: 1px;}
+.textTitle,.textTitleS{ font-size: 30px;color: #fff;font-weight: bold;line-height: 70px;float: left;padding-left: 50px;}
+.textMessage,.textMessageS{font-size: 20px;color: #fff;padding-left: 60px;line-height: 70px;float: left;letter-spacing: 1px;}
 .container{ float: left; margin-left: 15px;width: 962px;}
 .applications{ width: 962px;height: 160px;background-color: #fff;box-shadow: 0 1px 2px #eee}
 ul.textApply{  padding: 45px 80px;height:70px;}
@@ -54,9 +54,7 @@ ul.textApply li .time{font-size:14px;color: #666 ; padding-top:14px}
 ul.textApply li .date em,ul.textApply li .time em{ color: #000}
 ul.textApply li .applyBto{ margin-left: 130px;line-height:70px;width: 160px;}
 .container .loanProducts .applyProcess{ width: 962px;height: 200px;box-shadow:0 1px 2px #eee;background-color: #fff;margin-top: 20px;position: relative;}
-.textProcess{font-size: 20px;
-    color: #000;
-    padding: 30px 0 30px 40px;}
+.textProcess{font-size: 20px;color: #000; padding: 30px 0 30px 40px;}
 .otherSty{ font-size: 20px;color: #000;padding: 0 0 0 40px;height: 54px;border-bottom: 1px solid #eee;line-height: 55px;}
 .applyProcess ul.content li .fillIn,.applyProcess ul.housePro li .fillIn{background: url("../images/icon.png") -74px -31px; width: 29px; height: 30px; margin: 0 auto}
 .applyProcess ul.content li .contact,.applyProcess ul.housePro li .contact{background: url("../images/icon.png") -111px -31px; width: 31px; height: 30px; margin: 0 auto}
@@ -112,8 +110,6 @@ td{border:1px solid  #ccc;}
 .example .appDowns p{font-size: 12px; color: #999;padding-top: 30px;font-weight: bold;}
 .insideFail{width: 531px; height: auto;overflow: hidden; margin: 0 auto; padding-top: 70px;}
 
-
-
 /* CSS Document */
 
 input, select{ outline:none;}
@@ -147,7 +143,7 @@ input, select{ outline:none;}
 .applyBtn{ width:350px; height:45px; background:#ff6600; border:0; cursor:pointer; font-size:18px; color:#fff; margin-top:20px; margin-left:85px; border-radius:5px;}
 .line{ height:1px; border-bottom:1px solid #dbdbdb; margin-top:20px;}
 
-.calculatorMain{ width: 250px;position: absolute;top: 50px;right: -24px;z-index: 99;height: 264px;}
+.calculatorMain{ width: 250px;position: absolute;top: 50px;right: -24px;z-index: 99;height: 256px;}
 .calculatorMain h4.textCalc{font-size: 16px;color: #000; text-align: center;padding-top: 15px;position: relative;height: 40px;}
 .calculatorMain span.close{ color: #2577e3;font-size: 25px; position: absolute;top: 12px;right: 15px;cursor: pointer}
 .calculatorMain .topCal{width:248px; position: absolute;border: 1px solid #dcdcdc;background-color: #f8f8f7;}
@@ -155,7 +151,7 @@ a.CalMainBtn{ width: 130px;height: 30px;background-color: #2577e3;display: block
 a.CalMainBtn:hover{color: #fff;}
 .ipBox,.ipBoxS{height: 37px;margin-bottom: 20px;}
 .calcNum .timeBox{ width: 210px;height: 35px;border: 1px solid #dbdbdb;border-radius: 2px;padding-left: 8px;font-size: 14px;
-color: #333333;line-height:37px;}
+color: #333333;line-height:35px;}
 .miniText{width: 198px;height: 33px;border: 1px solid #dbdbdb;border-radius: 2px;padding-left: 10px;font-size: 14px;
 color: #333333;line-height:35px;}
 input.miniText:hover{border:1px solid #2577e3 ;}
@@ -172,6 +168,7 @@ input.miniText:hover{border:1px solid #2577e3 ;}
 .bottomCalc .pngArrow{background: url("../images/icon.png") -154px -76px no-repeat;width: 33px;height: 33px;display: inline-block;margin-top: 1px;}
 #ErorrMess{ color: #ff0600;font-size: 12px;}
 .icon-yuan{ background: url("../images/icon-r-yuan.png")no-repeat right 50% #fff;}
+
 /*借款首页*/
 #bannerWrap{ width:100%; height:350px; overflow:hidden; line-height:0; position:relative;min-width: 1180px;}
 #bannerWrap ul.imgToggle{ width:1920px; height:350px; position:absolute; top:0; left:50%; margin-left:-960px;}
@@ -250,19 +247,3 @@ input.miniText:hover{border:1px solid #2577e3 ;}
 #loanMain .faqsPro .textWord dl.text_master dt.text_themes{ padding-bottom: 10px;font-size: 16px;color: #333;}
 #loanMain .faqsPro .textWord dl.text_master dd{font-size: 14px;color: #666;}
 #loanMain .faqsPro .textWord dl.text_master dd a{color: #2577e3}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
