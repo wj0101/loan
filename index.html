@@ -123,9 +123,14 @@
 <!--Main start-->
 <div id="bannerWrap">
     <ul class="imgToggle">
-        <li><a><img src="http://www.niwodai.com/index.do?method=imageView&imgPath=articlePic/20160411/8dc83e2c-9f93-40a9-9105-26eac898c5fe.png"/></a></li>
-        <li><a><img src="http://www.niwodai.com/index.do?method=imageView&imgPath=articlePic/20160308/a186799b-5f4a-4aaf-aac1-9c3ceed3eb6d.jpeg"/></a></li>
-        <li><a><img src="http://www.niwodai.com/index.do?method=imageView&imgPath=articlePic/20160411/f35f300c-2ff7-4694-a0d8-16f485acae40.png"/></a></li>
+        <li><a class="bannerImg" href="http://www.niwodai.com/event.mhtml?artId=3800001348959392&intcmp=banner5&h=1&f=1" ><img src="http://www.niwodai.com/index.do?method=imageView&imgPath=articlePic/20160803/e8612503-b623-4904-a8c9-81e8e02ff19b.jpeg"/></a></li>
+        <li><a class="bannerImg" href="http://www.niwodai.com/index.do?method=ac&artId=3800001319132178&h=1&f=1">
+            <img src="http://www.niwodai.com/index.do?method=imageView&imgPath=articlePic/20160803/827beed9-811f-482f-a00a-412fc71c27f5.jpeg"/></a></li>
+        <li><a class="bannerImg" href="http://www.niwodai.com/daikuan/">
+            <img src="http://www.niwodai.com/index.do?method=imageView&imgPath=articlePic/20160803/84941ade-c7dd-4096-8baf-45ce7b3234a9.jpeg"/></a></li>
+        <li><a class="bannerImg" href="http://www.niwodai.com/event.mhtml?artId=3800000782060964&intcmp=banner2&h=1&f=1"><img src="http://www.niwodai.com/index.do?method=imageView&imgPath=articlePic/20160803/34499445-f86d-47c7-a46b-7073e77e9547.jpeg"/></a></li>
+        <li><a class="bannerImg" href="http://www.niwodai.com/event.mhtml?artId=3800000794998139&h=1&f=1">
+            <img src="http://www.niwodai.com/index.do?method=imageView&imgPath=articlePic/20160803/55551fcd-eaba-4358-95a6-8a73652d252b.jpeg"/></a></li>
     </ul>
     <div class="prev"><a href="javascript:;"></a></div>
     <div class="next"><a href="javascript:;"></a></div>
@@ -178,7 +183,7 @@
                 </dt>
                 <dt class="details">
                     <span class="textQuo">借款期限：</span>
-                    <span class="textNumb">3/6/12个月</span>
+                    <span class="textNumb">12/36个月</span>
                 </dt>
                 <dt class="details">
                     <span class="textQuo">申请方式：</span>
@@ -206,18 +211,26 @@
     </div>
 
     <div class="products_description">
-        <div class="leftProducts" onclick="ulrHtml(0)" href="javascript:;">
-            <div class="textTil">【大额借款】最高可借<span class="orange">50万元</span></div>
-            <div class="textExp">房贷、车贷、寿险保单、社保公积金，只要你有<br>其中一项，立可申请</div>
-            <div class="btnApply"><a  class="textWord">立即申请</a></div>
-            <div class="imgMon"><img src="images/index_18.png"></div>
-        </div>
-        <div class="rightProducts" onclick="ulrHtml(4)" href="javascript:;">
-            <div class="textTil">【抵押借款】额度高达<span class="orange">500万元</span></div>
-            <div class="textExp">有一套或多套住房的业主，抵押住房，立可申请</div>
-            <div class="btnApply"><a  class="textWord">立即申请</a></div>
-            <div class="imgHouse"><img src="images/index_16.png"></div>
-        </div>
+             <div class="leftProducts"  onclick="ulrHtml(6)" href="javascript:;">
+                <div class="textTil">【大额借款】最高可借<span class="orange">50万元</span></div>
+                <div class="textExp">房贷、车贷、寿险保单、社保公积金，只要你有<br>其中一项，立可申请</div>
+                <div class="btnApply">
+                    <a class="textWord">立即申请</a>
+                    <a class="textMore" onclick="ulrHtml(0)" href="javascript:;">查看详情</a>
+                </div>
+                <div class="imgMon"><img src="images/index_18.png"></div>
+            </div>
+
+            <div class="rightProducts" onclick="ulrHtml(6)" href="javascript:;" >
+                <div class="textTil">【抵押借款】额度高达<span class="orange">500万元</span></div>
+                <div class="textExp">有一套或多套住房的业主，抵押住房，立可申请</div>
+                <div class="btnApply">
+                    <a class="textWord">立即申请</a>
+                    <a class="textMore" onclick="ulrHtml(4)" href="javascript:;">查看详情</a>
+                </div>
+                <div class="imgHouse"><img src="images/index_16.png"></div>
+            </div>
+
     </div>
     <script type="text/javascript">
         function ulrHtml(num){

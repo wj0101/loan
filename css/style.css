@@ -96,7 +96,7 @@ td{border:1px solid  #ccc;}
 .cityB{ width: 167px;height: 40px;border: 1px solid #dbdbdb;border-radius:5px;padding-left:10px;color:#333;cursor:pointer;line-height: 35px; margin-left: 0; float: left;}
 .cityC{ width: 167px;height: 40px;;border: 1px solid #dbdbdb;border-radius:5px;margin-left: 5px;line-height: 35px;}
 .ageBox,.cityC,.cityB{background-color: #f9f9f9;}
-
+.ageBox:hover{border-color: #2577e3}
 .inside{ width: 962px;height: 580px;box-shadow: 0 1px 2px #eee;margin-bottom: 4px;background-color: #fff;}
 .inside .insideCon{ width: 435px; height: auto;overflow: hidden; margin: 0 auto; padding-top: 70px;}
 .inside .insideCon .succImg,.inside .insideFail .succImg{ float: left;}
@@ -170,15 +170,15 @@ input.miniText:hover{border:1px solid #2577e3 ;}
 .icon-yuan{ background: url("../images/icon-r-yuan.png")no-repeat right 50% #fff;}
 
 /*借款首页*/
-#bannerWrap{ width:100%; height:350px; overflow:hidden; line-height:0; position:relative;min-width: 1180px;}
-#bannerWrap ul.imgToggle{ width:1920px; height:350px; position:absolute; top:0; left:50%; margin-left:-960px;}
+#bannerWrap{ width:100%; height:300px; overflow:hidden; line-height:0; position:relative;min-width: 1180px;}
+#bannerWrap ul.imgToggle{ width:1920px; height:300px; position:absolute; top:0; left:50%; margin-left:-960px;}
 #bannerWrap ul.imgToggle li{ position:absolute; top:0; left:0;}
 #bannerWrap ul.buttonDot{ position:absolute; bottom:10px; left:50%; z-index:2;}
 #bannerWrap ul.buttonDot li{ width:15px; height:15px; background-color:#666; color:white; line-height:20px; text-align:center; float:left; margin-right:10px;cursor: pointer;border-radius: 15px;}
 #bannerWrap ul.buttonDot li.choice{ background-color:#F60;}
-#bannerWrap .prev,#bannerWrap .next{z-index: 9999;width: 50px;height: 350px;background-color: #0000A1;opacity: .3;position: absolute;cursor: pointer}
-#bannerWrap .prev{ top:0;left: 0;background: url("../images/arrow-left-light.png") 20px 150px no-repeat;  }
-#bannerWrap .next{ top: 0;right: 0;background: url("../images/arrow-right-light.png") 1px 150px no-repeat}
+#bannerWrap .prev,#bannerWrap .next{z-index: 9999;width: 50px;height: 300px;background-color: #0000A1;opacity: .3;position: absolute;cursor: pointer}
+#bannerWrap .prev{ top:0;left: 0;background: url("../images/arrow-left-light.png") 20px 125px no-repeat;  }
+#bannerWrap .next{ top: 0;right: 0;background: url("../images/arrow-right-light.png") 1px 125px no-repeat}
 #bannerWrap .prev a:hover{opacity: 1}
 #bannerWrap .next a:hover{opacity: 1}
 
@@ -213,14 +213,16 @@ input.miniText:hover{border:1px solid #2577e3 ;}
 .products_description{ width: 1180px;height: 240px;margin: 20px auto 0 auto;}
 .products_description .leftProducts{ width: 580px;height: 240px;margin-right: 20px;background-color: #fff;float: left;box-shadow:0 1px 2px #eee;position: relative;cursor: pointer;}
 .products_description .rightProducts{ width: 580px;height: 240px;background-color: #fff;float: left;box-shadow:0 1px 2px #eee;position: relative;cursor: pointer;}
-.products_description .leftProducts .textTil,.products_description .rightProducts .textTil{font-size: 20px;padding: 30px 0 20px 30px}
+.products_description .leftProducts .textTil,.products_description .rightProducts .textTil{font-size: 20px;padding: 30px 0 20px 30px;color: #333;}
 .products_description .leftProducts .textTil .orange,.products_description .rightProducts .textTil .orange{color: #2577e3}
 .products_description .leftProducts .textExp,.products_description .rightProducts .textExp{font-size: 16px;color: #666;padding: 0 0 20px 38px}
-.products_description .leftProducts .btnApply{ width: 160px;height: 40px;border-radius: 4px;background-color: #2577e3;margin: 15px 0 0 38px;}
-.textWord{ display: block;color: #fff;text-align: center;line-height: 40px;font-size: 16px;}
-.textWord:hover{color: #fff;text-decoration: none ;}
+.products_description .leftProducts .btnApply{ width: 260px;height: 40px;margin: 15px 0 0 38px;font-size: 16px;}
+.btnApply .textWord{ border-radius: 4px;display: inline-block;color: #fff;text-align: center;line-height: 40px;width: 160px;background-color: #2577e3;}
+.btnApply .textWord:hover{color: #fff;text-decoration: none ;background-color: #ff7a0e;border-radius: 4px;}
+.btnApply .textMore{display: inline-block;margin-left: 20px;}
+.btnApply .textMore:hover{color:#ff7a0e }
 .products_description .leftProducts .imgMon,.products_description .rightProducts .imgHouse{position: absolute;right: 60px; top:50%;margin-top: -50px;}
-.products_description .rightProducts .btnApply{ width: 160px;height: 40px;border-radius: 4px;background-color: #2577e3;margin: 34px 0 0 38px;}
+.products_description .rightProducts .btnApply{ width: 260px;height: 40px;margin: 34px 0 0 38px;}
 .borrowingPro{ width: 1180px;height: 240px;background-color: #fff;box-shadow:0 1px 2px #eee;margin:20px auto 0 auto}
 .borrowingPro .topPro{height: 54px;width: 1180px;border-bottom: 1px solid #eee;}
 .borrowingPro .topPro h3{font-size: 20px;float: left;padding-left: 40px;line-height: 55px;}
@@ -247,3 +249,4 @@ input.miniText:hover{border:1px solid #2577e3 ;}
 #loanMain .faqsPro .textWord dl.text_master dt.text_themes{ padding-bottom: 10px;font-size: 16px;color: #333;}
 #loanMain .faqsPro .textWord dl.text_master dd{font-size: 14px;color: #666;}
 #loanMain .faqsPro .textWord dl.text_master dd a{color: #2577e3}
+.bannerImg{display:inline-block;}
