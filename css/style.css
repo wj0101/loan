@@ -216,10 +216,10 @@ input.miniText:hover{border:1px solid #2577e3 ;}
 .products_description .leftProducts .textTil,.products_description .rightProducts .textTil{font-size: 20px;padding: 30px 0 20px 30px;color: #333;}
 .products_description .leftProducts .textTil .orange,.products_description .rightProducts .textTil .orange{color: #2577e3}
 .products_description .leftProducts .textExp,.products_description .rightProducts .textExp{font-size: 16px;color: #666;padding: 0 0 20px 38px}
-.products_description .leftProducts .btnApply{ width: 260px;height: 40px;margin: 15px 0 0 38px;font-size: 16px;}
-.btnApply .textWord{ border-radius: 4px;display: inline-block;color: #fff;text-align: center;line-height: 40px;width: 160px;background-color: #2577e3;}
+.products_description .leftProducts .btnApply{ width: 260px;height: 40px;margin: 15px 0 0 38px;}
+.btnApply .textWord{ border-radius: 4px;display: inline-block;color: #fff;text-align: center;font-size: 16px;line-height: 40px;width: 160px;background-color: #2577e3;}
 .btnApply .textWord:hover{color: #fff;text-decoration: none ;background-color: #ff7a0e;border-radius: 4px;}
-.btnApply .textMore{display: inline-block;margin-left: 20px;}
+.btnApply .textMore{display: inline-block;margin-left: 20px;font-size: 16px;}
 .btnApply .textMore:hover{color:#ff7a0e }
 .products_description .leftProducts .imgMon,.products_description .rightProducts .imgHouse{position: absolute;right: 60px; top:50%;margin-top: -50px;}
 .products_description .rightProducts .btnApply{ width: 260px;height: 40px;margin: 34px 0 0 38px;}

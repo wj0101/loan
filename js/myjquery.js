@@ -14,7 +14,13 @@ $(function(){
 		}else if (numB==6){
 			$(".loanProducts").hide();
 			$(".applyLoan ").show();
-			$(".textTitleS").text("大额借款")
+			$(".textTitleS").text("嘉保贷")
+		}else if (numB==7){
+			$(".loanProducts").hide();
+			$(".applyLoan ").show();
+			$(".textTitleS").text("宅抵贷");
+			$(".textMessageS").text("借款额度15-500万");
+			$('#menuWarp ul.asideList li:last').addClass('hoverButton').siblings('li').removeClass('hoverButton');
 		}
 	},0);
 	text.click(function(){
@@ -33,15 +39,19 @@ $(function(){
 		}else if(num==2	){
 			$(".applyLoan .topBanner_protect,.successful .topBanner_home,.successFail .topBanner_home").css({'background':'url(images/banner_1.jpg)' });
 			$(".applyLoan .textTitle,.successful .textTitle,.successFail .textTitle,.textTitleS").text('嘉房贷');
-			$(".applyLoan .textMessage,.successful .textMessage,.successFail .textMessage").text('按揭房贷借款')
+			$(".applyLoan .textMessage,.successful .textMessage,.successFail .textMessage").text('按揭房贷借款');
+			$(".textMessageS").text("借款额度2-30万")
 		}else if(num==3	){
 			$(".applyLoan .topBanner_protect,.successful .topBanner_home,.successFail .topBanner_home").css({'background':'url(images/banner_1.jpg)' });
 			$(".applyLoan .textTitle,.successful .textTitle,.successFail .textTitle,.textTitleS").text('嘉车贷');
-			$(".applyLoan .textMessage,.successful .textMessage,.successFail .textMessage").text('有车贷都能借')
+			$(".applyLoan .textMessage,.successful .textMessage,.successFail .textMessage").text('有车贷都能借');
+			$(".textMessageS").text("借款额度2-30万")
+
 		}else if(num==4	){
 			$(".applyLoan .topBanner_protect,.successful .topBanner_home,.successFail .topBanner_home").css({'background':'url(images/banner_1.jpg)' });
 			$(".applyLoan .textTitle,.successful .textTitle,.successFail .textTitle,.textTitleS").text('宅抵贷');
-			$(".applyLoan .textMessage,.successful .textMessage,.successFail .textMessage").text('有住宅就能借')
+			$(".applyLoan .textMessage,.successful .textMessage,.successFail .textMessage").text('有住宅就能借');
+			$(".textMessageS").text("借款额度15-500万")
 		}
 	});
 
