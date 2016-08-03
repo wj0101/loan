@@ -9,6 +9,10 @@ $(function(){
 		var numB=(href_part[1])*1;
 
 		if(numB<=5){
+			if(numB==4){
+				$(".textTitleS").text("宅抵贷");
+				$(".textMessageS").text("借款额度15-500万");
+			}
 			text.eq(numB).addClass('hoverButton').siblings('li').removeClass('hoverButton');
 			tab.eq(numB).show().siblings().hide()
 		}else if (numB==6){
@@ -22,6 +26,7 @@ $(function(){
 			$(".textMessageS").text("借款额度15-500万");
 			$('#menuWarp ul.asideList li:last').addClass('hoverButton').siblings('li').removeClass('hoverButton');
 		}
+
 	},0);
 	text.click(function(){
 		$(this).addClass('hoverButton').siblings('li').removeClass('hoverButton');
