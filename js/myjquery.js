@@ -1,5 +1,4 @@
 $(function(){
-
 	var text=$('#menuWarp ul.asideList li');
 	var tab=$('.container .loanProducts');
 	setTimeout(function(){
@@ -34,28 +33,31 @@ $(function(){
 		tab.eq(num).show().siblings().hide();
 
 		if(num==0){
-			$(".applyLoan .topBanner_protect,.successful .topBanner_home,.successFail .topBanner_home").css({'background':'url(images/banner_1.jpg)' });
+			$(".applyLoan .topBanner_protect,.successful .topBanner_home,.successFail .topBanner_home").css({'background':'url(http://www.niwodai.com/Public/Static/201404/event/daikuan/images/banner_1.jpg)' });
 			$(".applyLoan .textTitle,.successful .textTitle,.successFail .textTitle,.textTitleS").text('嘉保贷');
-			$(".applyLoan .textMessage,.successful .textMessage,.successFail .textMessage").text('有寿险保单就能借');
+			$(".applyLoan .textMessage,.successful .textMessage,.successFail .textMessage").text('有寿险保单就能申请');
+			$(".textMessageS").text("借款额度2-50万")
+
 		}else if(num==1){
-			$(".applyLoan .topBanner_protect,.successful .topBanner_home,.successFail .topBanner_home").css({'background':'url(images/banner_1.jpg)' });
+			$(".applyLoan .topBanner_protect,.successful .topBanner_home,.successFail .topBanner_home").css({'background':'url(http://www.niwodai.com/Public/Static/201404/event/daikuan/images/banner_1.jpg)' });
 			$(".applyLoan .textTitle,.successful .textTitle,.successFail .textTitle,.textTitleS").text('嘉英贷');
-			$(".applyLoan .textMessage,.successful .textMessage,.successFail .textMessage").text('社保/公积金借款')
+			$(".applyLoan .textMessage,.successful .textMessage,.successFail .textMessage").text('社保/公积金借款');
+			$(".textMessageS").text("借款额度2-50万")
 		}else if(num==2	){
-			$(".applyLoan .topBanner_protect,.successful .topBanner_home,.successFail .topBanner_home").css({'background':'url(images/banner_1.jpg)' });
+			$(".applyLoan .topBanner_protect,.successful .topBanner_home,.successFail .topBanner_home").css({'background':'url(http://www.niwodai.com/Public/Static/201404/event/daikuan/images/banner_1.jpg)' });
 			$(".applyLoan .textTitle,.successful .textTitle,.successFail .textTitle,.textTitleS").text('嘉房贷');
 			$(".applyLoan .textMessage,.successful .textMessage,.successFail .textMessage").text('按揭房贷借款');
 			$(".textMessageS").text("借款额度2-30万")
 		}else if(num==3	){
-			$(".applyLoan .topBanner_protect,.successful .topBanner_home,.successFail .topBanner_home").css({'background':'url(images/banner_1.jpg)' });
+			$(".applyLoan .topBanner_protect,.successful .topBanner_home,.successFail .topBanner_home").css({'background':'url(http://www.niwodai.com/Public/Static/201404/event/daikuan/images/banner_1.jpg)' });
 			$(".applyLoan .textTitle,.successful .textTitle,.successFail .textTitle,.textTitleS").text('嘉车贷');
-			$(".applyLoan .textMessage,.successful .textMessage,.successFail .textMessage").text('有车贷都能借');
+			$(".applyLoan .textMessage,.successful .textMessage,.successFail .textMessage").text('有车贷都能申请');
 			$(".textMessageS").text("借款额度2-30万")
 
 		}else if(num==4	){
-			$(".applyLoan .topBanner_protect,.successful .topBanner_home,.successFail .topBanner_home").css({'background':'url(images/banner_1.jpg)' });
+			$(".applyLoan .topBanner_protect,.successful .topBanner_home,.successFail .topBanner_home").css({'background':'url(http://www.niwodai.com/Public/Static/201404/event/daikuan/images/banner_1.jpg)' });
 			$(".applyLoan .textTitle,.successful .textTitle,.successFail .textTitle,.textTitleS").text('宅抵贷');
-			$(".applyLoan .textMessage,.successful .textMessage,.successFail .textMessage").text('有住宅就能借');
+			$(".applyLoan .textMessage,.successful .textMessage,.successFail .textMessage").text('有住宅就能申请');
 			$(".textMessageS").text("借款额度15-500万")
 		}
 	});
@@ -93,7 +95,7 @@ $(function(){
 		if(v==$('#bannerWrap ul.buttonDot>li').index($('#bannerWrap ul.buttonDot>li.choice'))
 		){return null}
 
-		$('#bannerWrap ul.imgToggle>li').finish().filter(':visible').fadeOut()
+		$('#bannerWrap ul.imgToggle>li').stop().filter(':visible').fadeOut()
 			.css({'z-index':0})//可以加入'display':'none'
 			.end()
 			.eq(v).fadeIn()
@@ -172,51 +174,38 @@ $("#bannerWrap .prev").hover(function(){
 });
 
 	$("#bannerWrap .next").hover(function(){
-			$(this).stop().animate({
-				"background-position-x":"17px",
-				"opacity":"1"
-			},300)
-	},function(){
-			$(this).stop().animate({
-				"background-position-x":"1px",
-				"opacity":".3"
-			},300)
-	});
-
-	$(".leftProducts,.rightProducts").hover(function(){
 		$(this).stop().animate({
-			"margin-top":"-4px",
-			"boxShadow":"0 8px 10px 0 #ccc",
-			"z-index":"2"
-		},200)
+			"background-position-x":"17px",
+			"opacity":"1"
+		},300)
 	},function(){
 		$(this).stop().animate({
-			"margin-top":"0px",
-			"boxShadow":"0 1px 2px 0 #eee"
-		},200)
+			"background-position-x":"1px",
+			"opacity":".3"
+		},300)
 	});
-
+	
 $(".column ul.columnTitle li:eq(0)").hover(function(){
-	$(".tagsImg:eq(0) img").attr("src","images/index_11_1.png")
+	$(".tagsImg:eq(0) img").attr("src","http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_11_1.png")
 },function(){
-	$(".tagsImg:eq(0) img").attr("src","images/index_11.png")
+	$(".tagsImg:eq(0) img").attr("src","http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_11.png")
 });
 
 	$(".column ul.columnTitle li:eq(1)").hover(function(){
-		$(".tagsImg:eq(1) img").attr("src","images/index_12_1.png")
+		$(".tagsImg:eq(1) img").attr("src","http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_12_1.png")
 	},function(){
-		$(".tagsImg:eq(1) img").attr("src","images/index_12.png")
+		$(".tagsImg:eq(1) img").attr("src","http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_12.png")
 	});
 
 	$(".column ul.columnTitle li:eq(2)").hover(function(){
-		$(".tagsImg:eq(2) img").attr("src","images/index_13_1.png")
+		$(".tagsImg:eq(2) img").attr("src","http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_13_1.png")
 	},function(){
-		$(".tagsImg:eq(2) img").attr("src","images/index_13.png")
+		$(".tagsImg:eq(2) img").attr("src","http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_13.png")
 	});
 	$(".column ul.columnTitle li:eq(3)").hover(function(){
-		$(".tagsImg:eq(3) img").attr("src","images/index_14_1.png")
+		$(".tagsImg:eq(3) img").attr("src","http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_14_1.png")
 	},function(){
-		$(".tagsImg:eq(3) img").attr("src","images/index_14.png")
+		$(".tagsImg:eq(3) img").attr("src","http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_14.png")
 	});
 
 	$(".bottomImg .leftAppDown").hover(function(){

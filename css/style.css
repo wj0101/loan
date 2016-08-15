@@ -11,7 +11,7 @@ a:hover{text-decoration: none}
 .navWarp .warp ul.navList li>a:hover{text-decoration: none;color: #2577e3;  }
 .navWarp .warp ul.navList li.calculatorRight{ float: right; margin-right: 25px; position: relative}
 .navWarp .warp ul.navList li.calculatorRight>a:hover{    color: #2577e3; border: 0;}
-.calculator{background: url("../images/icon.png") 0 0; width: 24px; height: 24px;position: absolute; top:50%;left: -31px;margin-top: -11px;}
+.calculator{background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/icon.png") 0 0; width: 24px; height: 24px;position: absolute; top:50%;left: -31px;margin-top: -11px;}
 .navWarp .warp ul.navList li>a.hover{ color: #2577e3;border: 0; width: 100px;}
 
 #menuWarp{margin: 0 auto; padding-top: 16px; min-width: 1180px;overflow: hidden;width: 1180px;}
@@ -23,9 +23,9 @@ a:hover{text-decoration: none}
 #menuWarp ul.asideList{ width: 202px; height: 410px; background-color: #fff; position: relative;font-size: 16px;box-shadow: 0 1px 2px #eee;box-sizing: border-box;}
 #menuWarp ul.asideList li{ width:202px;height: 48px;text-indent: 35px; cursor: pointer; padding: 16px 0;}
 .textTop{ color: #333;}
-.mobile{background: url("../images/icon.png") 0 -29px; width: 59px;height: 20px;position: absolute;right:30px;}
+.mobile{background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/icon.png") 0 -29px; width: 59px;height: 20px;position: absolute;right:30px;}
 .textBottom{ color: #999;font-size: 14px;}
-#menuWarp ul.asideList li .textTop .house{background: url("../images/icon.png") 0 -56px; width: 59px;height: 20px;position: absolute;right:30px;}
+#menuWarp ul.asideList li .textTop .house{background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/icon.png") 0 -56px; width: 59px;height: 20px;position: absolute;right:30px;}
 #menuWarp ul.asideList li.hoverButton{ background-color: #f2f8ff;border-left: 4px solid #2577e3;cursor: pointer;text-indent: 31px; width: 198px;}
 #menuWarp ul.asideList li.hoverButton .textTop{ color: #2577e3;}
 #menuWarp ul.asideList li:hover{background-color: #f2f8ff}
@@ -34,11 +34,11 @@ a:hover{text-decoration: none}
 .buttonCard{padding-top: 10px;background-color: #fff;position: relative}
 .fistCard:hover{background-color: #f2f8ff}
 
-.topBanner_protect{background: url("../images/banner_1.jpg") no-repeat;width: 962px;height: 70px;}
-.topBanner_britain{background: url("../images/banner_1.jpg") no-repeat;width: 962px;height: 70px;}
-.topBanner_house{background: url("../images/banner_1.jpg") no-repeat;width: 962px;height: 70px;}
-.topBanner_car{background: url("../images/banner_1.jpg") no-repeat;width: 962px;height: 70px;}
-.topBanner_home{background: url("../images/banner_1.jpg") no-repeat;width: 962px;height: 70px;}
+.topBanner_protect{background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/banner_1.jpg") no-repeat;width: 962px;height: 70px;}
+.topBanner_britain{background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/banner_1.jpg") no-repeat;width: 962px;height: 70px;}
+.topBanner_house{background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/banner_1.jpg") no-repeat;width: 962px;height: 70px;}
+.topBanner_car{background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/banner_1.jpg") no-repeat;width: 962px;height: 70px;}
+.topBanner_home{background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/banner_1.jpg") no-repeat;width: 962px;height: 70px;}
 
 .textTitle,.textTitleS{ font-size: 30px;color: #fff;font-weight: bold;line-height: 70px;float: left;padding-left: 50px;}
 .textMessage,.textMessageS{font-size: 20px;color: #fff;padding-left: 60px;line-height: 70px;float: left;letter-spacing: 1px;}
@@ -56,29 +56,29 @@ ul.textApply li .applyBto{ margin-left: 130px;line-height:70px;width: 160px;}
 .container .loanProducts .applyProcess{ width: 962px;height: 200px;box-shadow:0 1px 2px #eee;background-color: #fff;margin-top: 20px;position: relative;}
 .textProcess{font-size: 20px;color: #000; padding: 30px 0 30px 40px;}
 .otherSty{ font-size: 20px;color: #000;padding: 0 0 0 40px;height: 54px;border-bottom: 1px solid #eee;line-height: 55px;}
-.applyProcess ul.content li .fillIn,.applyProcess ul.housePro li .fillIn{background: url("../images/icon.png") -74px -31px; width: 29px; height: 30px; margin: 0 auto}
-.applyProcess ul.content li .contact,.applyProcess ul.housePro li .contact{background: url("../images/icon.png") -111px -31px; width: 31px; height: 30px; margin: 0 auto}
-.applyProcess ul.content li .material,.applyProcess ul.housePro li .material{background: url("../images/icon.png") -152px -31px; width: 28px; height: 29px; margin: 0 auto}
-.applyProcess ul.content li .payment,.applyProcess ul.housePro li .payment{background: url("../images/icon.png") -188px -31px; width: 28px; height: 30px; margin: 0 auto}
+.applyProcess ul.content li .fillIn,.applyProcess ul.housePro li .fillIn{background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/icon.png") -74px -31px; width: 29px; height: 30px; margin: 0 auto}
+.applyProcess ul.content li .contact,.applyProcess ul.housePro li .contact{background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/icon.png") -111px -31px; width: 31px; height: 30px; margin: 0 auto}
+.applyProcess ul.content li .material,.applyProcess ul.housePro li .material{background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/icon.png") -152px -31px; width: 28px; height: 29px; margin: 0 auto}
+.applyProcess ul.content li .payment,.applyProcess ul.housePro li .payment{background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/icon.png") -188px -31px; width: 28px; height: 30px; margin: 0 auto}
 .applyProcess ul.content{ margin: 28px 0 20px 0;overflow: hidden}
 .applyProcess ul.content li .fillText,.applyProcess ul.housePro li .fillText{ font-size: 14px; padding-top: 25px; text-align: center}
-.applyProcess ul.content li .rightRrrow{background: url("../images/icon.png") -47px 0; width: 12px; height: 22px;display: block;position: absolute; right: 10px; top:15px;}
+.applyProcess ul.content li .rightRrrow{background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/icon.png") -47px 0; width: 12px; height: 22px;display: block;position: absolute; right: 10px; top:15px;}
 .applyProcess ul.content li{position: relative; width: 230px; height:98px;float: left }
 .applyProcess ul.housePro{overflow: hidden;text-align: center;margin-top: 28px;}
 .applyProcess ul.housePro li{position: relative; width: 160px; height:98px;float: left}
-.applyProcess ul.housePro li .rightRrrow{background: url("../images/icon.png") -47px 0; width: 12px; height: 22px;display: block;position: absolute; right: 10px; top:15px;}
-.applyProcess ul.housePro li .noodles{background: url("../images/icon.png") -221px -32px; width: 31px; height: 29px; margin: 0 auto}
-.applyProcess ul.housePro li .mortgage{background: url("../images/icon.png") -258px -32px; width: 26px; height: 29px; margin: 0 auto}
+.applyProcess ul.housePro li .rightRrrow{background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/icon.png") -47px 0; width: 12px; height: 22px;display: block;position: absolute; right: 10px; top:15px;}
+.applyProcess ul.housePro li .noodles{background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/icon.png") -221px -32px; width: 31px; height: 29px; margin: 0 auto}
+.applyProcess ul.housePro li .mortgage{background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/icon.png") -258px -32px; width: 26px; height: 29px; margin: 0 auto}
 
 .container .loanProducts .master{ width: 962px; background-color: #fff;box-shadow: 0 1px 2px #eee;margin-top: 20px; margin-bottom: 4px;overflow: hidden;}
 .container .loanProducts .master .qualifications,.materials,.costDescription{position: relative;overflow: hidden; }
 .applicationCon{line-height: 2;font-size: 14px;padding:0 0 36px 60px;}
 .textLine{border-bottom: 1px solid #eee; width: 900px;margin: 0 auto;}
-ul.imgMater li .cardID{background: url("../images/icon.png") -74px 0; width: 22px; height: 16px; float: left;}
-ul.imgMater li .houseIcon{background: url("../images/icon.png") -182px 0; width: 22px; height: 23px; float: left;}
-ul.imgMater li .creditReport{background: url("../images/icon.png") -127px 0; width: 20px; height: 22px; float: left}
-ul.imgMater li .policy{background: url("../images/icon.png") -102px 0; width: 21px; height: 22px;float: left}
-ul.imgMater li .investigation{background: url("../images/icon.png") -152px 0; width: 19px; height: 22px; float: left}
+ul.imgMater li .cardID{background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/icon.png") -74px 0; width: 22px; height: 16px; float: left;}
+ul.imgMater li .houseIcon{background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/icon.png") -182px 0; width: 22px; height: 23px; float: left;}
+ul.imgMater li .creditReport{background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/icon.png") -127px 0; width: 20px; height: 22px; float: left}
+ul.imgMater li .policy{background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/icon.png") -102px 0; width: 21px; height: 22px;float: left}
+ul.imgMater li .investigation{background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/icon.png") -152px 0; width: 19px; height: 22px; float: left}
 ul.imgMater li{ width: 400px;height: 50px;float: left;}
 ul.imgMater li .textCard{text-align: center; font-size: 14px;float: left;padding-left: 20px;line-height: 16px;}
 ul.imgMater li .textHouse{text-align: center; font-size: 14px;float: left;padding-left: 20px;line-height: 24px;}
@@ -130,7 +130,7 @@ input, select{ outline:none;}
 .ageBox:hover{ border-color:#295ab4;}
 .city{ height:37px;}
 .city span{ float:left; }
-.city .cityBox{ width:340px; height:38px; border:1px solid #dbdbdb; border-radius:5px; padding-left:10px; font-size:14px; color:#333333; float:left; margin-left:5px; background:url(../images/down.png) no-repeat 318px center; cursor:pointer;}
+.city .cityBox{ width:340px; height:38px; border:1px solid #dbdbdb; border-radius:5px; padding-left:10px; font-size:14px; color:#333333; float:left; margin-left:5px; background:url(http://www.niwodai.com/Public/Static/201404/event/daikuan/images/down.png) no-repeat 318px center; cursor:pointer;}
 .city .cityBox:hover{ border-color:#295ab4;}
 .city .cityBox dl dt{ line-height:35px;}
 .city .cityBox dl{ position:relative;}
@@ -165,9 +165,9 @@ input.miniText:hover{border:1px solid #2577e3 ;}
 .conResult .conRes .monthlyNum .moneyAm,.conResult .Total .moneyTo{font-size: 24px; color:#2577e3; }
 .conResult .conRes .monthlyNum{padding-bottom: 10px;}
 .conResult{ width: 248px;border: 1px solid #dcdcdc;}
-.bottomCalc .pngArrow{background: url("../images/icon.png") -154px -76px no-repeat;width: 33px;height: 33px;display: inline-block;margin-top: 1px;}
+.bottomCalc .pngArrow{background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/icon.png") -154px -76px no-repeat;width: 33px;height: 33px;display: inline-block;margin-top: 1px;}
 #ErorrMess{ color: #ff0600;font-size: 12px;}
-.icon-yuan{ background: url("../images/icon-r-yuan.png")no-repeat right 50% #fff;}
+.icon-yuan{ background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/icon-r-yuan.png")no-repeat right 50% #fff;}
 
 /*借款首页*/
 #bannerWrap{ width:100%; height:300px; overflow:hidden; line-height:0; position:relative;min-width: 1180px;}
@@ -177,8 +177,8 @@ input.miniText:hover{border:1px solid #2577e3 ;}
 #bannerWrap ul.buttonDot li{ width:15px; height:15px; background-color:#666; color:white; line-height:20px; text-align:center; float:left; margin-right:10px;cursor: pointer;border-radius: 15px;}
 #bannerWrap ul.buttonDot li.choice{ background-color:#F60;}
 #bannerWrap .prev,#bannerWrap .next{z-index: 9999;width: 50px;height: 300px;background-color: #0000A1;opacity: .3;position: absolute;cursor: pointer}
-#bannerWrap .prev{ top:0;left: 0;background: url("../images/arrow-left-light.png") 20px 125px no-repeat;  }
-#bannerWrap .next{ top: 0;right: 0;background: url("../images/arrow-right-light.png") 1px 125px no-repeat}
+#bannerWrap .prev{ top:0;left: 0;background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/arrow-left-light.png") 20px 125px no-repeat;  }
+#bannerWrap .next{ top: 0;right: 0;background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/arrow-right-light.png") 1px 125px no-repeat}
 #bannerWrap .prev a:hover{opacity: 1}
 #bannerWrap .next a:hover{opacity: 1}
 
@@ -193,7 +193,7 @@ input.miniText:hover{border:1px solid #2577e3 ;}
 
 #loanMain{ min-width: 1180px;margin: 20px auto 0 auto;overflow: hidden;}
 #loanMain .explainPro{height: 360px;width: 1180px;background-color: #fff;box-shadow:0 1px 2px #eee;margin: 0 auto}
-#loanMain .explainPro .leftTitle{background: url("../images/main_bg.jpg") no-repeat;width: 280px;height: 360px;float: left;text-align: center;color: #fff;}
+#loanMain .explainPro .leftTitle{background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/main_bg.jpg") no-repeat;width: 280px;height: 360px;float: left;text-align: center;color: #fff;}
 #loanMain .explainPro .leftTitle .textMo{ padding-top: 35px;font-size: 20px;opacity: 0.9}
 #loanMain .explainPro .leftTitle p{font-size: 14px;opacity: 0.9}
 #loanMain .explainPro .leftTitle .numPeople{padding-top:25px;opacity: 0.9}
@@ -202,13 +202,14 @@ input.miniText:hover{border:1px solid #2577e3 ;}
 .rightList dl.newsRelease{ width: 900px;height: 180px;}
 .rightList dl.newsRelease .textProducts{padding: 36px 0 24px 40px;font-size: 20px;}
 .rightList dl.newsRelease .textProducts .fontCo{color: #2577e3;font-size: 20px;}
-.rightList dl.newsRelease .details{float: left;padding: 0 0 0 40px;width: 220px;}
-.rightList dl.newsRelease .details .textQuo{ color: #999;display: block;font-size: 14px;padding-bottom: 6px;}
-.rightList dl.newsRelease .details .textNumb{ display: block;font-size: 16px;}
+.rightList dl.newsRelease .detail{float: left;padding: 0 0 0 40px;width: 300px;}
+.rightList dl.newsRelease .details{float: left;padding: 0 0 0 40px;width: 200px;}
+.rightList dl.newsRelease .details .textQuo,.rightList dl.newsRelease .detail .textQuo{ color: #999;display: block;font-size: 14px;padding-bottom: 6px;}
+.rightList dl.newsRelease .details .textNumb,.rightList dl.newsRelease .detail .textNumb{ display: block;font-size: 16px;}
 .lineBottom{ border-bottom: 1px solid #eee;width: 820px;margin: 0 auto}
-.symbol{background: url("../images/icon.png") -237px -86px no-repeat;width: 63px; height: 21px;vertical-align: middle;margin-left: 10px;margin-top: -2px;}
-.symbolCard{background: url("../images/icon.png") -237px -86px no-repeat;width: 63px; height: 21px;vertical-align: middle;margin-left: 10px;margin-top: -2px;}
-.symbolE{background: url("../images/icon.png") 0 -86px no-repeat;width: 63px; height: 21px;vertical-align: middle;margin-left: 8px;margin-top: -2px;}
+.symbol{background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/icon.png") -237px -86px no-repeat;width: 63px; height: 21px;vertical-align: middle;margin-left: 10px;margin-top: -2px;}
+.symbolCard{background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/icon.png") -237px -86px no-repeat;width: 63px; height: 21px;vertical-align: middle;margin-left: 10px;margin-top: -2px;}
+.symbolE{background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/icon.png") 0 -86px no-repeat;width: 63px; height: 21px;vertical-align: middle;margin-left: 8px;margin-top: -2px;}
 
 .products_description{ width: 1180px;height: 240px;margin: 20px auto 0 auto;}
 .products_description .leftProducts{ width: 580px;height: 240px;margin-right: 20px;background-color: #fff;float: left;box-shadow:0 1px 2px #eee;position: relative;cursor: pointer;}
@@ -227,16 +228,16 @@ input.miniText:hover{border:1px solid #2577e3 ;}
 .borrowingPro .topPro{height: 54px;width: 1180px;border-bottom: 1px solid #eee;}
 .borrowingPro .topPro h3{font-size: 20px;float: left;padding-left: 40px;line-height: 55px;}
 .borrowingPro .topPro .textEx{float: right;line-height: 55px;padding-right: 30px;color: #999;font-size: 14px;}
-.markIc{background: url("../images/icon.png") -217px 0 no-repeat;width: 22px;height: 22px;vertical-align: middle;margin-right: 10px;}
+.markIc{background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/icon.png") -217px 0 no-repeat;width: 22px;height: 22px;vertical-align: middle;margin-right: 10px;}
 
 .textTecProcess{height: 185px;width: 1180px;}
 .textTecProcess ul.process li{float: left; width: 295px;position: relative;}
-.textTecProcess ul.process li .fillInApp{background: url("../images/icon.png") -74px -31px no-repeat;width: 29px;height: 30px;margin: 50px auto 0 auto;}
-.textTecProcess ul.process li .fillInCon{background: url("../images/icon.png") -111px -31px no-repeat;width: 31px;height: 30px;margin: 50px auto 0 auto;}
-.textTecProcess ul.process li .fillInMat{background: url("../images/icon.png") -152px -31px no-repeat;width: 28px;height: 29px;margin: 50px auto 0 auto;}
-.textTecProcess ul.process li .fillInEnd{background: url("../images/icon.png") -188px -31px no-repeat;width: 28px;height: 30px;margin: 50px auto 0 auto;}
+.textTecProcess ul.process li .fillInApp{background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/icon.png") -74px -31px no-repeat;width: 29px;height: 30px;margin: 50px auto 0 auto;}
+.textTecProcess ul.process li .fillInCon{background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/icon.png") -111px -31px no-repeat;width: 31px;height: 30px;margin: 50px auto 0 auto;}
+.textTecProcess ul.process li .fillInMat{background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/icon.png") -152px -31px no-repeat;width: 28px;height: 29px;margin: 50px auto 0 auto;}
+.textTecProcess ul.process li .fillInEnd{background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/icon.png") -188px -31px no-repeat;width: 28px;height: 30px;margin: 50px auto 0 auto;}
 .textTecProcess ul.process li .text_fillInApp{text-align: center;padding-top: 30px;font-size: 16px;}
-.textTecProcess ul.process li .right_Arrow{position: absolute;background: url("../images/icon.png") -246px 0 no-repeat;width: 44px;height: 12px;right: 0;top:50%;margin-top:-6px;}
+.textTecProcess ul.process li .right_Arrow{position: absolute;background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/icon.png") -246px 0 no-repeat;width: 44px;height: 12px;right: 0;top:50%;margin-top:-6px;}
 
 #loanMain .faqsPro{height: 440px;width: 1180px;background-color: #fff;margin: 20px auto 2px auto;box-shadow: 0 1px 2px #eee;}
 .faqsPro .text_faqsTop{width: 1180px;height: 54px;border-bottom: 1px solid #eee}
@@ -250,3 +251,26 @@ input.miniText:hover{border:1px solid #2577e3 ;}
 #loanMain .faqsPro .textWord dl.text_master dd{font-size: 14px;color: #666;}
 #loanMain .faqsPro .textWord dl.text_master dd a{color: #2577e3}
 .bannerImg{display:inline-block;}
+
+
+/* Float Shadow */
+.leftProducts,.rightProducts {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -webkit-transition-property: all;
+    transition-property: all;
+
+}
+.leftProducts:hover, .leftProducts:focus, .leftProducts:active,.rightProducts:hover, .rightProducts:focus, .rightProducts:active  {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    box-shadow:0 8px 10px 0 #ccc;
+}
