@@ -12,19 +12,21 @@
     <script type="text/javascript" src="http://static2.niwodai.com/Public/Static/201404/js/jquery-1.7.2.min.js"></script>
     <script type="text/javascript" src="/js/index.js?v=20160714195229.js"></script>
     <script src="//assets.adobedtm.com/c8ea0a653764b7f183397c1c6c6482bb4c159ac0/satelliteLib-5d50ccbd6e1caa58a49b64ba8fcf89a0597c0ce9.js"></script>
-
 </head>
 
 <body>
+<style type="text/css">
+    #bannerWrap ul.buttonDot{margin-left: -75px;}
+</style>
 <link href="http://static3.niwodai.com/Public/Static/201603/css/nwd_common.css?v=20160811180325.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="css/reset.min.css">
-<link href="css/style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="js/myjquery.js"></script>
+<link rel="stylesheet" type="text/css" href="http://www.niwodai.com/Public/Static/201404/event/daikuan/css/reset.min.css">
+<link href="http://www.niwodai.com/Public/Static/201404/event/daikuan/css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://www.niwodai.com/Public/Static/201404/event/daikuan/js/myjquery.js"></script>
 <script type="text/javascript" desc="Adobe">
-    s.pageName = "借款：借款产品";
+    s.pageName = "借款：借款频道首页";
     s.channel = "借款";
-    s.prop1 = "借款：借款产品";
-    s.prop2 = "借款：借款产品";
+    s.prop1 = "借款：借款频道首页";
+    s.prop2 = "借款：借款频道首页";
     s.prop5 = "PC";
     var s_code = s.t();
     if (s_code) {
@@ -140,11 +142,10 @@
 </div>
 <!--header and-->
 
-
 <!--Main start-->
 <div id="bannerWrap">
     <ul class="imgToggle">
-        <li><a class="bannerImg" href="http://www.niwodai.com/event.mhtml?artId=3800001348959392&intcmp=banner5&h=1&f=1" ><img src="http://www.niwodai.com/index.do?method=imageView&imgPath=articlePic/20160810/4979be3f-4a51-423a-977b-22bfb6b00e2a.jpeg"/></a></li>
+        <li><a class="bannerImg" href="http://www.niwodai.com/event.mhtml?artId=3800001348959392&intcmp=banner5&h=1&f=1" ><img src="http://www.niwodai.com/index.do?method=imageView&imgPath=articlePic/20160815/bead736f-2dcc-4e5a-8b1c-c0c83df7ea57.jpeg"/></a></li>
         <li><a class="bannerImg" href="http://www.niwodai.com/index.do?method=ac&artId=3800001319132178&h=1&f=1">
             <img src="http://www.niwodai.com/index.do?method=imageView&imgPath=articlePic/20160803/827beed9-811f-482f-a00a-412fc71c27f5.jpeg"/></a></li>
         <li><a class="bannerImg" href="http://www.niwodai.com/daikuan/">
@@ -254,9 +255,15 @@
     </div>
     <script type="text/javascript">
         function ulrHtml(num){
-            var toUrl = "jiekuan.html?"+num+"&intcmp=button"+num;
+            var toUrl = "jiekuan.html"+"&intcmp=button"+num+"?"+num;
             window.open(toUrl);
         }
+
+        $(document).ready(function(){
+            $('.textWord,.textMore').click(function(event){
+                event.stopPropagation();
+            })
+        });
     </script>
 
     <div class="borrowingPro">
@@ -648,7 +655,6 @@
         dataType:"json",
         success : function(data) {
             $("#myTargetElement").html(data.totalBorrower);//成功借款人数
-
         }
     });
 </script>
