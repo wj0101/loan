@@ -12,19 +12,31 @@
     <script type="text/javascript" src="http://static2.niwodai.com/Public/Static/201404/js/jquery-1.7.2.min.js"></script>
     <script type="text/javascript" src="/js/index.js?v=20160714195229.js"></script>
     <script src="//assets.adobedtm.com/c8ea0a653764b7f183397c1c6c6482bb4c159ac0/satelliteLib-5d50ccbd6e1caa58a49b64ba8fcf89a0597c0ce9.js"></script>
-
 </head>
 
 
 <body >
 
-<link rel="stylesheet" type="text/css" href="css/reset.min.css">
+
+<link rel="stylesheet" type="text/css" href="http://www.niwodai.com/Public/Static/201404/event/daikuan/css/reset.min.css">
 <link href="css/style.css" rel="stylesheet" type="text/css" />
-<link href="http://static.niwodai.com/Public/Static/201603/css/nwd_common.css?v=20160802043108.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="js/myjquery.js"></script>
 <link href="http://static.niwodai.com/Public/Static/201603/css/nwd_common.css?v=20160802043108.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="http://static.niwodai.com/Public/Static/201603/js/nwd_common.js?v=20160802043103.js"></script>
 <script type="text/javascript" src="http://static2.niwodai.com/Public/Static/201404/js/common.js?v=20160802044634.js"></script>
+<script type="text/javascript" desc="Adobe">
+    s.pageName = "借款：借款频道产品";
+    s.channel = "借款";
+    s.prop1 = "借款：借款频道产品";
+    s.prop2 = "借款：借款频道产品";
+    s.prop5 = "PC";
+    var s_code = s.t();
+    if (s_code) {
+        document.write(s_code);
+    }
+</script>
+<script type="text/javascript" src="js/myjquery.ad.js"></script>
+<script type="text/javascript" src="js/jiekuan.verification.js"></script>
+<script type="text/javascript" src="js/idcode.verification.js"></script>
 
 <!--nav-->
 <script>
@@ -99,52 +111,7 @@
         } else {
             $('.box02').attr('display', 'block')
         }
-        //			   $('.iphone_txt').val('请输入手机号码').css('color','#999');
-        //			   $('.tuxin_txt').val('请输入图形验证码').css('color','#999');
-        //			   $('.duanxin_txt').val('请输入短信码').css('color','#999');
-        //
-        //			   $('.iphone_txt').focus(function(){
-        //
-        //			   	 $('.iphone_txt').val('');
-        //
-        //			   });
-        //
-        //			  $('.iphone_txt').blur(function(){
-        //			  	   if($(this).length==0)
-        //			  	   {
-        //			  	   	$('.iphone_txt').val('请输入手机号码').css('color','#999');
-        //			  	   }
-        //
-        //			  });
-        //			   $('.tuxin_txt').focus(function(){
-        //
-        //			   	 $('.tuxin_txt').val('');
-        //
-        //			   });
-        //
-        //			  $('.tuxin_txt').blur(function(){
-        //
-        //			  	   if($(this).length==0)
-        //			  	   {
-        //			  	   	$('.tuxin_txt').val('请输入手机号码').css('color','#999');
-        //			  	   }
-        //
-        //			  });
-        //			   $('.duanxin_txt').focus(function(){
-        //
-        //			   	 $('.duanxin_txt').val('');
-        //
-        //			   });
-        //
-        //			  $('.duanxin_txt').blur(function(){
-        //
-        //			  	    if($(this).length==0)
-        //			  	   {
-        //			  	   	$('.duanxin_txt').val('请输入手机号码').css('color','#999');
-        //			  	   }
-        //			  });
-        //
-        //
+        
     });
 </script>
 <!--header start-->
@@ -231,7 +198,7 @@
                             <a class="navphoto fs_16 fl mar_l10" href="javaScript:;" title="我的账户">
                                 <i class="mar_r5 relative">
                                     <img id="small-tx" src="http://static.niwodai.com/Public/Static/201603/manage/img/smalltx.png">
-                                    <img id="smallImg" alt="头像" src="http://static.niwodai.com/Public/Static/201603/manage/images/touxiang.jpg" class="smallmytxPic">
+                                    <img id="smallImg" alt="头像" src="http://static3.niwodai.com/Public/Static/201603/manage/images/touxiang.jpg" class="smallmytxPic">
                                 </i></a>
 
                             <div class="Ledger_name pad_t5">
@@ -252,7 +219,6 @@
 </div>
 <!--header and-->
 
-
 <!--导航-->
 <div class="navWarp">
 	<div class="warp">
@@ -264,7 +230,7 @@
             	<a href="javascript:;">借款产品</a>
             </li>
         	<li>
-                <a href="http://www.niwodai.com/help/jiekshenqing.html">借款攻略</a>
+                <a href="http://www.niwodai.com/activity.mhtml?artId=3800000435636409&f&h">借款攻略</a>
             </li>
             <li class="calculatorRight">
                 <a href="javascript:;" class="hover">
@@ -324,6 +290,8 @@
 
 <!--内容-->
 <div id="menuWarp">
+	<input type="hidden" id="isSubmitSuccess" name="isSubmitSuccess" value="0">
+	<input type="hidden" id="selectNum" name="selectNum" value="">
     <div class="siderbar">
         <div class="buttonCard">
             <!--
@@ -366,138 +334,137 @@
     </div>
     <div class="container">
         <!--嘉保贷-->
-        <div class="loanProducts" >
-                <div class="topBanner_protect">
-                    <h2 class="textTitle">嘉保贷</h2>
-                    <h3 class="textMessage">有寿险保单就能申请</h3>
+        <div class="loanProducts jiabao" >
+            <div class="topBanner_protect">
+                <h2 class="textTitle">嘉保贷</h2>
+                <h3 class="textMessage">有寿险保单就能申请</h3>
+            </div>
+            <div class="applications">
+                <ul class="textApply">
+                    <li>
+                        <div class="textNum">借款额度（元）：</div>
+                        <div class="quota">2-50万</div>
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                        <div class="date">借款期限：<em>12、24、36个月</em></div>
+                        <div class="time">审批时间：<em>快至2个工作日</em></div>
+                    </li>
+                    <li>
+                        <div class="applyBto">
+                            <a href="javascript:;"  class="btnbao1"><img src="http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_15.png"></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="applyProcess">
+                <h3 class=" otherSty">申请流程</h3>
+                <ul class="content">
+                    <li>
+                        <div class="fillIn"></div>
+                        <div class="fillText">
+                            1.填写借款申请
+                        </div>
+                        <i class="rightRrrow"></i>
+                    </li>
+                    <li>
+                        <div class="contact"></div>
+                        <div class="fillText">
+                            2.借款专员与您联系
+                        </div>
+                        <i class="rightRrrow"></i>
+                    </li>
+                    <li>
+                        <div class="material "></div>
+                        <div class="fillText">
+                            3.提交材料，借款审批
+                        </div>
+                        <i class="rightRrrow"></i>
+                    </li>
+                    <li>
+                        <div class="payment"></div>
+                        <div class="fillText">
+                            4.审批结束，借款支付
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="master">
+                <div class="qualifications">
+                    <h3 class="textProcess">申请资格</h3>
+                    <div class="applicationCon">
+                        &bull; 年龄 23 周岁 -55 周岁的中国大陆公民（港、澳、台除外）<br>
+                        &bull; 申请人名下有所投人寿保险保单（缴费期未满或已满不超过1年）<br>
+                        &bull; 保单总缴费期限≥ 3 年，缴款方式1年内没有发生变化<br>
+                        &bull; 三非客户（非本地户籍，非当地居住半年，非当地经营/工作半年）除外
+                    </div>
+                    <div class="textLine"></div>
                 </div>
-                <div class="applications">
-                    <ul class="textApply">
+
+                <div class="materials">
+                    <h3 class="textProcess">申请材料</h3>
+                    <ul class="imgMater">
                         <li>
-                            <div class="textNum">借款额度（元）：</div>
-                            <div class="quota">2-50万</div>
+                            <div class="cardID"></div>
+                            <div class="textCard">
+                                申请人二代身份证
+                            </div>
                         </li>
-                        <li class="line"></li>
                         <li>
-                            <div class="date">借款期限：<em>12、24、36个月</em></div>
-                            <div class="time">审批时间：<em>快至2个工作日</em></div>
+                            <div class="creditReport"></div>
+                            <div class="textReport">
+                                申请人1个月内信用报告
+                            </div>
                         </li>
                         <li>
-                            <div class="applyBto">
-                                <a href="javascript:;" id="butLoan"><img src="http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_15.png"></a>
+                            <div class="policy"></div>
+                            <div class="textPolicy">
+                                申请人寿险保单截图
+                            </div>
+                        </li>
+                        <li>
+                            <div class="investigation"></div>
+                            <div class="textInvest">
+                                嘉保贷保单调查表
                             </div>
                         </li>
                     </ul>
-                </div>
-                <div class="applyProcess">
-                    <h3 class=" otherSty">申请流程</h3>
-                    <ul class="content">
-                        <li>
-                            <div class="fillIn"></div>
-                            <div class="fillText">
-                                1.填写借款申请
-                            </div>
-                            <i class="rightRrrow"></i>
-                        </li>
-                        <li>
-                            <div class="contact"></div>
-                            <div class="fillText">
-                                2.借款专员与您联系
-                            </div>
-                            <i class="rightRrrow"></i>
-                        </li>
-                        <li>
-                            <div class="material "></div>
-                            <div class="fillText">
-                                3.提交材料，借款审批
-                            </div>
-                            <i class="rightRrrow"></i>
-                        </li>
-                        <li>
-                            <div class="payment"></div>
-                            <div class="fillText">
-                                4.审批结束，借款支付
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="master">
-                    <div class="qualifications">
-                        <h3 class="textProcess">申请资格</h3>
-                        <div class="applicationCon">
-                            &bull; 年龄 23 周岁 -55 周岁的中国大陆公民（港、澳、台除外）<br>
-                            &bull; 申请人名下有所投人寿保险保单（缴费期未满或已满不超过1年）<br>
-                            &bull; 保单总缴费期限≥ 3 年，缴款方式1年内没有发生变化<br>
-                            &bull; 三非客户（非本地户籍，非当地居住半年，非当地经营/工作半年）除外
-                        </div>
-                        <div class="textLine"></div>
-                    </div>
-
-                    <div class="materials">
-                        <h3 class="textProcess">申请材料</h3>
-                        <ul class="imgMater">
-                            <li>
-                                <div class="cardID"></div>
-                                <div class="textCard">
-                                    申请人二代身份证
-                                </div>
-                            </li>
-                            <li>
-                                <div class="creditReport"></div>
-                                <div class="textReport">
-                                    申请人1个月内信用报告
-                                </div>
-                            </li>
-                            <li>
-                                <div class="policy"></div>
-                                <div class="textPolicy">
-                                    申请人寿险保单截图
-                                </div>
-                            </li>
-                            <li>
-                                <div class="investigation"></div>
-                                <div class="textInvest">
-                                    嘉保贷保单调查表
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="textLine"></div>
-                    </div>
-
-                    <div class="costDescription">
-                        <h3 class="textProcess">费用说明</h3>
-                        <table width="600" border="1" height="90" class="tabStyle">
-                            <tr align="center" valign="middle" height="45">
-                                <td >借款时间</td>
-                                <td>12个月</td>
-                                <td>24个月</td>
-                                <td>36个月</td>
-                            </tr>
-                            <tr align="center" valign="middle" height="45">
-                                <td >借款年利率</td>
-                                <td >10%</td>
-                                <td>11%</td>
-                                <td>12%</td>
-                            </tr>
-                        </table>
-                        <div class="applicationCon">
-                            &bull; 平台管理费: 借款金额的0.3%，按月收取<br>
-                            &bull; 综合服务费: 按不同信用类型进行收取<br>
-                            &bull; 收费示例:  借款100,000，分12期还款；月还款10364，月均成本2.03%
-                        </div>
-                    </div>
-                </div>
-                <div class="footerApply">
-                    <h2 class="textBrand">嘉保贷</h2>
-                    <h3 class="textExplain">有寿险保单就能借</h3>
-                    <div class="imgBtn">
-                        <a href="javascript:;"><img src="http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_15.png"></a>
-                    </div>
+                    <div class="textLine"></div>
                 </div>
 
+                <div class="costDescription">
+                    <h3 class="textProcess">费用说明</h3>
+                    <table width="600" border="1" height="90" class="tabStyle">
+                        <tr align="center" valign="middle" height="45">
+                            <td >借款时间</td>
+                            <td>12个月</td>
+                            <td>24个月</td>
+                            <td>36个月</td>
+                        </tr>
+                        <tr align="center" valign="middle" height="45">
+                            <td >借款年利率</td>
+                            <td >10%</td>
+                            <td>11%</td>
+                            <td>12%</td>
+                        </tr>
+                    </table>
+                    <div class="applicationCon">
+                        &bull; 平台管理费: 借款金额的0.3%，按月收取<br>
+                        &bull; 综合服务费: 按不同信用类型进行收取<br>
+                        &bull; 收费示例:  借款100,000，分12期还款；月还款10364，月均成本2.03%
+                    </div>
+                </div>
+            </div>
+            <div class="footerApply">
+                <h2 class="textBrand">嘉保贷</h2>
+                <h3 class="textExplain">有寿险保单就能借</h3>
+                <div class="imgBtn">
+                    <a href="javascript:;"  class="btnbao2"><img src="http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_15.png"></a>
+                </div>
+            </div>
         </div>
         <!--嘉英贷-->
-        <div class="loanProducts hideCon" >
+        <div class="loanProducts jiaying hideCon" >
             <div class="topBanner_britain">
                 <h2 class="textTitle">嘉英贷</h2>
                 <h3 class="textMessage">社保/公积金借款</h3>
@@ -515,7 +482,7 @@
                     </li>
                     <li>
                         <div class="applyBto">
-                            <a href="javascript:;"><img src="http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_15.png"></a>
+                            <a href="javascript:;" class="btnying1"><img src="http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_15.png"></a>
                         </div>
                     </li>
                 </ul>
@@ -617,12 +584,12 @@
                 <h2 class="textBrand">嘉英贷</h2>
                 <h3 class="textExplain">社保/公积金借款</h3>
                 <div class="imgBtn">
-                    <a href="javascript:;"><img src="http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_15.png"></a>
+                    <a href="javascript:;" class="btnying2"><img src="http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_15.png"></a>
                 </div>
             </div>
         </div>
         <!--嘉房贷-->
-        <div class="loanProducts hideCon" >
+        <div class="loanProducts jiafang hideCon" >
             <div class="topBanner_house">
                 <h2 class="textTitle">嘉房贷</h2>
                 <h3 class="textMessage">按揭房贷借款</h3>
@@ -640,7 +607,7 @@
                     </li>
                     <li>
                         <div class="applyBto">
-                            <a href="javascript:;"><img src="http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_15.png"></a>
+                            <a href="javascript:;" class="btnfang1"><img src="http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_15.png"></a>
                         </div>
                     </li>
                 </ul>
@@ -739,12 +706,12 @@
                 <h2 class="textBrand">嘉房贷</h2>
                 <h3 class="textExplain">按揭房贷借款</h3>
                 <div class="imgBtn">
-                    <a href="javascript:;"><img src="http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_15.png"></a>
+                    <a href="javascript:;" class="btnfang2"><img src="http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_15.png"></a>
                 </div>
             </div>
         </div>
         <!--嘉车贷-->
-        <div class="loanProducts hideCon" >
+        <div class="loanProducts jiache hideCon" >
             <div class="topBanner_car">
                 <h2 class="textTitle">嘉车贷</h2>
                 <h3 class="textMessage">有车贷都能申请</h3>
@@ -762,7 +729,7 @@
                     </li>
                     <li>
                         <div class="applyBto">
-                            <a href="javascript:;"><img src="http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_15.png"></a>
+                            <a href="javascript:;" class="btnche1"><img src="http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_15.png"></a>
                         </div>
                     </li>
                 </ul>
@@ -869,12 +836,12 @@
                 <h2 class="textBrand">嘉车贷</h2>
                 <h3 class="textExplain">有车贷都能借</h3>
                 <div class="imgBtn">
-                    <a href="javascript:;"><img src="http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_15.png"></a>
+                    <a href="javascript:;" class="btnche2"><img src="http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_15.png"></a>
                 </div>
             </div>
         </div>
         <!--宅抵贷-->
-        <div class="loanProducts hideCon" >
+        <div class="loanProducts jiahouse hideCon" >
             <div class="topBanner_home">
                 <h2 class="textTitle">宅抵贷</h2>
                 <h3 class="textMessage">有住宅就能申请</h3>
@@ -892,7 +859,7 @@
                     </li>
                     <li>
                         <div class="applyBto">
-                            <a href="javascript:;"><img src="http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_15.png"></a>
+                            <a href="javascript:;" class="btnzhai1"><img src="http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_15.png"></a>
                         </div>
                     </li>
                 </ul>
@@ -1002,7 +969,7 @@
                 <h2 class="textBrand">宅邸贷</h2>
                 <h3 class="textExplain">有住宅就能借</h3>
                 <div class="imgBtn">
-                    <a href="javascript:;"><img src="http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_15.png"></a>
+                    <a href="javascript:;" class="btnzhai2"><img src="http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_15.png"></a>
                 </div>
             </div>
         </div>
@@ -1019,6 +986,7 @@
                 <input type="hidden" id="period" name="period" value="24">
                 <input type="hidden" id="gender" name="gender" value="0">
                 <input type="hidden" id="income" name="income" value="5000">
+				<input type="hidden" id="loanType" name="loanType" value="0">
                 <input type="hidden" name="stok" id="stokStr" value="c7d1b09c-2e36-4105-ad2a-bf14c919d85f">
                 <div class="topBanner_protect">
                     <h2 class="textTitleS">嘉保贷</h2>
@@ -1032,13 +1000,13 @@
                             <input type="text" id="mobile" name="mobile" placeholder="请输入手机号码" maxlength="11">
                             <p id="mobileError" class="error">请输入真实的手机号码</p>
                         </div>
-                        <div class="iptBox">
+                        <div class="iptBox isLogin">
                             <span class="message">图形验证码</span>
                             <input type="text" class="short" name="imgcode" id="imgcode" placeholder="请输入图形验证码">
                             <img src="/validatecode/refresh.htm?date=new Date()" width="80" height="36" name="imgc" id="imgc" alt="换一张" class="get-code">
                             <p id="imgcodeError" class="error">图形验证码错误，请重新输入</p>
                         </div>
-                        <div class="iptBox">
+                        <div class="iptBox isLogin">
                             <span class="message">短信验证码</span>
                             <input type="text" class="short" name="verify" id="fucode" placeholder="请输入短信验证码">
                             <i><a href="javascript:;" class="get-code" id="dtmbtn" name="dtmbtn" onclick="putyzm()">获取验证码</a></i>
@@ -1048,7 +1016,7 @@
                             <input type="text" id="realName" name="realName" placeholder="请输入真实姓名" maxlength="15">
                             <p id="realNameError" class="error">请输入真实姓名</p>
                         </div>
-                        <div class="iptBox">
+                        <div class="iptBox inputAge">
                             <span>真实年龄</span>
                             <select class="ageBox" id="age" name="age">
                                 <option value="0">请选择年龄段</option>
@@ -1056,10 +1024,11 @@
                                 <option value="40">23岁-55岁</option>
                                 <option value="80">55岁以上</option>
                             </select>
+
                         </div>
                         <div class="iptBox city">
                             <span>所在城市</span>
-                            <div class="cityBox" style="border: 0;background: none;margin-left: 0; padding-left: 0px; width: 360px;">
+                            <div class="cityBox">
                                 <select id="s_province" name="s_province" class="cityB" onchange="findCitys();">
                                     <option selected="selected" value="-1">请选择</option>
                                     <option value="1">北京市</option>
@@ -1116,54 +1085,419 @@
                 </div>
             </form>
         </div>
-        <!--申请成功-->
-        <div class="successful hideCon">
+        <!--补充资料-->
+        <div class="supplementData ">
             <div class="topBanner_home">
-                <h2 class="textTitle">宅抵贷</h2>
-                <h3 class="textMessage">有住宅就能借</h3>
+                <h2 class="textTitle">借款申请</h2>
+                <h3 class="textMessage">额度高至可借50万元</h3>
             </div>
-            <div class="inside">
-                <div class="insideCon">
-                    <div class="succImg"><img src="http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_03.png"></div>
-                    <div class="succText">
-                        <h4>您已申请成功</h4>
-                        <p>请保持手机通畅，我们的工作人员将在2个工作日内联系您<br>您也可以下载你我贷借款APP查看您的借款进度</p>
+            <!--补充资料确认-->
+            <div class="insideData ">
+                <div class="suppleCon">
+                    <div class="suppleImg"><img src="images/index_book.png"></div>
+                    <div class="dataText">
+                        <h4>尊敬的客户，您的借款申请已提交，您可以</h4>
+                        <p>继续补充资料加速借款申请。</p>
+                    </div>
+                </div>
+                <div class="suppleBtn">
+                    <div class="suppleBtnLeft btnAggregate">
+                        <a href="javascript:;" class="supple"><h3>继续补充资料</h3></a>
+                    </div>
+                    <div class="suppleBtnRight btnAggregate">
+                       <h3>等待客服电话</h3>
+                    </div>
+                </div>
+            </div>
+            <!--选择产品-->
+            <div class="supplementProduct hideCon">
+                <div class="suppleProText">
+                    <h3>选择产品</h3>
+                    <p>尊敬的客户，您的借款申请已提交，您可以选择产品后继续补充资料加速放款。</p>
+                </div>
+                <div class="proSelection">
+                    <div class="proLoanChoice">
+                        <h3 class="proName">嘉保贷</h3>
+                        <div class="iconLoan_bao"></div>
+                        <div class="proSurveyText">
+                            适合名下有本人<span>人寿保险单</span>的用户申请
+                        </div>
+                        <div class="proApplyBtn" id="btn_bao">
+                            <a href="javascript:;">选择</a>
+                        </div>
+                    </div>
+                    <div class="proLoanChoice distanceLeft">
+                        <h3 class="proName">嘉英贷</h3>
+                        <div class="iconLoan_ying"></div>
+                        <div class="proSurveyText">
+                            适合有<span>公积金或社保</span>的用户申请
+                        </div>
+                        <div class="proApplyBtn" id="btn_ying">
+                            <a href="javascript:;">选择</a>
+                        </div>
+                    </div>
+                    <div class="proLoanChoice distanceLeft">
+                        <h3 class="proName">嘉房贷</h3>
+                        <div class="iconLoan_fang"></div>
+                        <div class="proSurveyText">
+                            适合有<span>按揭房贷</span>在还的用户申请
+                        </div>
+                        <div class="proApplyBtn" id="btn_fang">
+                            <a href="javascript:;">选择</a>
+                        </div>
+                    </div>
+                    <div class="proLoanChoice distanceLeft">
+                        <h3 class="proName">嘉车贷</h3>
+                        <div class="iconLoan_che"></div>
+                        <div class="proSurveyText">
+                            适合有<span>车贷</span>在还的用户申请
+                        </div>
+                        <div class="proApplyBtn" id="btn_che">
+                            <a href="javascript:;">选择</a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="example">
-                    <div class="imgApp"><img src="http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_07.png"></div>
-                    <div class="appDowns">
-                        <div class="imgCode"><img src="http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_10.png"></div>
-                        <h3>你我贷借款APP</h3>
-                        <p>扫码下载  支持Android 和 iOS</p>
+            </div>
+            <!--基础信息-->
+            <div class="basicInfo hideCon">
+                <div class="suppleProText">
+                    <h3>基础信息</h3>
+                    <p>准确填写以下信息，我们将为您匹配最符合的借款方案。</p>
+                </div>
+                <div class="delCon">
+                    <div class="iptBox">
+                        <span>身份证号</span>
+                        <input type="text" id="card_no" name="card_no" placeholder="身份证号" maxlength="18"  onBlur="javasprit:checktheform();" />
+                        <p id="codeError" class="error">请输入身份证号</p>
                     </div>
+                    <div class="iptBox inputCredit">
+                        <span>信用情况</span>
+                        <select class="credit" id="credit" name="credit">
+                            <option value="0">请选择</option>
+                            <option value="1">无信用卡或贷款</option>
+                            <option value="3">信用良好</option>
+                            <option value="4">严重逾期</option>
+                        </select>
+                    </div>
+                    <div class="iptBox inputJob">
+                        <span class="job">职业</span>
+                        <select class="work" id="work" name="work">
+                            <option value="0">请选择</option>
+                            <option value="1">自雇</option>
+                            <option value="2">授薪</option>
+                            <option value="3">自由职业</option>
+                        </select>
+                    </div>
+                    <div class="iptBox inputYear hideCon">
+                        <span class="manageYear">经营年限-自雇</span>
+                        <input type="text" id="manageYear" name="term"  maxlength="18"  class="icon-yue" />
+
+                    </div>
+                    <div class="iptBox inputJobType hideCon">
+                        <span class="typeText">自雇类型</span>
+                        <select class="jobType" id="jobType" name="jobType">
+                            <option value="0">请选择</option>
+                            <option value="1">法人</option>
+                            <option value="2">股东</option>
+                        </select>
+                    </div>
+                    <div class="iptBox inputWorkYear hideCon">
+                        <span class="workYearText">现单位工作年限-授薪</span>
+                        <input type="text" id="workYear" name="term"  maxlength="18"  class="icon-yue" />
+                    </div>
+                    <input class="nextBtn" type="button" value="下一步" onclick="checktheform();" >
+                </div>
+            </div>
+            <!--表单 嘉保贷-->
+            <div class="perfectInfo loan_bao hideCon">
+                <div class="suppleInfoText">
+                    <h3>完善资料</h3>
+                    <p>准确填写以下信息，我们将为您匹配符合的借款方案，请确保申请人名下有所投<span class="typeColor">人寿保险保单</span></p>
+                </div>
+                <div class="delCon">
+                    <div class="iptBox inputOneself" >
+                        <span>投保人是否为本人</span>
+                        <select class="oneself" id="oneself" name="oneself">
+                            <option value="0">请选择</option>
+                            <option value="1">是本人</option>
+                            <option value="2">不是本人</option>
+                        </select>
+                    </div>
+                    <div class="iptBox inputCurrent">
+                        <span class="currentText">当前缴纳情况</span>
+                        <select class="current" id="current" name="current">
+                            <option value="0">请选择</option>
+                            <option value="1">较差</option>
+                            <option value="2">一般</option>
+                            <option value="3">良好</option>
+                        </select>
+                    </div>
+                    <div class="iptBox inputPayOff">
+                        <span class="payOffText">是否断缴</span>
+                        <select class="payOff" id="payOff" name="payOff">
+                            <option value="0">请选择</option>
+                            <option value="1">有断缴</option>
+                            <option value="2">没有断缴</option>
+                        </select>
+                    </div>
+                    <div class="iptBox inputMode">
+                        <span class="modeText">近一年投保人和缴费方式是否变过</span>
+                        <select class="mode" id="mode" name="mode">
+                            <option value="0">请选择</option>
+                            <option value="1">有变过</option>
+                            <option value="2">没有变过</option>
+                        </select>
+                    </div>
+
+                    <div class="iptBox inputTerm">
+                        <span class="termText">已缴纳期限</span>
+                        <input type="text" id="term" name="term"  maxlength="18"  class="icon-yue" />
+                    </div>
+                    <div class="iptBox inputPremium">
+                        <span class="premiumText">年缴纳保费额</span>
+                        <input type="text" id="premium" name="premium"  maxlength="18"  class="icon-yuan"  />
+                    </div>
+                    <input class="nextBtn2" type="button" value="下一步" id="nextBtn_bao">
+                </div>
+            </div>
+            <!--表单 嘉英贷-->
+            <div class="perfectInfo loan_ying hideCon">
+                <div class="suppleInfoText">
+                    <h3>完善资料</h3>
+                    <p>准确填写以下信息，我们将为您匹配符合的借款方案</p>
+                </div>
+                <div class="delCon">
+                    <div class="iptBox inputSecurity" >
+                        <span class="securityText">是否有社保</span>
+                        <select class="security" id="security" name="security">
+                            <option value="0">请选择</option>
+                            <option value="1">是</option>
+                            <option value="2">否</option>
+                        </select>
+                    </div>
+
+                    <div class="iptBox inputSecurityYear hideCon">
+                        <span class="securityYearText">社保缴纳期限</span>
+                        <input type="text" id="securityYear" name="securityYear"  maxlength="18"  class="icon-yue" />
+                    </div>
+                    <div class="iptBox inputSecurityNum hideCon">
+                        <span class="securityNumText">社保缴纳基数</span>
+                        <input type="text" id="securityNum" name="securityNum"  maxlength="18"  class="icon-yuan"  />
+                    </div>
+
+                    <div class="iptBox inputFund">
+                        <span class="fundText">是否有公积金</span>
+                        <select class="fund" id="fund" name="fund">
+                            <option value="0">请选择</option>
+                            <option value="1">是</option>
+                            <option value="2">否</option>
+                        </select>
+                    </div>
+                    <div class="iptBox inputFundYear hideCon">
+                        <span class="fundYearText">公积金缴纳期限</span>
+                        <input type="text" id="fundYear" name="fundYear"  maxlength="18"  class="icon-yue" />
+                    </div>
+                    <div class="iptBox inputFundNum hideCon">
+                        <span class="fundNumText">公积金缴纳基数</span>
+                        <input type="text" id="fundNum" name="fundNum"  maxlength="18"  class="icon-yuan"  />
+                    </div>
+                    <input class="nextBtn2" type="button" value="下一步" id="nextBtn_ying">
+                </div>
+            </div>
+            <!--表单 嘉房贷-->
+            <div class="perfectInfo loan_fang hideCon">
+                <div class="suppleInfoText">
+                    <h3>完善资料</h3>
+                    <p>准确填写以下信息，我们将为您匹配符合的借款方案</p>
+                </div>
+                <div class="delCon">
+                    <div class="iptBox inputHouses" >
+                        <span class="housesText">住房类型</span>
+                        <select class="houses" id="houses" name="houses">
+                            <option value="0">请选择</option>
+                            <option value="1">商品住宅</option>
+                            <option value="2">商铺</option>
+                            <option value="3">办公楼</option>
+                            <option value="4">厂房</option>
+                            <option value="5">经济/限价房</option>
+                            <option value="6">房改/危改房</option>
+                            <option value="7">小产权房</option>
+                            <option value="8">宅基地/自建房</option>
+                            <option value="9">商住两用房</option>
+                            <option value="10">军改房</option>
+                            <option value="11">其他</option>
+                        </select>
+                    </div>
+                    <div class="iptBox inputHouseMort">
+                        <span class="houseMortText">房按揭情况</span>
+                        <select class="houseMort" id="houseMort" name="houseMort">
+                            <option value="0">请选择</option>
+                            <option value="1">按揭中</option>
+                            <option value="2">全款</option>
+                        </select>
+                    </div>
+                    <div class="iptBox inputMortgage hideCon">
+                        <span class="mortgageText">按揭总期数</span>
+                        <input type="text" id="mortgage" name="mortgage"  maxlength="18"  class="icon-yue" />
+                    </div>
+                    <div class="iptBox inputRepayment hideCon">
+                        <span class="repaymentText">已还款期数</span>
+                        <input type="text" id="repayment" name="repayment"  maxlength="18"  class="icon-yue"  />
+                    </div>
+                    <input class="nextBtn2" type="button" value="下一步" id="nextBtn_fang">
+                </div>
+            </div>
+            <!--表单 嘉车贷-->
+            <div class="perfectInfo loan_che hideCon">
+                <div class="suppleInfoText">
+                    <h3>完善资料</h3>
+                    <p>准确填写以下信息，我们将为您匹配符合的借款方案</p>
+                </div>
+                <div class="delCon">
+                    <div class="iptBox inputOperation" >
+                        <span class="operationText">车辆类型</span>
+                        <select class="operation" id="operation" name="operation">
+                            <option value="0">请选择</option>
+                            <option value="1">非营运</option>
+                            <option value="2">营运</option>
+                        </select>
+                    </div>
+                    <div class="iptBox inputCarMort">
+                        <span class="carMortText">车按揭情况</span>
+                        <select class="carMort" id="carMort" name="carMort">
+                            <option value="0">请选择</option>
+                            <option value="1">按揭中</option>
+                            <option value="2">全款</option>
+                        </select>
+                    </div>
+                    <div class="iptBox inputinsurancePolicy hideCon">
+                        <span class="insurancePolicyText">交强险保单和车贷发放间隔</span>
+                        <input type="text" id="insurancePolicy" name="insurancePolicy"  maxlength="18"  class="icon-yue" />
+                    </div>
+                    <div class="iptBox inputRepayments hideCon">
+                        <span class="repaymentsText">还款月供</span>
+                        <input type="text" id="repayments" name="repayments"  maxlength="18"  class="icon-yuan"  />
+                    </div>
+                    <div class="iptBox inputCarLoanType hideCon">
+                        <span class="carLoanText">车贷类型</span>
+                        <select class="carLoan" id="carLoan" name="carLoan">
+                            <option value="0">请选择</option>
+                            <option value="1">个人按揭贷款</option>
+                            <option value="2">信用卡分期贷款</option>
+                        </select>
+                    </div>
+                    <div class="iptBox inputAlreadyRepay hideCon">
+                        <span class="alreadyRepayText">已还款期限</span>
+                        <input type="text" id="alreadyRepay" name="alreadyRepay"  maxlength="18"  class="icon-yue"  />
+                    </div>
+
+                    <div class="iptBox inputCardInstall hideCon">
+                        <span class="cardInstallText">信用卡分期期限</span>
+                        <input type="text" id="cardInstall" name="cardInstall"  maxlength="18"  class="icon-yue"  />
+                    </div>
+                    <div class="iptBox inputRepayPeriod hideCon">
+                        <span class="repayPeriodText">已还款期限-信用卡</span>
+                        <input type="text" id="repayPeriod" name="repayPeriod"  maxlength="18"  class="icon-yue"  />
+                    </div>
+                    <input class="nextBtn2" type="button" value="下一步" id="nextBtn_che">
                 </div>
             </div>
         </div>
-        <!--申请失败-->
-        <div class="successFail hideCon">
+        <!--申请成功-->
+        <div class="successful hideCon">
             <div class="topBanner_home">
-                <h2 class="textTitle">宅抵贷</h2>
-                <h3 class="textMessage">有住宅就能借</h3>
+                <h2 class="textTitle">借款申请</h2>
+                <h3 class="textMessage">额度高至可借50万元</h3>
+            </div>
+            <div class="inside insideCon">
+                <div class="insideCon">
+                    <div class="succImg"><img src="http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_03.png"></div>
+                    <div class="succText ">
+                        <h4>恭喜您，申请成功！</h4>
+                        <p>我们的客服专员会在1-2个工作日内联系您，安排送审，请保持您的手机畅通。</p>
+                    </div>
+                </div>
+                <div class="example exampleTop">
+                    <div class="imgApp"><img src="images/index_07.jpg"></div>
+                    <div class="appDowns">
+                        <div class="imgCodeIos"><a href="#"><img src="images/index_10.jpg"></a></div>
+                        <div class="imgCodeAnd"><a href="#"><img src="images/index_13.jpg"></a></div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!--产品选择申请失败-->
+        <div class="successFail failProduct hideCon">
+            <div class="topBanner_home">
+                <h2 class="textTitle">借款申请</h2>
+                <h3 class="textMessage">额度高至可借50万元</h3>
             </div>
             <div class="inside">
                 <div class="insideFail">
                     <div class="succImg"><img src="http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_17.png"></div>
-                    <div class="succText">
-                        <h4>很抱歉，由于城市或年龄不符，暂无法申请</h4>
-                        <p>您目前只能通过手机下载客户端申请借款！</p>
+                    <div class="succText textWidth">
+                        <h4>很抱歉，您的申请条件与本产品匹配度不高！</h4>
+                        <p>您也可以使用手机下载你我贷借款APP，申请最新快速借款产品，无需上门，
+                            快至当天放款，高至可借50000元</p>
                     </div>
                 </div>
 
-                <div class="example">
-                    <div class="imgApp"><img src="http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_07.png"></div>
+                <div class="example exampleTop2">
+                    <div class="imgApp"><img src="images/index_07.jpg"></div>
                     <div class="appDowns">
-                        <div class="imgCode"><img src="http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_10.png"></div>
-                        <h3>你我贷借款APP</h3>
-                        <p>扫码下载  支持Android 和 iOS</p>
+                        <div class="imgCodeIos"><a href="#"><img src="images/index_10.jpg"></a></div>
+                        <div class="imgCodeAnd"><a href="#"><img src="images/index_13.jpg"></a></div>
                     </div>
                 </div>
+
+                <div class="againCon">
+                    <h3>或者重新选择您的借款产品，进行匹配</h3>
+                    <ul class="againBtn">
+                        <li class="blueSucc">
+                            <a class="btnStyle" href="javascript:;">嘉保贷</a>
+                        </li>
+                        <li class="blueSucc">
+                            <a class="btnStyle" href="javascript:;">嘉英贷</a>
+                        </li>
+                        <li class="blueSucc">
+                            <a class="btnStyle" href="javascript:;">嘉房贷</a>
+                        </li>
+                        <li class="failBtns disabled" >
+                            <a class="btnStyle" href="javascript:;">嘉车贷</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <!--申请失败-->
+        <div class="successFail failType hideCon">
+            <div class="topBanner_home">
+                <h2 class="textTitle">借款申请</h2>
+                <h3 class="textMessage">额度高至可借50万元</h3>
+            </div>
+            <div class="inside">
+                <div class="insideFail">
+                    <div class="succImg"><img src="http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_17.png"></div>
+                    <div class="succText textWidth">
+                        <h4>很抱歉，您的申请条件与本产品匹配度不高！</h4>
+                        <p>您也可以使用手机下载你我贷借款APP，申请最新快速借款产品，无需上门，
+                            快至当天放款，高至可借50000元</p>
+                    </div>
+                </div>
+
+                <div class="example exampleTop">
+                    <div class="imgApp"><img src="images/index_07.jpg"></div>
+                    <div class="appDowns">
+                        <div class="imgCodeIos"><a href="#"><img src="images/index_10.jpg"></a></div>
+                        <div class="imgCodeAnd"><a href="#"><img src="images/index_13.jpg"></a></div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </div>
@@ -1542,6 +1876,8 @@
     }
 </script>
 <script type="text/javascript">
+
+	
     $(function(){
         $.ajax({
             type: "get",
@@ -1550,15 +1886,57 @@
             contentType: "application/x-www-form-urlencoded; charset=UTF-8",
             success: function(data){
                 if(data.status=='success'){
-                    $('.container .loanProducts').css('display','none');
-                    $('.applyLoan').css('display','block');
-                    $(window).scrollTop(0)
-                    $(".isLogin").hide();
-                    $("#mobile").val(data.phone);
-                    $("#realName").val(data.uname);
+				var isSubmitSuccess = $("#isSubmitSuccess").val();
+					if(isSubmitSuccess==0){
+						$('.container .loanProducts').css('display','none');
+						$('.applyLoan').css('display','block');
+						$(window).scrollTop(0);
+						$(".isLogin").hide();
+						$("#mobile").val(data.phone);
+						$("#realName").val(data.uname);
+					}else if(isSubmitSuccess==1){
+						$("#isSubmitSuccess").val(0);
+						$(".isLogin").hide();
+						$("#mobile").val(data.phone);
+						$("#realName").val(data.uname);
+					}
+     
                 }
             }
         });
+		
+		$('#menuWarp ul.asideList li').click(function(){
+			var num=$(this).index();
+			$("#loanType").val(num);		
+		});
+	
+	
+		var num = $("#selectNum").val();
+		if(num!=''){
+			$('#menuWarp ul.asideList li').eq(num).addClass('hoverButton').siblings('li').removeClass('hoverButton');
+			if(num==0){
+				$(".applyLoan .topBanner_protect,.successful .topBanner_home,.successFail .topBanner_home").css({'background':'url(http://www.niwodai.com/Public/Static/201404/event/daikuan/images/banner_1.jpg)' });
+				$(".applyLoan .textTitle,.successful .textTitle,.successFail .textTitle").text('嘉保贷');
+				$(".applyLoan .textMessage,.successful .textMessage,.successFail .textMessage").text('有寿险保单就能借');
+			}else if(num==1){
+				$(".applyLoan .topBanner_protect,.successful .topBanner_home,.successFail .topBanner_home").css({'background':'url(http://www.niwodai.com/Public/Static/201404/event/daikuan/images/banner_1.jpg)' });
+				$(".applyLoan .textTitle,.successful .textTitle,.successFail .textTitle").text('嘉英贷');
+				$(".applyLoan .textMessage,.successful .textMessage,.successFail .textMessage").text('社保/公积金借款')
+			}else if(num==2	){
+				$(".applyLoan .topBanner_protect,.successful .topBanner_home,.successFail .topBanner_home").css({'background':'url(http://www.niwodai.com/Public/Static/201404/event/daikuan/images/banner_1.jpg)' });
+				$(".applyLoan .textTitle,.successful .textTitle,.successFail .textTitle").text('嘉房贷');
+				$(".applyLoan .textMessage,.successful .textMessage,.successFail .textMessage").text('按揭房贷借款')
+			}else if(num==3	){
+				$(".applyLoan .topBanner_protect,.successful .topBanner_home,.successFail .topBanner_home").css({'background':'url(http://www.niwodai.com/Public/Static/201404/event/daikuan/images/banner_1.jpg)' });
+				$(".applyLoan .textTitle,.successful .textTitle,.successFail .textTitle").text('嘉车贷');
+				$(".applyLoan .textMessage,.successful .textMessage,.successFail .textMessage").text('有车贷都能借')
+			}else if(num==4	){
+				$(".applyLoan .topBanner_protect,.successful .topBanner_home,.successFail .topBanner_home").css({'background':'url(http://www.niwodai.com/Public/Static/201404/event/daikuan/images/banner_1.jpg)' });
+				$(".applyLoan .textTitle,.successful .textTitle,.successFail .textTitle").text('宅抵贷');
+				$(".applyLoan .textMessage,.successful .textMessage,.successFail .textMessage").text('有住宅就能借')
+			}
+		}
+		
 
 
         $('.city .cityBox').click(function(e) {
