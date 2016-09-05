@@ -1,44 +1,129 @@
+var num=0;
 $(function(){
 	var text=$('#menuWarp ul.asideList li');
 	var tab=$('.container .loanProducts');
+
 	setTimeout(function(){
 		var location = window.location.href;
 		var href= location+"";
 		var href_part=href.split("?");
-		var numB=(href_part[1])*1;
+		var numB=(href_part[1]*1);
+		num=numB;
+
+		$("#save").click(function(){
+			if(num==0){
+				var s = s_gi(s_account);
+				s.linkTrackVars = "eVar75,events";
+				s.linkTrackEvents = "event100";
+				s.eVar75 = "嘉保贷立即申请3";
+				s.events = "event100";
+				s.tl(this, 'o', 'custom');
+			}else if(num==1){
+				var s = s_gi(s_account);
+				s.linkTrackVars = "eVar75,events";
+				s.linkTrackEvents = "event100";
+				s.eVar75 = "嘉英贷立即申请3";
+				s.events = "event100";
+				s.tl(this, 'o', 'custom');
+			}else if(num==2){
+				var s = s_gi(s_account);
+				s.linkTrackVars = "eVar75,events";
+				s.linkTrackEvents = "event100";
+				s.eVar75 = "嘉房贷立即申请3";
+				s.events = "event100";
+				s.tl(this, 'o', 'custom');
+			}else if (num==3){
+				var s = s_gi(s_account);
+				s.linkTrackVars = "eVar75,events";
+				s.linkTrackEvents = "event100";
+				s.eVar75 = "嘉车贷立即申请3";
+				s.events = "event100";
+				s.tl(this, 'o', 'custom');
+			}else if (num==4){
+				var s = s_gi(s_account);
+				s.linkTrackVars = "eVar75,events";
+				s.linkTrackEvents = "event100";
+				s.eVar75 = "宅抵贷立即申请3";
+				s.events = "event100";
+				s.tl(this, 'o', 'custom');
+			}else if(location=="http://www.niwodai.com/daikuan/jiekuan.html"){
+				var s = s_gi(s_account);
+				s.linkTrackVars = "eVar75,events";
+				s.linkTrackEvents = "event100";
+				s.eVar75 = "嘉保贷立即申请3";
+				s.events = "event100";
+				s.tl(this, 'o', 'custom');
+			}else if(numB==6){
+				var s = s_gi(s_account);
+				s.linkTrackVars = "eVar75,events";
+				s.linkTrackEvents = "event100";
+				s.eVar75 = "嘉保贷立即申请3";
+				s.events = "event100";
+				s.tl(this, 'o', 'custom');
+
+			}else if(numB==7){
+				var s = s_gi(s_account);
+				s.linkTrackVars = "eVar75,events";
+				s.linkTrackEvents = "event100";
+				s.eVar75 = "宅抵贷立即申请3";
+				s.events = "event100";
+				s.tl(this, 'o', 'custom');
+
+			}
+
+		});
+
 
 		if(numB<=5){
 			if(numB==4){
 				$(".textTitleS").text("宅抵贷");
 				$(".textMessageS").text("借款额度15-500万");
+				var s = s_gi(s_account);
+				s.linkTrackVars = "eVar75,events";
+				s.linkTrackEvents = "event100";
+				s.eVar75 = "宅抵贷导航";
+				s.events = "event100";
+				s.tl(this, 'o', 'custom');
+			}else if(numB==0){
+				var s = s_gi(s_account);
+				s.linkTrackVars = "eVar75,events";
+				s.linkTrackEvents = "event100";
+				s.eVar75 = "嘉保贷导航";
+				s.events = "event100";
+				s.tl(this, 'o', 'custom');
+
 			}
 			text.eq(numB).addClass('hoverButton').siblings('li').removeClass('hoverButton');
 			tab.eq(numB).show().siblings().hide()
 		}else if (numB==6){
 			$(".loanProducts").hide();
 			$(".applyLoan ").show();
-			$(".textTitleS").text("嘉保贷")
+			$(".textTitleS").text("嘉保贷");
+			var s = s_gi(s_account);
+			s.linkTrackVars = "eVar75,events";
+			s.linkTrackEvents = "event100";
+			s.eVar75 = "嘉保贷立即申请";
+			s.events = "event100";
+			s.tl(this, 'o', 'custom');
 		}else if (numB==7){
 			$(".loanProducts").hide();
 			$(".applyLoan ").show();
 			$(".textTitleS").text("宅抵贷");
 			$(".textMessageS").text("借款额度15-500万");
 			$('#menuWarp ul.asideList li:last').addClass('hoverButton').siblings('li').removeClass('hoverButton');
-		}
+			var s = s_gi(s_account);
+			s.linkTrackVars = "eVar75,events";
+			s.linkTrackEvents = "event100";
+			s.eVar75 = "宅抵贷立即申请";
+			s.events = "event100";
+			s.tl(this, 'o', 'custom');
 
+		}
 	},0);
-	function clickAdoboe1() {
-		var s = s_gi(s_account);
-		s.linkTrackVars = "eVar75,events";
-		s.linkTrackEvents = "event100";
-		s.eVar75 = "立即申请";
-		s.events = "event100";
-		s.tl(this, 'o', 'custom');
-	}
 
 	text.click(function(){
 		$(this).addClass('hoverButton').siblings('li').removeClass('hoverButton');
-		var num=$(this).index();
+		num=$(this).index();
 		tab.eq(num).show().siblings().hide();
 
 		if(num==0){
@@ -46,34 +131,173 @@ $(function(){
 			$(".applyLoan .textTitle,.successful .textTitle,.successFail .textTitle,.textTitleS").text('嘉保贷');
 			$(".applyLoan .textMessage,.successful .textMessage,.successFail .textMessage").text('有寿险保单就能申请');
 			$(".textMessageS").text("借款额度2-50万");
-			clickAdoboe1();
+			var s = s_gi(s_account);
+			s.linkTrackVars = "eVar75,events";
+			s.linkTrackEvents = "event100";
+			s.eVar75 = "嘉保贷导航";
+			s.events = "event100";
+			s.tl(this, 'o', 'custom');
 		}else if(num==1){
 			$(".applyLoan .topBanner_protect,.successful .topBanner_home,.successFail .topBanner_home").css({'background':'url(http://www.niwodai.com/Public/Static/201404/event/daikuan/images/banner_1.jpg)' });
 			$(".applyLoan .textTitle,.successful .textTitle,.successFail .textTitle,.textTitleS").text('嘉英贷');
 			$(".applyLoan .textMessage,.successful .textMessage,.successFail .textMessage").text('社保/公积金借款');
 			$(".textMessageS").text("借款额度2-50万");
-			clickAdoboe1();
+			var s = s_gi(s_account);
+			s.linkTrackVars = "eVar75,events";
+			s.linkTrackEvents = "event100";
+			s.eVar75 = "嘉英贷导航";
+			s.events = "event100";
+			s.tl(this, 'o', 'custom');
 		}else if(num==2	){
 			$(".applyLoan .topBanner_protect,.successful .topBanner_home,.successFail .topBanner_home").css({'background':'url(http://www.niwodai.com/Public/Static/201404/event/daikuan/images/banner_1.jpg)' });
 			$(".applyLoan .textTitle,.successful .textTitle,.successFail .textTitle,.textTitleS").text('嘉房贷');
 			$(".applyLoan .textMessage,.successful .textMessage,.successFail .textMessage").text('按揭房贷借款');
 			$(".textMessageS").text("借款额度2-30万");
-			clickAdoboe1();
+			var s = s_gi(s_account);
+			s.linkTrackVars = "eVar75,events";
+			s.linkTrackEvents = "event100";
+			s.eVar75 = "嘉房贷导航";
+			s.events = "event100";
+			s.tl(this, 'o', 'custom');
 		}else if(num==3	){
 			$(".applyLoan .topBanner_protect,.successful .topBanner_home,.successFail .topBanner_home").css({'background':'url(http://www.niwodai.com/Public/Static/201404/event/daikuan/images/banner_1.jpg)' });
 			$(".applyLoan .textTitle,.successful .textTitle,.successFail .textTitle,.textTitleS").text('嘉车贷');
 			$(".applyLoan .textMessage,.successful .textMessage,.successFail .textMessage").text('有车贷都能申请');
 			$(".textMessageS").text("借款额度2-30万");
-			clickAdoboe1();
+			var s = s_gi(s_account);
+			s.linkTrackVars = "eVar75,events";
+			s.linkTrackEvents = "event100";
+			s.eVar75 = "嘉车贷导航";
+			s.events = "event100";
+			s.tl(this, 'o', 'custom');
 		}else if(num==4	){
 			$(".applyLoan .topBanner_protect,.successful .topBanner_home,.successFail .topBanner_home").css({'background':'url(http://www.niwodai.com/Public/Static/201404/event/daikuan/images/banner_1.jpg)' });
 			$(".applyLoan .textTitle,.successful .textTitle,.successFail .textTitle,.textTitleS").text('宅抵贷');
 			$(".applyLoan .textMessage,.successful .textMessage,.successFail .textMessage").text('有住宅就能申请');
 			$(".textMessageS").text("借款额度15-500万");
-			clickAdoboe1();
+			var s = s_gi(s_account);
+			s.linkTrackVars = "eVar75,events";
+			s.linkTrackEvents = "event100";
+			s.eVar75 = "宅抵贷导航";
+			s.events = "event100";
+			s.tl(this, 'o', 'custom');
 		}
 	});
 
+	function clickAdoboebao1(){
+		var s = s_gi(s_account);
+		s.linkTrackVars = "eVar75,events";
+		s.linkTrackEvents = "event100";
+		s.eVar75 = "嘉保贷立即申请";
+		s.events = "event100";
+		s.tl(this, 'o', 'custom');
+	}
+
+	$(".btnbao1").click(function(){
+		clickAdoboebao1();
+	});
+	function clickAdoboebao2(){
+		var s = s_gi(s_account);
+		s.linkTrackVars = "eVar75,events";
+		s.linkTrackEvents = "event100";
+		s.eVar75 = "嘉保贷立即申请2";
+		s.events = "event100";
+		s.tl(this, 'o', 'custom');
+	}
+	$(".btnbao2").click(function(){
+		clickAdoboebao2()
+	});
+	function clickAdoboeying1(){
+		var s = s_gi(s_account);
+		s.linkTrackVars = "eVar75,events";
+		s.linkTrackEvents = "event100";
+		s.eVar75 = "嘉英贷立即申请";
+		s.events = "event100";
+		s.tl(this, 'o', 'custom');
+	}
+	$(".btnying1").click(function(){
+		clickAdoboeying1()
+	});
+
+	function clickAdoboeying2(){
+		var s = s_gi(s_account);
+		s.linkTrackVars = "eVar75,events";
+		s.linkTrackEvents = "event100";
+		s.eVar75 = "嘉英贷立即申请2";
+		s.events = "event100";
+		s.tl(this, 'o', 'custom');
+	}
+	$(".btnying2").click(function(){
+		clickAdoboeying2()
+	});
+	function clickAdoboefang1(){
+		var s = s_gi(s_account);
+		s.linkTrackVars = "eVar75,events";
+		s.linkTrackEvents = "event100";
+		s.eVar75 = "嘉房贷立即申请";
+		s.events = "event100";
+		s.tl(this, 'o', 'custom');
+	}
+	$(".btnfang1").click(function(){
+		clickAdoboefang1()
+	});
+	function clickAdoboefang2(){
+		var s = s_gi(s_account);
+		s.linkTrackVars = "eVar75,events";
+		s.linkTrackEvents = "event100";
+		s.eVar75 = "嘉房贷立即申请2";
+		s.events = "event100";
+		s.tl(this, 'o', 'custom');
+	}
+	$(".btnfang2").click(function(){
+		clickAdoboefang2()
+	});
+	function clickAdoboeche1(){
+		var s = s_gi(s_account);
+		s.linkTrackVars = "eVar75,events";
+		s.linkTrackEvents = "event100";
+		s.eVar75 = "嘉车贷立即申请";
+		s.events = "event100";
+		s.tl(this, 'o', 'custom');
+	}
+	$(".btnche1").click(function(){
+		clickAdoboeche1()
+	});
+
+	function clickAdoboeche2(){
+		var s = s_gi(s_account);
+		s.linkTrackVars = "eVar75,events";
+		s.linkTrackEvents = "event100";
+		s.eVar75 = "嘉车贷立即申请2";
+		s.events = "event100";
+		s.tl(this, 'o', 'custom');
+	}
+	$(".btnche2").click(function(){
+		clickAdoboeche2()
+	});
+	function clickAdoboezhai1(){
+		var s = s_gi(s_account);
+		s.linkTrackVars = "eVar75,events";
+		s.linkTrackEvents = "event100";
+		s.eVar75 = "宅抵贷立即申请";
+		s.events = "event100";
+		s.tl(this, 'o', 'custom');
+	}
+	$(".btnzhai1").click(function(){
+		clickAdoboezhai1()
+	});
+
+	function clickAdoboezhai2(){
+		var s = s_gi(s_account);
+		s.linkTrackVars = "eVar75,events";
+		s.linkTrackEvents = "event100";
+		s.eVar75 = "宅抵贷立即申请2";
+		s.events = "event100";
+		s.tl(this, 'o', 'custom');
+	}
+	$(".btnzhai2").click(function(){
+		clickAdoboezhai2()
+	});
 	$('.applyBto,.imgBtn').on('click',function(){
 		tab.css('display','none');
 		$('.applyLoan').css('display','block');
@@ -173,17 +397,17 @@ $(function(){
 	});
 	//幻灯效果结束
 
-$("#bannerWrap .prev").hover(function(){
-	$(this).stop().animate({
-		"background-position-x":"6px",
-		"opacity":"1"
-	},500)
-},function(){
-	$(this).stop().animate({
-		"background-position-x":"20px",
-		"opacity":".3"
-	},500)
-});
+	$("#bannerWrap .prev").hover(function(){
+		$(this).stop().animate({
+			"background-position-x":"6px",
+			"opacity":"1"
+		},500)
+	},function(){
+		$(this).stop().animate({
+			"background-position-x":"20px",
+			"opacity":".3"
+		},500)
+	});
 
 	$("#bannerWrap .next").hover(function(){
 		$(this).stop().animate({
@@ -196,12 +420,12 @@ $("#bannerWrap .prev").hover(function(){
 			"opacity":".3"
 		},300)
 	});
-	
-$(".column ul.columnTitle li:eq(0)").hover(function(){
-	$(".tagsImg:eq(0) img").attr("src","http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_11_1.png")
-},function(){
-	$(".tagsImg:eq(0) img").attr("src","http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_11.png")
-});
+
+	$(".column ul.columnTitle li:eq(0)").hover(function(){
+		$(".tagsImg:eq(0) img").attr("src","http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_11_1.png")
+	},function(){
+		$(".tagsImg:eq(0) img").attr("src","http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_11.png")
+	});
 
 	$(".column ul.columnTitle li:eq(1)").hover(function(){
 		$(".tagsImg:eq(1) img").attr("src","http://www.niwodai.com/Public/Static/201404/event/daikuan/images/index_12_1.png")
@@ -332,4 +556,3 @@ $(".column ul.columnTitle li:eq(0)").hover(function(){
 
 
 });
-

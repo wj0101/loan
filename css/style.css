@@ -96,19 +96,53 @@ td{border:1px solid  #ccc;}
 .cityB{ width: 167px;height: 40px;border: 1px solid #dbdbdb;border-radius:5px;padding-left:10px;color:#333;cursor:pointer;line-height: 35px; margin-left: 0; float: left;}
 .cityC{ width: 167px;height: 40px;;border: 1px solid #dbdbdb;border-radius:5px;margin-left: 5px;line-height: 35px;}
 .ageBox,.cityC,.cityB{background-color: #f9f9f9;}
-.ageBox:hover{border-color: #2577e3}
+.iptBox span.job{padding-left: 31px;}
 .inside{ width: 962px;height: 580px;box-shadow: 0 1px 2px #eee;margin-bottom: 4px;background-color: #fff;}
-.inside .insideCon{ width: 435px; height: auto;overflow: hidden; margin: 0 auto; padding-top: 70px;}
+.inside .insideCon{ width: 559px; height: auto;overflow: hidden; margin: 0 auto; padding-top: 70px;}
 .inside .insideCon .succImg,.inside .insideFail .succImg{ float: left;}
 .inside .insideCon .succText,.inside .insideFail .succText{ float: left;padding-left: 20px;}
 .inside .insideCon .succText h4,.inside .insideFail .succText h4{ font-size: 20px;font-weight: bold;}
 .inside .insideCon .succText p,.inside .insideFail .succText p{font-size: 14px;color: #999;padding-top: 10px;}
-.example{ padding-top: 50px;width: 550px; margin: 0 auto;height: auto;overflow: hidden;}
-.example .imgApp{float: left;}
-.example .appDowns{float: right;text-align: center;padding-top: 43px;}
-.example .appDowns h3{ font-size: 20px;color: #2577e3;padding-top: 23px;font-weight: bold;}
-.example .appDowns p{font-size: 12px; color: #999;padding-top: 30px;font-weight: bold;}
+.example{width: 550px; margin: 0 auto;height: auto;overflow: hidden;}
+.example .imgApp{float: left;padding-left: 40px;}
+.example .appDowns{float: left;text-align: center;padding-top: 65px;padding-left: 50px;}
+.example .appDowns .imgCodeAnd{padding-top: 20px;}
+.example .appDowns a{display: block;}
 .insideFail{width: 531px; height: auto;overflow: hidden; margin: 0 auto; padding-top: 70px;}
+.exampleTop{padding-top: 50px;}
+.exampleTop2{padding-top: 20px;}
+
+.dataText{line-height: 2;padding-top: 42px;text-indent: -15px;}
+.dataText h4{font-weight: normal;font-size: 14px;}
+.dataText p{font-size: 24px;color: #2577e3;}
+.suppleImg{width: 226px;height: 155px;float: left;}
+.insideData .suppleCon {width: 523px; overflow: hidden; margin: 0 auto;padding-top: 70px;}
+.suppleBtn{width: 400px;height: 40px;padding-top: 80px;margin: 0 auto;}
+.suppleBtn .btnAggregate{ width:180px ;height: 40px;border-radius: 2px;}
+.suppleBtn .btnAggregate h3{font-size: 16px;color: #fff;text-align: center;line-height: 40px;}
+.suppleBtn .suppleBtnLeft{background-color: #2577e3;float: left;}
+.suppleBtn .suppleBtnRight{float: left;margin-left:40px;background-color: #797f88;  pointer-events: none; }
+.suppleBtn .btnAggregate a{text-decoration: none;display:block;}
+.insideData,.supplementProduct,.basicInfo,.perfectInfo{width: 962px;height: 530px; box-shadow: 0 1px 2px #eee;margin-bottom: 4px;background-color: #fff;}
+.suppleProText{padding: 50px  0 0 130px;line-height: 2}
+.suppleProText h3,.suppleInfoText h3{font-size: 24px;color: #2577e3;}
+.suppleProText p,.suppleInfoText p{font-size: 14px;color: #333;}
+.suppleInfoText{padding: 20px  0 0 130px;line-height: 2}
+
+.proLoanChoice{width: 180px;height: 270px;border: 2px solid #e3e5e6;border-radius: 2px;float: left;position: relative}
+.proLoanChoice h3.proName{padding-top: 20px;text-align: center;font-size: 16px;padding-bottom: 25px;}
+.proLoanChoice .proSurveyText{padding: 20px;font-size: 14px;color: #333;line-height: 2;position: absolute;bottom:60px;}
+.proLoanChoice .proSurveyText span{color: #2577e3}
+.proLoanChoice .proApplyBtn{width: 120px;height:40px;background-color: #2577e3;margin: 0 auto;position: absolute;bottom: 20px;left:50%;margin-left: -60px;border-radius: 2px; }
+.proLoanChoice .proApplyBtn a{display: block;color: #fff;text-align: center;line-height: 40px;font-size: 16px;}
+.proLoanChoice .proApplyBtn a:hover{background-color: #ff6600;text-decoration: none;border-radius: 2px; }
+.proLoanChoice:hover{border: 2px solid #ff6600;}
+.proLoanChoice .iconLoan_bao{background: url("../images/icon.png") no-repeat -47px -115px;width: 33px;height: 39px;margin: 0 auto;padding-bottom: 5px; }
+.proLoanChoice .iconLoan_ying{background: url("../images/icon.png") no-repeat -90px -115px;width: 34px;height: 35px;margin: 0 auto;padding-bottom: 5px; }
+.proLoanChoice .iconLoan_fang{background: url("../images/icon.png") no-repeat 0 -115px;width: 36px;height: 39px;margin: 0 auto;padding-bottom: 5px; }
+.proLoanChoice .iconLoan_che{background: url("../images/icon.png") no-repeat -135px -115px;width: 42px;height: 28px;margin: 0 auto;padding-bottom: 5px; }
+.distanceLeft{margin-left: 10px;}
+.proSelection{padding: 40px 97px 0 97px;overflow: hidden}
 
 /* CSS Document */
 
@@ -125,12 +159,13 @@ input, select{ outline:none;}
 
 .iptBox input:hover{ border-color:#2577e3;}
 .error{ margin-left: 23px;font-size: 14px;color: #ff6600;margin-top: 8px;display: none;float: left;}
-.ageBox{ width:352px; height:40px; border:1px solid #dbdbdb; border-radius:5px; padding-left:6px; font-size:14px; -webkit-appearance: none; cursor:pointer; color:#333333;background-color: #f9f9f9}
+.ageBox,.work,.credit,.oneself,.payOff,.current,.jobType,.security,.fund,.houses,.houseMort,.operation,.carMort,.carLoan{ width:352px; height:40px; border:1px solid #dbdbdb; border-radius:2px; padding-left:6px; font-size:14px;  cursor:pointer; color:#333333;background-color: #f9f9f9;float: left}
+.mode{ width:238px; height:40px; border:1px solid #dbdbdb; border-radius:2px; padding-left:6px; font-size:14px;  cursor:pointer; color:#333333;background-color: #f9f9f9;float: left}
 #dtmbtn{line-height: 40px;}
-.ageBox:hover{ border-color:#295ab4;}
+.ageBox:hover,.work:hover,.credit:hover{ border-color:#2577e3;}
 .city{ height:37px;}
 .city span{ float:left; }
-.city .cityBox{ width:340px; height:38px; border:1px solid #dbdbdb; border-radius:5px; padding-left:10px; font-size:14px; color:#333333; float:left; margin-left:5px; background:url(http://www.niwodai.com/Public/Static/201404/event/daikuan/images/down.png) no-repeat 318px center; cursor:pointer;}
+.city .cityBox{ width:352px; height:38px;border-radius:5px;font-size:14px; color:#333333; float:left; border: 0;background: none;margin-left: 0; padding-left: 0; cursor:pointer;}
 .city .cityBox:hover{ border-color:#295ab4;}
 .city .cityBox dl dt{ line-height:35px;}
 .city .cityBox dl{ position:relative;}
@@ -168,6 +203,43 @@ input.miniText:hover{border:1px solid #2577e3 ;}
 .bottomCalc .pngArrow{background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/icon.png") -154px -76px no-repeat;width: 33px;height: 33px;display: inline-block;margin-top: 1px;}
 #ErorrMess{ color: #ff0600;font-size: 12px;}
 .icon-yuan{ background: url("http://www.niwodai.com/Public/Static/201404/event/daikuan/images/icon-r-yuan.png")no-repeat right 50% #fff;}
+.nextBtn{ width:180px; height:40px; background:#ff6600; border:0; cursor:pointer; font-size:18px; color:#fff; margin-top:30px;  border-radius:2px;}
+.nextBtn2{ width:180px; height:40px; background:#ff6600; border:0; cursor:pointer; font-size:18px; color:#fff; margin-top:20px;  border-radius:2px;}
+.basicInfo  .delCon{margin-left: 130px;margin-top: 30px;}
+.perfectInfo .delCon {margin-left: 130px;margin-top: 10px;}
+.typeColor{color: #2577e3}
+.iptBox span.payOffText{padding-right: 62px;}
+.iptBox span.termText{padding-right: 46px;}
+.iptBox span.premiumText{padding-right: 31px;}
+.iptBox span.currentText{padding-right: 31px;}
+.icon-yue {
+    background: url("http://www.niwodai.com/index.do?method=imageView&imgPath=articlePic/20160831/ef26f08f-c0a9-4535-9ae4-47dc3ebbce83.png")no-repeat right 50% #fff;
+}
+.iptBox input#term,.iptBox input#premium { width: 200px;height: 38px;border: 1px solid #dbdbdb;border-radius: 2px;padding-left: 10px;font-size: 14px;color: #333333; line-height: 40px;background-color: #f9f9f9;float: left;}
+
+#termError,#premiumError,#manageYearError,#workYearError,#securityYearError,#securityNumError,#fundYearError,#fundNumError,#mortgageError,#repaymentError,#repaymentsError,#insurancePolicyError,#alreadyRepayError,#cardInstallError,#repayPeriodError{ margin-left: 23px;font-size: 14px;color: #ff6600;margin-top: 8px;float: left;  }
+.textWidth{width: 457px;}
+.againCon{ width: 500px;padding-top: 30px;margin: 0 auto;}
+.againCon h3{font-size: 20px;color: #333;}
+.againCon .againBtn{padding-top: 20px;overflow: hidden}
+.againCon .againBtn li.blueSucc{float: left; width: 100px;height: 36px;border: 2px solid #2577e3;margin-right: 21px;border-radius: 30px;}
+.againCon .againBtn li a.btnStyle{display: block;line-height: 36px;text-align: center;font-size: 16px;}
+.againCon .againBtn li.blueSucc:hover{background-color: #2577e3;color: #fff;text-decoration: none;border-radius: 30px;}
+.againCon .againBtn li.blueSucc a:hover{color: #fff;text-decoration: none;}
+.againCon .againBtn li.failBtns{border: 2px solid #999;color: #999;float: left; width: 100px;height: 36px;margin-right: 21px;border-radius: 30px;pointer-events: none; }
+.againCon .againBtn li.failBtns a:hover{color: #999;cursor: default}
+.againCon .againBtn li.failBtns a{color: #999;}
+.inputYear input#manageYear{width: 301px;height: 38px;border: 1px solid #dbdbdb; border-radius: 2px;padding-left: 10px;font-size: 14px;color: #333333;line-height: 40px;background-color: #f9f9f9;float: left;}
+.inputWorkYear input#workYear{width: 254px;height: 38px;border: 1px solid #dbdbdb; border-radius: 2px;padding-left: 10px;font-size: 14px;color: #333333;line-height: 40px;background-color: #f9f9f9;float: left;}
+.securityText{padding-left: 16px;}
+.inputFundYear input#fundYear ,.inputFundNum input#fundNum{ width: 325px; height: 38px;border: 1px solid #dbdbdb;border-radius: 2px;padding-left: 10px;font-size: 14px;color: #333333;line-height: 40px;background-color: #f9f9f9;float: left; }
+.housesText{padding-left: 16px;}
+.operationText,.repaymentsText,.carLoanText{padding-right: 16px;}
+
+.iptBox input#insurancePolicy { width: 228px;}
+.iptBox input#cardInstall { width: 308px;}
+.iptBox input#repayPeriod { width: 286px;}
+.loan_che{height: 590px;}
 
 /*借款首页*/
 #bannerWrap{ width:100%; height:300px; overflow:hidden; line-height:0; position:relative;min-width: 1180px;}
