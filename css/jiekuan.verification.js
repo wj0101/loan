@@ -65,12 +65,12 @@ $(function(){
         }else{
             $(".supplementData").hide();
             $(".successful").show();
-            getJsonBao()
         }
 
     });
 
     $("#nextBtn_ying").click(function(){
+
         s.linkTrackVars = "eVar75,events";
         s.linkTrackEvents = "event100";
         s.eVar75 = "嘉英贷下一步2";
@@ -111,7 +111,6 @@ $(function(){
             }else {
                 $(".supplementData").hide();
                 $(".successful").show();
-                getJsonYing()
             }
         }else if($(".inputSecurityYear").css("display")=="block"){
             $(".inputSecurityYear #securityYear").trigger("blur");
@@ -123,7 +122,6 @@ $(function(){
             }else {
                 $(".supplementData").hide();
                 $(".successful").show();
-                getJsonYing()
             }
         }else if($(".inputFundYear").css("display")=="block"){
             $(".inputFundYear #fundYear").trigger("blur");
@@ -135,12 +133,10 @@ $(function(){
             }else {
                 $(".supplementData").hide();
                 $(".successful").show();
-                getJsonYing()
             }
         }else {
             $(".supplementData").hide();
             $(".successful").show();
-            getJsonYing()
         }
     });
 
@@ -151,12 +147,12 @@ $(function(){
         s.events = "event100";
         s.tl(this, 'o', 'custom');
         $(".inputHouses").find("#housesError").remove();
-        var val1 = $('.inputHouses input[name="genre"]:checked').length;
+        var val1 = $('.inputHouses select option:selected').val();
         if(0 == val1)
         {
-            var error1=$("<p id='housesError' class='error'>请勾选住房类型，一个或多个</p>");
+            var error1=$("<p id='housesError' class='error'>请选择住房类型</p>");
             $(".inputHouses").append(error1);
-            $(".inputHouses .error").css("display","block");
+            $(".inputHouses .error").css("display","block")
         }
 
         $(".inputHouseMort").find("#houseMortError").remove();
@@ -181,12 +177,10 @@ $(function(){
             }else {
                 $(".supplementData").hide();
                 $(".successful").show();
-                getJsonFang()
             }
         }else {
             $(".supplementData").hide();
             $(".successful").show();
-            getJsonFang()
         }
     });
 
@@ -260,12 +254,10 @@ $(function(){
             }else {
                 $(".supplementData").hide();
                 $(".successful").show();
-                getJsonChe()
             }
         }else {
             $(".supplementData").hide();
             $(".successful").show();
-            getJsonChe()
         }
     });
 
@@ -301,7 +293,7 @@ $(function(){
             $("#jobType").find("option[value='0']").attr("selected",true)
         }else if(3==val2){
             $(".inputYear,.inputJobType,.inputWorkYear").hide();
-            $("#manageYear,#workYear").val("");
+            $("#manageYear").val("");
             $("#jobType").find("option[value='0']").attr("selected",true)
         }
 
@@ -357,7 +349,7 @@ $(function(){
 
     });
 
-    $(".inputSecurity,.inputFund").change(function(){
+    $(".security,.fund").change(function(){
         $(".inputSecurity").find("#securityError").remove();
         var val1 = $('.inputSecurity select option:selected').val();
         if(0 == val1)
@@ -366,12 +358,11 @@ $(function(){
             $(".inputSecurity").append(error1);
             $(".inputSecurity .error").css("display","block");
             $(".inputSecurityYear,.inputSecurityNum").hide();
-            $("#securityYear,#securityNum").val("");
+
         }else if(1 == val1){
             $(".inputSecurityYear,.inputSecurityNum").show();
         }else if(2 == val1){
             $(".inputSecurityYear,.inputSecurityNum").hide();
-            $("#securityYear,#securityNum").val("");
         }
 
         $(".inputFund").find("#fundError").remove();
@@ -382,16 +373,14 @@ $(function(){
             $(".inputFund").append(error2);
             $(".inputFund .error").css("display","block");
             $(".inputFundYear,.inputFundNum").hide();
-            $("#fundYear,#fundNum").val("");
         }else if(1 == val2){
             $(".inputFundYear,.inputFundNum").show();
         }else if(2 == val2){
             $(".inputFundYear,.inputFundNum").hide();
-            $("#fundYear,#fundNum").val("");
         }
     });
 
-    $(".operation,.inputCarMort").change(function(){
+    $(".operation,.carMort").change(function(){
         $(".inputOperation").find("#operationError").remove();
         var val1 = $('.inputOperation select option:selected').val();
         if(0 == val1)
@@ -409,15 +398,10 @@ $(function(){
             $(".inputCarMort").append(error2);
             $(".inputCarMort .error").css("display","block");
             $(".inputinsurancePolicy,.inputRepayments,.inputCarLoanType,.inputAlreadyRepay,.inputCardInstall").hide();
-            $("#insurancePolicy,#repayments,#alreadyRepay,#cardInstall").val("");
-            $(".inputCarLoanType select#carLoan").find("option[value='0']").attr("selected",true);
-
         }else if(1 == val2){
             $(".inputinsurancePolicy,.inputRepayments,.inputCarLoanType").show();
         }else if(2 == val2){
-            $(".inputinsurancePolicy,.inputRepayments,.inputCarLoanType,.inputAlreadyRepay,.inputCardInstall,.inputRepayPeriod").hide();
-            $("#insurancePolicy,#repayments,#alreadyRepay,#cardInstall").val("");
-            $(".inputCarLoanType select#carLoan").find("option[value='0']").attr("selected",true);
+            $(".inputinsurancePolicy,.inputRepayments,.inputCarLoanType,.inputAlreadyRepay,.inputCardInstall").hide();
         }
     });
 
@@ -582,7 +566,7 @@ $(function(){
     }).focus(function(){
         $(this).triggerHandler("blur")
     });
-    $(".inputHouseMort").change(function(){
+    $(".inputHouseMort,.inputHouses").change(function(){
         $(".inputHouseMort").find("#houseMortError").remove();
         var val2 = $('.inputHouseMort select option:selected').val();
         if(0 == val2)
@@ -591,15 +575,23 @@ $(function(){
             $(".inputHouseMort").append(error2);
             $(".inputHouseMort .error").css("display","block");
             $(".inputMortgage,.inputRepayment").hide();
-            $("#mortgage,#repayment").val("");
 
         }else if(1==val2){
             $(".inputMortgage,.inputRepayment").show();
         }else if(2==val2){
             $(".inputMortgage,.inputRepayment").hide();
-            $("#mortgage,#repayment").val("");
+
         }
 
+
+        $(".inputHouses").find("#housesError").remove();
+        var val1 = $('.inputHouses select option:selected').val();
+        if(0 == val1)
+        {
+            var error1=$("<p id='housesError' class='error'>请选择住房类型</p>");
+            $(".inputHouses").append(error1);
+            $(".inputHouses .error").css("display","block");
+        }
     });
 
     $(".inputMortgage #mortgage").blur(function(){
@@ -682,7 +674,7 @@ $(function(){
     }).focus(function(){
         $(this).triggerHandler("blur")
     });
-    $(".inputCarLoanType").change(function(){
+    $(".carLoan").change(function(){
         $(".inputCarLoanType").find("#carLoanTypeError").remove();
         var val2 = $('.inputCarLoanType select option:selected').val();
         if(0 == val2)
@@ -691,15 +683,13 @@ $(function(){
             $(".inputCarLoanType").append(error2);
             $(".inputCarLoanType .error").css("display","block");
             $(".inputAlreadyRepay,.inputCardInstall,.inputRepayPeriod").hide();
-            $("#alreadyRepay,#cardInstall,#repayPeriod").val("")
+
         }else if(1==val2){
             $(".inputAlreadyRepay,.inputCardInstall").show();
             $(".inputRepayPeriod").hide();
-            $("#repayPeriod").val("")
         }else if(2==val2){
             $(".inputAlreadyRepay,.inputCardInstall").hide();
             $(".inputRepayPeriod").show();
-            $("#alreadyRepay,#cardInstall").val("")
         }
 
 
@@ -778,32 +768,276 @@ $(function(){
         oLis[index].onclick=function(){
             showID=this.id;
             if(showID=="btn_bao"){
-                $(".supplementProduct").hide();
-                $(".loan_bao").show();
+                $(".nextBtn").click(function(){
+                    $(".inputCredit").find("#creditError").remove();
+                    var val1 = $('.inputCredit select option:selected').val();
+                    if(0 == val1)
+                    {
+                        var error1=$("<p id='creditError' class='error'>请选择信用情况</p>");
+                        $(".inputCredit").append(error1);
+                        $(".inputCredit .error").css("display","block")
+                    }
+
+                    $(".inputJob").find("#jobError").remove();
+                    var val2 = $('.inputJob select option:selected').val();
+                    if(0 == val2)
+                    {
+                        var error2=$("<p id='jobError' class='error'>请选择职业</p>");
+                        $(".inputJob").append(error2);
+                        $(".inputJob .error").css("display","block")
+                    }
+
+
+                    var numError1=$("#creditError").length,numError2=$("#jobError").length,numError3=$("#codeError");
+
+                    if(numError1 || numError2||numError3.css("display")=="block"){
+                        return false
+                    }else if($(".inputJobType").css("display")=="block"){
+                        $(".inputYear #manageYear").trigger("blur");
+
+                        $(".inputJobType").find("#jobTypeError").remove();
+                        var val3 = $('.inputJobType select option:selected').val();
+                        if(0 == val3)
+                        {
+                            var error3=$("<p id='jobTypeError' class='error'>请选择自雇类型</p>");
+                            $(".inputJobType").append(error3);
+                            $(".inputJobType .error").css("display","block");
+
+                        }
+                        var numError4=$("#jobTypeError").length,numError5=$("#manageYearError").length;
+                        if(numError4||numError5){
+                            return false
+                        }else{
+                            $(".basicInfo").hide();
+                            $(".loan_bao").show();
+                        }
+
+                    }else if($(".inputWorkYear").css("display")=="block"){
+                        $(".inputWorkYear #workYear").trigger("blur");
+                        var numError6=$("#workYearError").length;
+                        if(numError6){
+                            return false
+                        }else{
+                            $(".basicInfo").hide();
+                            $(".loan_bao").show();
+                        }
+                    }
+
+                    else{
+                        $(".basicInfo").hide();
+                        $(".loan_bao").show();
+                    }
+
+
+
+                });
                 s.linkTrackVars = "eVar75,events";
                 s.linkTrackEvents = "event100";
                 s.eVar75 = "嘉保贷选择";
                 s.events = "event100";
                 s.tl(this, 'o', 'custom');
             }else if(showID=="btn_ying"){
-                $(".supplementProduct").hide();
-                $(".loan_ying").show();
+                $(".nextBtn").click(function(){
+                    $(".inputCredit").find("#creditError").remove();
+                    var val1 = $('.inputCredit select option:selected').val();
+                    if(0 == val1)
+                    {
+                        var error1=$("<p id='creditError' class='error'>请选择信用情况</p>");
+                        $(".inputCredit").append(error1);
+                        $(".inputCredit .error").css("display","block")
+                    }
+
+                    $(".inputJob").find("#jobError").remove();
+                    var val2 = $('.inputJob select option:selected').val();
+                    if(0 == val2)
+                    {
+                        var error2=$("<p id='jobError' class='error'>请选择职业</p>");
+                        $(".inputJob").append(error2);
+                        $(".inputJob .error").css("display","block")
+                    }
+
+
+                    var numError1=$("#creditError").length,numError2=$("#jobError").length,numError3=$("#codeError");
+
+                    if(numError1 || numError2||numError3.css("display")=="block"){
+                        return false
+                    }else if($(".inputJobType").css("display")=="block"){
+                        $(".inputYear #manageYear").trigger("blur");
+
+                        $(".inputJobType").find("#jobTypeError").remove();
+                        var val3 = $('.inputJobType select option:selected').val();
+                        if(0 == val3)
+                        {
+                            var error3=$("<p id='jobTypeError' class='error'>请选择自雇类型</p>");
+                            $(".inputJobType").append(error3);
+                            $(".inputJobType .error").css("display","block");
+
+                        }
+                        var numError4=$("#jobTypeError").length,numError5=$("#manageYearError").length;
+                        if(numError4||numError5){
+                            return false
+                        }else{
+                            $(".basicInfo").hide();
+                            $(".loan_ying").show();
+                        }
+
+                    }else if($(".inputWorkYear").css("display")=="block"){
+                        $(".inputWorkYear #workYear").trigger("blur");
+                        var numError6=$("#workYearError").length;
+                        if(numError6){
+                            return false
+                        }else{
+                            $(".basicInfo").hide();
+                            $(".loan_ying").show();
+                        }
+                    }
+
+                    else{
+                        $(".basicInfo").hide();
+                        $(".loan_ying").show();
+                    }
+
+
+
+                });
                 s.linkTrackVars = "eVar75,events";
                 s.linkTrackEvents = "event100";
                 s.eVar75 = "嘉英贷选择";
                 s.events = "event100";
                 s.tl(this, 'o', 'custom');
             }else if(showID=="btn_fang"){
-                $(".supplementProduct").hide();
-                $(".loan_fang").show();
+                $(".nextBtn").click(function(){
+                    $(".inputCredit").find("#creditError").remove();
+                    var val1 = $('.inputCredit select option:selected').val();
+                    if(0 == val1)
+                    {
+                        var error1=$("<p id='creditError' class='error'>请选择信用情况</p>");
+                        $(".inputCredit").append(error1);
+                        $(".inputCredit .error").css("display","block")
+                    }
+
+                    $(".inputJob").find("#jobError").remove();
+                    var val2 = $('.inputJob select option:selected').val();
+                    if(0 == val2)
+                    {
+                        var error2=$("<p id='jobError' class='error'>请选择职业</p>");
+                        $(".inputJob").append(error2);
+                        $(".inputJob .error").css("display","block")
+                    }
+
+
+                    var numError1=$("#creditError").length,numError2=$("#jobError").length,numError3=$("#codeError");
+
+                    if(numError1 || numError2||numError3.css("display")=="block"){
+                        return false
+                    }else if($(".inputJobType").css("display")=="block"){
+                        $(".inputYear #manageYear").trigger("blur");
+
+                        $(".inputJobType").find("#jobTypeError").remove();
+                        var val3 = $('.inputJobType select option:selected').val();
+                        if(0 == val3)
+                        {
+                            var error3=$("<p id='jobTypeError' class='error'>请选择自雇类型</p>");
+                            $(".inputJobType").append(error3);
+                            $(".inputJobType .error").css("display","block");
+
+                        }
+                        var numError4=$("#jobTypeError").length,numError5=$("#manageYearError").length;
+                        if(numError4||numError5){
+                            return false
+                        }else{
+                            $(".basicInfo").hide();
+                            $(".loan_fang").show();
+                        }
+
+                    }else if($(".inputWorkYear").css("display")=="block"){
+                        $(".inputWorkYear #workYear").trigger("blur");
+                        var numError6=$("#workYearError").length;
+                        if(numError6){
+                            return false
+                        }else{
+                            $(".basicInfo").hide();
+                            $(".loan_fang").show();
+                        }
+                    }
+
+                    else{
+                        $(".basicInfo").hide();
+                        $(".loan_fang").show();
+                    }
+
+
+
+                });
                 s.linkTrackVars = "eVar75,events";
                 s.linkTrackEvents = "event100";
                 s.eVar75 = "嘉房贷选择";
                 s.events = "event100";
                 s.tl(this, 'o', 'custom');
             }else if(showID=="btn_che"){
-                $(".supplementProduct").hide();
-                $(".loan_che").show();
+                $(".nextBtn").click(function(){
+                    $(".inputCredit").find("#creditError").remove();
+                    var val1 = $('.inputCredit select option:selected').val();
+                    if(0 == val1)
+                    {
+                        var error1=$("<p id='creditError' class='error'>请选择信用情况</p>");
+                        $(".inputCredit").append(error1);
+                        $(".inputCredit .error").css("display","block")
+                    }
+
+                    $(".inputJob").find("#jobError").remove();
+                    var val2 = $('.inputJob select option:selected').val();
+                    if(0 == val2)
+                    {
+                        var error2=$("<p id='jobError' class='error'>请选择职业</p>");
+                        $(".inputJob").append(error2);
+                        $(".inputJob .error").css("display","block")
+                    }
+
+
+                    var numError1=$("#creditError").length,numError2=$("#jobError").length,numError3=$("#codeError");
+
+                    if(numError1 || numError2||numError3.css("display")=="block"){
+                        return false
+                    }else if($(".inputJobType").css("display")=="block"){
+                        $(".inputYear #manageYear").trigger("blur");
+
+                        $(".inputJobType").find("#jobTypeError").remove();
+                        var val3 = $('.inputJobType select option:selected').val();
+                        if(0 == val3)
+                        {
+                            var error3=$("<p id='jobTypeError' class='error'>请选择自雇类型</p>");
+                            $(".inputJobType").append(error3);
+                            $(".inputJobType .error").css("display","block");
+
+                        }
+                        var numError4=$("#jobTypeError").length,numError5=$("#manageYearError").length;
+                        if(numError4||numError5){
+                            return false
+                        }else{
+                            $(".basicInfo").hide();
+                            $(".loan_che").show();
+                        }
+
+                    }else if($(".inputWorkYear").css("display")=="block"){
+                        $(".inputWorkYear #workYear").trigger("blur");
+                        var numError6=$("#workYearError").length;
+                        if(numError6){
+                            return false
+                        }else{
+                            $(".basicInfo").hide();
+                            $(".loan_che").show();
+                        }
+                    }
+
+                    else{
+                        $(".basicInfo").hide();
+                        $(".loan_che").show();
+                    }
+
+
+
+                });
                 s.linkTrackVars = "eVar75,events";
                 s.linkTrackEvents = "event100";
                 s.eVar75 = "嘉车贷选择";
@@ -813,278 +1047,34 @@ $(function(){
 
         }
     }
-
-    $(".nextBtn").click(function(){
-        var cardNo = document.getElementById('card_no').value.toUpperCase();
-        var valCredit=$(".credit").val();
-        $(".inputCredit").find("#creditError").remove();
-        var val1 = $('.inputCredit select option:selected').val();
-        if(0 == val1)
-        {
-            var error1=$("<p id='creditError' class='error'>请选择信用情况</p>");
-            $(".inputCredit").append(error1);
-            $(".inputCredit .error").css("display","block")
-        }
-
-        $(".inputJob").find("#jobError").remove();
-        var val2 = $('.inputJob select option:selected').val();
-        if(0 == val2)
-        {
-            var error2=$("<p id='jobError' class='error'>请选择职业</p>");
-            $(".inputJob").append(error2);
-            $(".inputJob .error").css("display","block")
-        }
-
-
-        var numError1=$("#creditError").length,numError2=$("#jobError").length,numError3=$("#codeError");
-
-        if(numError1 || numError2||numError3.css("display")=="block"){
-            return false
-        }else if($(".inputJobType").css("display")=="block"){
-            $(".inputYear #manageYear").trigger("blur");
-
-            $(".inputJobType").find("#jobTypeError").remove();
-            var val3 = $('.inputJobType select option:selected').val();
-            if(0 == val3)
-            {
-                var error3=$("<p id='jobTypeError' class='error'>请选择自雇类型</p>");
-                $(".inputJobType").append(error3);
-                $(".inputJobType .error").css("display","block");
-
-            }
-            var numError4=$("#jobTypeError").length,numError5=$("#manageYearError").length;
-            if(numError4||numError5){
-                return false
-            }else{
-                $.ajax({
-                    type: "get",
-                    url: "/loanapply/validateIdentity.do",
-                    data:{"idCard":cardNo},
-                    dataType: "json",
-                    contentType: "application/x-www-form-urlencoded; charset=UTF-8",
-                    success: function(data){
-                        if(data.isBlank=='Y'&& valCredit==4){
-                            $(".supplementData").hide();
-                            $(".failProduct").show();
-                        }else {
-                            $(".basicInfo").hide();
-                            $(".supplementProduct").show();
-                        }
-                    }
-                });
-                s.linkTrackVars = "eVar75,events";
-                s.linkTrackEvents = "event100";
-                s.eVar75 = "下一步";
-                s.events = "event100";
-                s.tl(this, 'o', 'custom');
-                getJson()
-            }
-        }else if($(".inputWorkYear").css("display")=="block"){
-            $(".inputWorkYear #workYear").trigger("blur");
-            var numError6=$("#workYearError").length;
-            if(numError6){
-                return false
-            }else{
-
-                $.ajax({
-                    type: "get",
-                    url: "/loanapply/validateIdentity.do",
-                    data:{"idCard":cardNo},
-                    dataType: "json",
-                    contentType: "application/x-www-form-urlencoded; charset=UTF-8",
-                    success: function(data){
-                        if(data.isBlank=='Y'&& valCredit==4){
-                            $(".supplementData").hide();
-                            $(".failProduct").show();
-                        }else {
-                            $(".basicInfo").hide();
-                            $(".supplementProduct").show();
-                        }
-                    }
-                });
-                s.linkTrackVars = "eVar75,events";
-                s.linkTrackEvents = "event100";
-                s.eVar75 = "下一步";
-                s.events = "event100";
-                s.tl(this, 'o', 'custom');
-                getJson()
-            }
-        }
-        else{
-            $.ajax({
-                type: "get",
-                url: "/loanapply/validateIdentity.do",
-                data:{"idCard":cardNo},
-                dataType: "json",
-                contentType: "application/x-www-form-urlencoded; charset=UTF-8",
-                success: function(data){
-                    if(data.isBlank=='Y'&& valCredit==4){
-                        $(".supplementData").hide();
-                        $(".failProduct").show();
-                    }else {
-                        $(".basicInfo").hide();
-                        $(".supplementProduct").show();
-                    }
-                }
-            });
+    var btnnext=$(".nextBtn");
+    btnnext.click(function(){
+        if(showID=="btn_bao"){
             s.linkTrackVars = "eVar75,events";
             s.linkTrackEvents = "event100";
-            s.eVar75 = "下一步";
+            s.eVar75 = "嘉保贷下一步";
             s.events = "event100";
             s.tl(this, 'o', 'custom');
-            getJson()
+        }else if(showID=="btn_ying"){
+            s.linkTrackVars = "eVar75,events";
+            s.linkTrackEvents = "event100";
+            s.eVar75 = "嘉英贷下一步";
+            s.events = "event100";
+            s.tl(this, 'o', 'custom');
+        }else if(showID=="btn_fang"){
+            s.linkTrackVars = "eVar75,events";
+            s.linkTrackEvents = "event100";
+            s.eVar75 = "嘉房贷下一步";
+            s.events = "event100";
+            s.tl(this, 'o', 'custom');
+        }else if(showID=="btn_che"){
+            s.linkTrackVars = "eVar75,events";
+            s.linkTrackEvents = "event100";
+            s.eVar75 = "嘉车贷下一步";
+            s.events = "event100";
+            s.tl(this, 'o', 'custom');
         }
     });
-
-
-//身份证表单
-    $(".delCon .inputCredit select option:eq(1)").attr("itemid","2768703605011874");
-    $(".delCon .inputCredit select option:eq(2)").attr("itemid","2768703605011875");
-    $(".delCon .inputCredit select option:eq(3)").attr("itemid","2768703605011876");
-
-    $(".delCon .inputJob select option:eq(1)").attr("itemid","2768703605011987");
-    $(".delCon .inputJob select option:eq(2)").attr("itemid","2768703605011988");
-    $(".delCon .inputJob select option:eq(3)").attr("itemid","2768703605011989");
-
-    $(".delCon .inputJobType select option:eq(1)").attr("itemid","2868703605015316");
-    $(".delCon .inputJobType select option:eq(2)").attr("itemid","2868703605015317");
-    function getJson() {
-        var dataval={};
-        $('#fistInput input').each(function(){if(this.value!=''&&this.name!='')dataval[this.name]=this.value});
-        $('#fistInput select').each(function(){if(this.value!=0&&this.name!='')dataval[this.name]=$(this).find("option:selected").attr("itemid")});
-        console.log(dataval);
-        var cardNo = document.getElementById('card_no').value.toUpperCase();
-        $.ajax({
-            type: "post",
-            url: "/loanapply/perfectBaseInfo.do",
-            dataType: "json",
-            data: {idCard:cardNo,data:JSON.stringify(dataval),number:"2"},
-            async: false,
-            contentType: "application/x-www-form-urlencoded; charset=UTF-8",
-            success: function(data){
-                console.log(data);
-            }
-        });
-    }
-//身份证表单结束
-
-//嘉保贷表单
-    $(".delCon .inputOneself select option:eq(1)").attr("itemid","2768703605012897");
-    $(".delCon .inputOneself select option:eq(2)").attr("itemid","2768703605012898");
-    $(".delCon .inputCurrent select option:eq(1)").attr("itemid","2768703605012901");
-    $(".delCon .inputCurrent select option:eq(2)").attr("itemid","2768703605012902");
-    $(".delCon .inputCurrent select option:eq(3)").attr("itemid","2768703605012903");
-    $(".delCon .inputPayOff select option:eq(1)").attr("itemid","2768703605012905");
-    $(".delCon .inputPayOff select option:eq(2)").attr("itemid","2768703605012906");
-    $(".delCon .inputMode select option:eq(1)").attr("itemid","2768703605012908");
-    $(".delCon .inputMode select option:eq(2)").attr("itemid","2768703605012909");
-
-    function getJsonBao() {
-        var dataval={};
-        $('#jiabao_Input input').each(function(){if(this.value!=''&&this.name!='')dataval[this.name]=this.value});
-        $('#jiabao_Input select').each(function(){if(this.value!=0&&this.name!='')dataval[this.name]=$(this).find("option:selected").attr("itemid")});
-        console.log(dataval);
-        $.ajax({
-            type: "post",
-            url: "/loanapply/perfectBaseInfo.do",
-            dataType: "json",
-            data: {data:JSON.stringify(dataval),number:"4"},
-            async: false,
-            contentType: "application/x-www-form-urlencoded; charset=UTF-8",
-            success: function(data){
-                console.log(data);
-            }
-        });
-    }
-//嘉保贷表单结束
-
-//嘉英贷表单
-    $(".delCon .inputSecurity select option:eq(1)").attr("itemid","2768703605011857");
-    $(".delCon .inputSecurity select option:eq(2)").attr("itemid","2768703605011858");
-    $(".delCon .inputFund select option:eq(1)").attr("itemid","2768703605011862");
-    $(".delCon .inputFund select option:eq(2)").attr("itemid","2768703605011863");
-
-    function getJsonYing() {
-        var dataval={};
-        $('#jiaying_Input input').each(function(){if(this.value!=''&&this.name!='')dataval[this.name]=this.value});
-        $('#jiaying_Input select').each(function(){if(this.value!=0&&this.name!='')dataval[this.name]=$(this).find("option:selected").attr("itemid")});
-        console.log(dataval);
-        $.ajax({
-            type: "post",
-            url: "/loanapply/perfectBaseInfo.do",
-            dataType: "json",
-            data: {data:JSON.stringify(dataval),number:"4"},
-            async: false,
-            contentType: "application/x-www-form-urlencoded; charset=UTF-8",
-            success: function(data){
-                console.log(data);
-            }
-        });
-    }
-//嘉英贷表单结束
-
-//嘉房贷表单
-    $(".delCon .inputHouseMort select option:eq(1)").attr("itemid","2768703605011900");
-    $(".delCon .inputHouseMort select option:eq(2)").attr("itemid","2768703605011901");
-
-    function getJsonFang() {
-        var dataval={};
-        $('#jiafang_Input select').each(function(){if(this.value!=0&&this.name!='')dataval[this.name]=$(this).find("option:selected").attr("itemid")});
-        $('#jiafang_Input input[type="text"]').each(function(){if(this.value!=''&&this.name!='')dataval[this.name]=this.value});
-
-        var id_array=new  Array();
-
-        $('#jiafang_Input input:checked').each(function(){
-            id_array.push($(this).val());//向数组中添加元素
-        });
-        if($('#jiafang_Input input:checked').is(":checked")){
-            var temp= '{"2768703605011886":["' + id_array.join('","') + '"]}';
-            dataval['2768703605011886']=eval('('+temp+')');
-        }
-        console.log(dataval);
-        $.ajax({
-            type: "post",
-            url: "/loanapply/perfectBaseInfo.do",
-            dataType: "json",
-            data: {data:JSON.stringify(dataval),number:"4"},
-            async: false,
-            contentType: "application/x-www-form-urlencoded; charset=UTF-8",
-            success: function(data){
-                console.log(data);
-            }
-        });
-
-    }
-//嘉房贷表单结束
-
-//嘉车贷表单
-    $(".delCon .inputOperation select option:eq(1)").attr("itemid","2768703605011908");
-    $(".delCon .inputOperation select option:eq(2)").attr("itemid","2768703605011909");
-    $(".delCon .inputCarMort select option:eq(1)").attr("itemid","2768703605011911");
-    $(".delCon .inputCarMort select option:eq(2)").attr("itemid","2768703605011912");
-    $(".delCon .inputCarLoanType select option:eq(1)").attr("itemid","2768703605012876");
-    $(".delCon .inputCarLoanType select option:eq(2)").attr("itemid","2768703605012877");
-
-    function getJsonChe() {
-        var dataval={};
-        $('#jiache_Input input').each(function(){if(this.value!=''&&this.name!='')dataval[this.name]=this.value});
-        $('#jiache_Input select').each(function(){if(this.value!=0&&this.name!='')dataval[this.name]=$(this).find("option:selected").attr("itemid")});
-        console.log(dataval);
-        $.ajax({
-            type: "post",
-            url: "/loanapply/perfectBaseInfo.do",
-            dataType: "json",
-            data: {data:JSON.stringify(dataval),number:"4"},
-            async: false,
-            contentType: "application/x-www-form-urlencoded; charset=UTF-8",
-            success: function(data){
-                console.log(data);
-            }
-        });
-    }
-//嘉车贷表单结束
-
-
 
     var btnFail=$(".againCon ul.againBtn li");
     btnFail.click(function(){
@@ -1124,9 +1114,7 @@ $(function(){
         s.eVar75 = "继续补充资料";
         s.events = "event100";
         s.tl(this, 'o', 'custom');
-    });
-
-
+    })
 
 
 
