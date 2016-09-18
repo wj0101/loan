@@ -229,8 +229,8 @@ input.miniText:hover{border:1px solid #2577e3 ;}
 .againCon .againBtn li.failBtns{border: 2px solid #999;color: #999;float: left; width: 100px;height: 36px;margin-right: 21px;border-radius: 30px;pointer-events: none; }
 .againCon .againBtn li.failBtns a:hover{color: #999;cursor: default}
 .againCon .againBtn li.failBtns a{color: #999;}
-.inputYear input#manageYear{width: 301px;height: 38px;border: 1px solid #dbdbdb; border-radius: 2px;padding-left: 10px;font-size: 14px;color: #333333;line-height: 40px;background-color: #f9f9f9;float: left;}
-.inputWorkYear input#workYear{width: 254px;height: 38px;border: 1px solid #dbdbdb; border-radius: 2px;padding-left: 10px;font-size: 14px;color: #333333;line-height: 40px;background-color: #f9f9f9;float: left;}
+.inputYear input.manageYear{width: 301px;height: 38px;border: 1px solid #dbdbdb; border-radius: 2px;padding-left: 10px;font-size: 14px;color: #333333;line-height: 40px;background-color: #f9f9f9;float: left;}
+.inputWorkYear input.workYear{width: 254px;height: 38px;border: 1px solid #dbdbdb; border-radius: 2px;padding-left: 10px;font-size: 14px;color: #333333;line-height: 40px;background-color: #f9f9f9;float: left;}
 .securityText{padding-left: 16px;}
 .inputFundYear input#fundYear ,.inputFundNum input#fundNum{ width: 325px; height: 38px;border: 1px solid #dbdbdb;border-radius: 2px;padding-left: 10px;font-size: 14px;color: #333333;line-height: 40px;background-color: #f9f9f9;float: left; }
 .housesText{padding-left: 16px;}
@@ -240,6 +240,21 @@ input.miniText:hover{border:1px solid #2577e3 ;}
 .iptBox input#cardInstall { width: 308px;}
 .iptBox input#repayPeriod { width: 286px;}
 .loan_che{height: 590px;}
+.iptBox input.houses{width: 50px;height: 20px;margin: 5px;line-height: 20px;}
+.inputHouses label{margin-right:1.2rem;margin-bottom: 1rem}
+.inputHouses span{color: #666666;
+    font-size: 16px;
+    margin-right: 20px;
+    display: inline-block;
+    float: left;
+    line-height: 40px;
+}
+.inputHouses{width: 658px;}
+#housesError{float: right;margin-right: 60px;margin-top: 0;}
+
+
+
+
 
 /*借款首页*/
 #bannerWrap{ width:100%; height:300px; overflow:hidden; line-height:0; position:relative;min-width: 1180px;}

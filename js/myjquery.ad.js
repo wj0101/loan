@@ -85,7 +85,8 @@ $(function(){
 			$(".applyLoan ").hide();
 			$(".failProduct .textTitleS,.supplementData .textTitle,.successful .textTitle").text("借款申请");
 			$(".failProduct .textMessageS,.supplementData .textMessage,.successful .textMessage").text('额度高至可借50万元');
-			$(".asideList li").removeClass("hoverButton")
+			$(".asideList li").removeClass("hoverButton");
+
 
 		}else if (numB==7){
 			$(".loanProducts").hide();
@@ -101,8 +102,6 @@ $(function(){
 			s.tl(this, 'o', 'custom');
 		}
 	},0);
-
-
 
 	text.click(function(){
 		$(this).addClass('hoverButton').siblings('li').removeClass('hoverButton');
@@ -540,11 +539,9 @@ $(function(){
 
 	$(".suppleBtnLeft").click(function(){
 		$(".insideData").hide();
-		$(".supplementProduct").show();
+		$(".basicInfo").show();
 	});
 
-	$(".proApplyBtn").click(function(){
-		$(".supplementProduct").hide();
-		$(".basicInfo").show();
-	})
+
+
 });
