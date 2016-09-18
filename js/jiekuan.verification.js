@@ -815,8 +815,8 @@ $(function(){
     }
 
     $(".nextBtn").click(function(){
-        var cardNo = document.getElementById('card_no').value.toUpperCase();
         var valCredit=$(".credit").val();
+
         $(".inputCredit").find("#creditError").remove();
         var val1 = $('.inputCredit select option:selected').val();
         if(0 == val1)
@@ -863,7 +863,7 @@ $(function(){
                     dataType: "json",
                     contentType: "application/x-www-form-urlencoded; charset=UTF-8",
                     success: function(data){
-                        if(data.isBlank=='Y'&& valCredit==4){
+                        if(valCredit==4){
                             $(".supplementData").hide();
                             $(".failProduct").show();
                         }else {
@@ -885,7 +885,6 @@ $(function(){
             if(numError6){
                 return false
             }else{
-
                 $.ajax({
                     type: "get",
                     url: "/loanapply/validateIdentity.do",
@@ -893,7 +892,7 @@ $(function(){
                     dataType: "json",
                     contentType: "application/x-www-form-urlencoded; charset=UTF-8",
                     success: function(data){
-                        if(data.isBlank=='Y'&& valCredit==4){
+                        if(valCredit==4){
                             $(".supplementData").hide();
                             $(".failProduct").show();
                         }else {
@@ -918,7 +917,7 @@ $(function(){
                 dataType: "json",
                 contentType: "application/x-www-form-urlencoded; charset=UTF-8",
                 success: function(data){
-                    if(data.isBlank=='Y'&& valCredit==4){
+                    if(valCredit==4){
                         $(".supplementData").hide();
                         $(".failProduct").show();
                     }else {

@@ -26,10 +26,7 @@ $(function(){
                 }
             }
         });
-        if(numB==6){
 
-        }else if(numB!=6){
-        }
     });
 //查询客户是否新名单
     if(numB==6){
